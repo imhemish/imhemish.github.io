@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <meta charset="utf-8">
+    {% block title %}
+    {% if page.title %}
+    <title>{{ page.title }}</title>
+    {% else %}
+    <title>Hemish's website</title>
+    {% endif %}
+    {% endblock %}
+    <meta name="description" content="Hemish's Website">
+    <meta name="author" content="Hemish">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
+  </head>
+  <body>
+    <header>
+	   <!-- <span class="hackergotchi">
+		   <img src='/hackergotchi.png' width=104 height=120 alt='My face'> <div class="caption"> What's this? - <a href="https://en.everybodywiki.com/Hackergotchi" target="_blank">Hackergotchi</a></div></span> -->
+      <h1>Hemish</h1>
+      <nav>
+        <span><a href="/">Home</a></span>|
+        <span><a href="/posts">Posts</a></span>|
+        <span><a href="/tags">Post Tags</a></span>|
+        <span><a target="_blank" href="/posts/atom.xml">Posts Feed</a></span>|
+	<span><a href="/poems">Poems</a></span>|
+	<span><a href="/languages">Poem Language Tags</a></span>|
+	<span><a target="_blank" href="/poems/atom.xml">Poems Feed</a></span>
+
+      </nav>
+      <div class="search-container">
+	<input id="search" type="search" placeholder="🔎 Site Search">
+	<button>go</button>
+	<div class="search-results">
+          <div class="search-results__items"></div>
+	</div>
+      </div>
+    </header>
+    <hr/>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    <hr>
+    <footer>
+	    My online presence: <br> <br>
+      <nav>
+        {% for social in config.extra.socials %}
+        <a target="_blank" href="{{ social[1] }}"><button>{{ social[0] }}</button></a>
+        {% endfor %}
+
+      </nav><br><hr><br>
+      <nav>
+        {% for mention in config.extra.photo_mentions %}
+        <button>
+          <a target="_blank" href="{{ mention[0] }}">
+			      <img src="{{ mention[1] }}" height=30 width=30 alt="{{ mention[2] }}">
+          </a>
+        </button>
+        {% endfor %}
+          
+          <br>(Not endoresed by any of these)
+	      <br> <br>
+      <span>
+        &copy Copyright 2022 <a href="/">Hemish</a>. Few rights reserved:
+      </span>
+      <span>
+	      The content on this site is available under <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank"> CC-BY-4.0 license</a>, that is you can use the content as long as you credit me, and list this site as source.
+    </footer>
+  </body>
+  <script src="/elasticlunr.min.js"></script>
+  <script src="/search_index.en.js"></script>
+  <script src="/js/search.js"></script>
+</html>

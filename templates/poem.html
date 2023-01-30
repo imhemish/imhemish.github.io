@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+  <h1 id="blog-title">{{ page.title }}</h1>
+  <span>
+  {% if page.date %}
+  <small class="blog-date">{{ page.date }}</small>
+  {% endif %}
+  {% for language in page.taxonomies["languages"] %}
+      <a href="/languages/{{ language }}">#{{ language }}</a>
+      {% endfor %}
+  </span>
+</div>  
+<div id="blog">  
+  {{ page.content | markdown | safe }}
+</div>  
+{% endblock content %}
