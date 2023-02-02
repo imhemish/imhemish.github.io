@@ -2,6 +2,10 @@ git add .
 git commit -m "auto update"
 git push origin main
 sed -i 's/hemish.tk/hemish.tildevarsh.in/g' config.toml
+sed -i 's/A mirror of this site is available at/This site is a mirror of/g' templates/base.html
+sed -i 's/hemish.tildevarsh.in/hemish.tk/g' templates/base.html
 zola build
 rsync -arP --delete public/ hemish@tildevarsh.in:public_html/
 sed -i 's/hemish.tildevarsh.in/hemish.tk/g' config.toml
+sed -i 's/This site is a mirror of/A mirror of this site is available at/g' templates/base.html
+sed -i 's/hemish.tk/hemish.tildevarsh.in/g' templates/base.html

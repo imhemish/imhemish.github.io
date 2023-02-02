@@ -25,6 +25,7 @@ socials = [
     ["Mastodon", "https://mastodon.world/@hemish"],
     ["Email", "mailto:hemi.sh@outlook.com"],
     ["Instagram", "https://instagram.com/imhemish"],
+    ["Pixelfed", "https://pixey.org/@hemish"],
     ["Spotify", "https://open.spotify.com/user/q96e23cp4bimqcczlj9e6gj90/playlists"]
 ]
 photo_mentions = [
