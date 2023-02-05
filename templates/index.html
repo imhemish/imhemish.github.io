@@ -1,4 +1,9 @@
 {% extends "page.html" %}
+
 {% block content %}
 {{ section.content | safe }}
 {% endblock content %}
+
+{% block description %}
+<meta name="description" content="{{ section.description }}"/>
+{% endblock description %}

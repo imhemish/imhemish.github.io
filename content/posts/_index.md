@@ -1,8 +1,8 @@
 +++
 title = "List of posts"
+description = "List of posts by Hemish"
 sort_by = "date"
 template = "posts.html"
 generate_feed = true
-page_template = "page.html"
 paginate_by = 5
 +++

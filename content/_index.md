@@ -1,6 +1,6 @@
 +++
 title = "Hemish"
-page_template = "page.html"
+description = "Website of a geeky, nerdy person named Hemish"
 +++
 # Site Guide
 Pleaese read [/guide](/guide) to know how to use this website efficiently and subscribe to feeds, and subscribe to specific tags. (Note: Read only if you are techy enough, otherwise just keep using this site the way you are using it now, as the guide is highly technical.)

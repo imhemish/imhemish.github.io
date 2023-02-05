@@ -1,6 +1,7 @@
 +++
 title = "Tools I use"
 page_template = "page.html"
+description = "All the tools I use on my desktop, which includes any applications and operating systems"
 +++
 # Desktop environment or window managers
 I primarily use Wayland. 

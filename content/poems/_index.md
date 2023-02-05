@@ -1,5 +1,6 @@
 +++
 title = "List of poems"
+description = "List of poems by Hemish"
 sort_by = "date"
 template = "poems.html"
 generate_feed = true

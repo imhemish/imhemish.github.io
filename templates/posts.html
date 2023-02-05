@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-{% block title %}
-<title>Posts</title>
-{% endblock %}
+{% block description %}
+<meta name="description" content="{{ section.description }}"/>
+{% endblock description %}
 {% block content %}
 <h1 class="title">{{ section.title }}</h1>
 <div id="blog-list">
