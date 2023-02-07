@@ -1,4 +1,4 @@
-/** CSS partially picked up from https://bugswriter.com, https://krolyxon.tildevarsh.in/ **/
+/** CSS partially picked up from https://bugswriter.com, https://krolyxon.tildevarsh.in/, perfectsite.neocities.org **/
 @font-face {
     font-family: "FreePixel";
     src: url("https://sadhost.neocities.org/fonts/FreePixel.ttf") format("truetype");
@@ -9,8 +9,9 @@
 }
 
 body{
-    color:white;
-    background-color:#222425;
+color:white;
+font-family: "Courier New", Courier, monospace;
+    background-color:#0d0d0d;
     margin:20px;
     font-size: 200%;
 }
@@ -55,7 +56,7 @@ a:link {
     text-decoration: none;
     }
 a{
-    color: #3391FF;
+    color: #73f273;
 }
 a:hover {
     color: white; 
@@ -172,7 +173,7 @@ p:has(> img){
 }
 
 h1, h2, h3 {
-	color:#907aa9;
+	color:#73f273;
 	font-family: "FreePixel";
         text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
 }

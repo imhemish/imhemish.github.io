@@ -38,3 +38,4 @@ photo_mentions = [
 ]
 fedihost = 'mastodon.world'
 fediuser = 'hemish'
+mirrors = ["https://hemish.tk", "https://hemish.tildevarsh.in"]

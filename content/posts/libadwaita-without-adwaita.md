@@ -1,10 +1,8 @@
 +++
 title='Libadwaita Without Adwaita'
-date='2023-01-17'
+date=2023-01-17
 [taxonomies]
-tags = ['linux', 'opensource', 'gnome']
-[extra]
-fediid=109812008389269847
+tags=['linux', 'opensource', 'gnome']
 +++
 
 While GNOME is moving to Libadwaita with the help of Purism (sure they need to be acknowledged), themeing has surely lessened, but people still use some hacks.
