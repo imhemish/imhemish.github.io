@@ -26,7 +26,7 @@ socials = [
     ["Email", "mailto:hemish04082005@gmail.com"],
     ["Instagram", "https://instagram.com/imhemish"],
     ["Pixelfed", "https://pixey.org/@hemish"],
-    ["Spotify", "https://open.spotify.com/user/q96e23cp4bimqcczlj9e6gj90/playlists"]
+    ["Spotify", "https://open.spotify.com/user/q96e23cp4bimqcczlj9e6gj90/playlists"],
 ]
 photo_mentions = [
     ["https://bugswriter.com", "https://bugswriter.com/favicon.ico", "BugsWriter"],
@@ -36,3 +36,5 @@ photo_mentions = [
     ["https://archlinux.org", "https://upload.wikimedia.org/wikipedia/commons/a/a5/Archlinux-icon-crystal-64.svg", "Arch Linux"],
     ["https://kernel.org", "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png", "Linux"]
 ]
+fedihost = 'mastodon.world'
+fediuser = 'hemish'

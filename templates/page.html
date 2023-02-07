@@ -27,4 +27,9 @@
 <div id="blog">  
   {{ page.content | markdown | safe }}
 </div>  
+{% if page.extra.fediid %}
+{% include 'fedicomments.html' %}
+{% elif section.extra.fediid %}
+{% include 'fedicomments.html' %}
+{% endif %}
 {% endblock content %}

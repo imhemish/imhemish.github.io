@@ -41,6 +41,8 @@
         <span><a href="/posts">Posts</a></span>|
 	<span><a href="/poems">Poems</a></span>|
 	<span><a href="#contact">Contact</a><span>
+	<br>
+	<span><a href="/guide">Feeds Guide</a><span>
 
       </nav>
       <div class="search-container">
@@ -58,7 +60,7 @@
     <hr>
     <footer>
 	    <div id="contact">
-	    My online presence: <br> <br>
+	    Links: <br> <br>
       <nav>
         {% for social in config.extra.socials %}
         <a target="_blank" href="{{ social[1] }}"><button>{{ social[0] }}</button></a>
@@ -68,6 +70,8 @@
 	    </div>
 	    <br><hr><br>
       <nav>
+	      Special thanks to: <br>
+	      <br>
         {% for mention in config.extra.photo_mentions %}
         <button>
           <a target="_blank" href="{{ mention[0] }}">

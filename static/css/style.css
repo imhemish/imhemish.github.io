@@ -13,8 +13,6 @@ body{
     background-color:#222425;
     margin:20px;
     font-size: 200%;
-    /*background-image: url("/starbg.gif");*/
-    font-family: "FreePixel";
 }
 
 p{
@@ -175,5 +173,6 @@ p:has(> img){
 
 h1, h2, h3 {
 	color:#907aa9;
-         text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
+	font-family: "FreePixel";
+        text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
 }

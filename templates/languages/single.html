@@ -5,7 +5,6 @@
 {% block content %}
 <h1 class="title">#{{ term.name }}</h1>
 <div id="blog-list">
-  <blockquote>
     Here is the list of poems tagged with language #{{ term.name }}. If you want to just follow this language's poems and not all my poems, here is a separate <a href="{{ term.permalink }}atom.xml">Atom feed</a> for #{{ term.name }}.
   {% for page in paginator.pages %}
   <div id="blog-summary"> 
