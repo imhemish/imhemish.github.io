@@ -1,5 +1,5 @@
 # site will be built for
-base_url = "https://hemish.tk"
+base_url = "https://hemish.tk/"
 title = "Hemish"
 compile_sass = false
 default_language = "en"
@@ -38,4 +38,4 @@ photo_mentions = [
 ]
 fedihost = 'mastodon.world'
 fediuser = 'hemish'
-mirrors = ["https://hemish.tk", "https://hemish.tk"]
+mirrors = ["https://hemish.tildevarsh.in", "https://hemish.tk"]
