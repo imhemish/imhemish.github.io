@@ -91,7 +91,7 @@
 	      <br>
 	      Mirror(s) of this site: 
 	      {% for mirror in config.extra.mirrors %}
-	      {% if mirror != config.base_url+'\/' %}
+	      {% if mirror != (config.base_url ~ '\/') %}
 	      
 	      <a href="{{ mirror }}" target="_blank">{{ mirror }}</a>
 	      {% endif %}
