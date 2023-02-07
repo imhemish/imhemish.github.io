@@ -1,7 +1,7 @@
 git add .
 git commit -m "auto update"
 git push origin main
-sed -i '1 s/hemish.tk/hemish.tildevarsh.in/' config.toml
+sed -i '1 s/hemish.tk/hemish.tildevarsh.in/g' config.toml
 cat config.toml | head -n 1
 zola build
 rsync -arP --delete public/ hemish@tildevarsh.in:public_html/
