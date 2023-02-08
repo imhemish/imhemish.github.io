@@ -1,20 +1,29 @@
-/** CSS partially picked up from https://bugswriter.com, https://krolyxon.tildevarsh.in/, perfectsite.neocities.org **/
+/** CSS partially picked up from https://bugswriter.com, https://krolyxon.tildevarsh.in/, https://perfectsite.neocities.org **/
+
+/* ------------ Fonts ------------- */
 @font-face {
-    font-family: "FreePixel";
-    src: url("https://sadhost.neocities.org/fonts/FreePixel.ttf") format("truetype");
+    font-family: "Courier";
+    src: url(../fonts/Courier.ttf);
 }
 @font-face {
     font-family: "Hack";
     src: url(../fonts/Hack-Regular.ttf);
 }
+@font-face {
+    font-family: "Newlimran";
+    src: url(../fonts/Newlimran.otf);
+}
+/* ------------------------------- */
+
 
 body{
-color:white;
-font-family: "Courier New", Courier, monospace;
-    background-color:#0d0d0d;
-    margin:20px;
-    font-size: 200%;
+  color:white;
+  font-family: Courier, monospace;
+  background-color:#0d0d0d;
+  margin:20px;
+  font-size: 100%;
 }
+
 
 p{
     text-align: justify;
@@ -23,12 +32,13 @@ p{
 hr{
     color: white;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .search-container {
     margin: 5px;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .search-results{
@@ -52,16 +62,19 @@ pre {
     border-radius: 20px;
     overflow: auto;
 }
+
+/* -------- Links ---------- */
 a:link {
     text-decoration: none;
-    }
-a{
-    color: #73f273;
+}
+a {
+  color: #73f273;
 }
 a:hover {
     color: white; 
     text-decoration: underline;
 }
+/* ------------------------ */
 
 footer span{
     text-align: center;
@@ -98,11 +111,6 @@ button {
     background-color: #FFFFFF;
 }
 
-
-header h1 span{
-    color: #FF72FF;
-}
-
 article {
     width: fit-content;
     text-align: center;
@@ -129,11 +137,9 @@ blockquote {
 #blog img{
     margin-left: auto;
     margin-right: auto;
-    max-width: 600px;
-}
-
-p:has(> img){
-    text-align: center;
+    object-fit: contain;
+    display: block;
+    text-align: justify;
 }
 
 .pagination {
@@ -143,37 +149,11 @@ p:has(> img){
     font-size: 110%;
 }
 
-@media (max-width:1000px)  {
-    body {
-        font-size: 100%;
-        padding: 3%;
-    }
-    #blog img{
-        max-width: 80%;
-    }
-}
-
-@media (max-width:1600px)  {
-    body {
-        font-size: 110%;
-        padding: 1%;
-    }
-    aside {
-        display: none;
-    }
-}
-.caption{
-    visibility: hidden;
-}
 .hackergotchi:hover .caption{
     visibility: visible;
-}
-.image-container {
-	text-align: center;
 }
 
 h1, h2, h3 {
 	color:#73f273;
-	font-family: "FreePixel";
-        text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
+	font-family: "Newlimran";
 }
