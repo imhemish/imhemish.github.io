@@ -16,12 +16,15 @@
 /* ------------------------------- */
 
 
+
 body{
   color:white;
   font-family: Courier, monospace;
   background-color:#0d0d0d;
-  margin:20px;
+  margin: auto;
+  padding: 20px;
   font-size: 100%;
+  max-width: 900px;
 }
 
 
@@ -36,6 +39,7 @@ hr{
 }
 
 .search-container {
+    display:none;
     margin: 5px;
     padding: 5px;
     border-radius: 20px;
