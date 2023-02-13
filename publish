@@ -5,4 +5,9 @@ sed -i '1 s/hemish.tk/hemish.tildevarsh.in/g' config.toml
 cat config.toml | head -n 1
 zola build
 rsync -arP --delete public/ hemish@tildevarsh.in:public_html/
-sed -i '1 s/hemish.tildevarsh.in/hemish.tk/g' config.toml
+sed -i '1 s/tildevarsh.in/neocities.org/g' config.toml
+zola build
+cd public
+neocities push .
+cd ..
+sed -i '1 s/hemish.neocities.org/hemish.tk/g' config.toml
