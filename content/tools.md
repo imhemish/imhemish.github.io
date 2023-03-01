@@ -10,22 +10,19 @@ I primarily use Wayland.
 
 # Text editors
 - I use [neovim](https://neovim.io) for quick editing in terminal,
-- but I use [VS Code](https://code.visualstudio.com) for projects spanning multiple files and actually coding something.
+- but I use [VS Codium](https://vscodium.com/) for projects spanning multiple files and actually coding something. I used to use VS Code earlier.
 - I sometimes also use [Xed](https://community.linuxmint.com/software/view/xed), that is a part of [Linux Mint](https://linuxmint.com)'s [XApps](https://linuxmint-developer-guide.readthedocs.io/en/latest/xapps.html), for quickly writing something or when I have to move around and copy something (I still don't know how to move stuff and copy in neovim or vim). Though I would mostly use GNOME apps, but I prefer Xed over Gnome Text Editor because I believe having a toolbar in Xed is good, and Xed also supports a tree sidebar for showing files.
 
 # Music Players
-- I have Spotify Premium, so I can download tracks. When I am offline, I use the official client.
+- I download music (by very legal ways) and maintain playlists using .m3u files. I use [Audacious](https://audacious-media-player.org/) on my laptop. I sync these music files and playlists between my phone and laptop by either using Syncthing, or using [MEGA](https://mega.io) cloud storage.
 
-When I have internet, I use the following (randomly switching between them):
-- [Spot](https://github.com/xou816/spot) (Libadwaita app)
-- a combination of [spotifyd](https://spotifyd.github.io/spotifyd/Introduction.html) and [spotify-qt](https://github.com/kraxarn/spotify-qt)
+I also use Spotify for discovering music (by going to some song that I know, and then clicking 'Go to Song Radio'). I used to use Spotify Premium, with thierd party clients based on [librespot](https://github.com/librespot-org/librespot), but I stopped using it, following the switch to offline music management.
 
-Both spotifyd and Spot are based on [librespot](https://github.com/librespot-org/librespot)
-
-For playing local files, I use [Amberol](https://apps.gnome.org/en/app/io.bassi.Amberol/). Emanuel Bassi and others have done a great work on it.
+Sometimes I also use [Amberol](https://apps.gnome.org/en/app/io.bassi.Amberol/) for offline music. Emanuel Bassi and others have done great work on it.
 
 # Archive manager
-- File Roller (generic name: Archive Manager) when using GUI.
+- Generally Nautilus (GNOME Files) just works fine with normal archives.
+- File Roller (generic name: Archive Manager) when using GUI, for complext archives and others not supported by Nautilus.
 - [unar](https://theunarchiver.com/command-line) in terminal because this can extract a lot of file types without learning separate commands for unzip, tar, etc.
 
 # Notes
@@ -33,7 +30,7 @@ I prefer to just use markdown for notes, but I also do want the sync functionali
 - [Paper](https://gitlab.com/posidon_software/paper) on laptop (libadwaita app)
 - [Obsidian](https://obsidian.md) on Android
 
-I sync their write directories through [Syncthing](https://syncthing.net), and they work beautifully.
+I sync their write directories either through [Syncthing](https://syncthing.net) or MEGA cloud storage, and they work beautifully.
 
 # Video player
 Imagine not using [MPV](https://mpv.io)
@@ -75,13 +72,16 @@ I use [Pika Backup](https://apps.gnome.org/en/app/org.gnome.World.PikaBackup/) t
 - [Nheko](https://nheko-reborn.github.io/) on Laptop
 - [SchildiChat](https://schildi.chat/android/) on Android
 
+Though I am looking forward to use [Fractal](https://gitlab.gnome.org/GNOME/fractal) when its development branch starts supporting spaces.
+
 # Mail client
 - [Geary](https://wiki.gnome.org/Apps/Geary) on Laptop
-- Gmail on Android
+- Gmail on Android (I am willing to switch)
 
 # Other miscalleneous tools
 - [Decoder](https://apps.gnome.org/app/com.belmoussaoui.Decoder/) for scanning QR codes on Laptop (libadwaita app)
 - [GNOME Characters](https://apps.gnome.org/app/org.gnome.Characters/) for adding emojis or unicode symbols
 - [Linux Mint](https://linuxmint.com)'s [Warpinator](https://community.linuxmint.com/software/view/warpinator) on Laptop and [unofficial Warpinator](https://f-droid.org/en/packages/slowscript.warpinator/) for Android to share files across phone and laptop when on same network
 - [Gtranslator](https://wiki.gnome.org/Apps/Gtranslator) for translating software UI's into Hindi
+- [Mousai](https://flathub.org/apps/details/io.github.seadve.Mousai) for identifying music, right through desktop.
 - Linux Mint's [webapp-manager](https://community.linuxmint.com/software/view/webapp-manager) to create web apps which have their own window and profile, in Firefox (despite Firefox killing PWA's)

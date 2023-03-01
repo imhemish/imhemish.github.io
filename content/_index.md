@@ -25,10 +25,10 @@ I belive that knowledge and information should be accessible to people, more tha
 The neurons in my brain are very crazy about logical stuff.
 I do and turn on computers and linux. I like programming and testing out random stuff on Linux.
 ## My system
-I use [Arch Linux](https://archlinux.org) on my system. A detailed description of applications and tools I use is available at [Tools](/tools).
+I use [Fedora](https://getfedora.org/) on my system. A detailed description of applications and tools I use is available at [Tools](/tools).
 
 # Contributions
-All my contributions to software, translations, and Wikipedia are listed at [contributions]. (this link, work in progress)
+All my contributions to software, translations, and Wikipedia are listed at [contributions].
 
 [he/him]: https://pronouns.org/he-him
 [Haryana]: https://en.wikipedia.org/wiki/Haryana
