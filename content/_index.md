@@ -1,7 +1,7 @@
-+++  
-title="Hemish"  
-page_template="index.html"  
-description="Website of a geeky, nerdy person named Hemish"  
++++
+title = "Hemish"
+description = "Website of a geeky, nerdy person named Hemish"
+page_template = "index.html"
 +++
 
 # About Me
