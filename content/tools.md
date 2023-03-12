@@ -1,7 +1,7 @@
-+++  
-title = "Tools I use"  
-page\_template = "page.html"  
-description = "All the tools I use on my desktop, which includes any applications and operating systems"  
++++
+title = "Tool I use"
+description = "All the tools I use on my desktop, which includes any applications and operating systems"
+page_template = "page.html"
 +++
 
 # Desktop environment or window managers

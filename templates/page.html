@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% block description %}
-{% if page.description %}
-    <meta name="description" content="Hemish's Website">
+
+{% if section.description %}
+    <meta name="description" content="{{ section.description }}">
+{% elif page.description %}
+    <meta name="description" content="{{ page.description }}">
 {% elif page.summary %}
     <meta name="description" content="{{ page.summary }} ... (continued)">
 {% elif page.title %}
@@ -9,7 +12,9 @@
 {% else %}
     <meta name="description" content="A page on Hemish's website"/>
 {% endif %}
+
 {% endblock description %}
+
 {% block content %}
 <div>
   <h1 id="blog-title">{{ page.title }}</h1>

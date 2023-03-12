@@ -1,7 +1,7 @@
-+++  
++++
 title = "Hemish's Contributions"  
 description = "All the contributions I have made in all spaces"  
-page\_template = "page.html"  
+page_template = "page.html"  
 +++
 
 # Wikipedia
