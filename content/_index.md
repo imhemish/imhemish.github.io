@@ -1,5 +1,6 @@
 +++  
-title = "Hemish"  
+title = "Hemish" 
+page_template = "index.html" 
 description = "Website of a geeky, nerdy person named Hemish"  
 +++
 
