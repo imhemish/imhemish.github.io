@@ -3,6 +3,9 @@ title = "Quest for a Notes app"
 date = "2023-02-20"
 [taxonomies]
 tags = ['opensource', 'workflow', 'rant']
+[extra]
+fediid = '109812008389269847'
+cover = "paper-notes-adaptive.png"
 +++
 My hunt for a plain markdown capable Notes app is stopped. Why was I searching a good notes app to fit my workflow even though there are countless offline and online notes available?
 <!-- more --> 

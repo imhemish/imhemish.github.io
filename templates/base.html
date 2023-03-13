@@ -14,17 +14,9 @@
     <title>Hemish's website</title>
     {% endif %}
     {% endblock %}
-    {% block description %}
-    {% if page.description %}
-    <meta name="description" content="Hemish's Website">
-    {% else %}
-    {% if page.title %}
-    <meta name="description" content="Blog post: {{ page.title }}"/>
-    {% else %}
-    <meta name="description" content="A page on Hemish's website"/>
+    {% if page.extra.cover %}
+    <meta property="og:image" content="/images/{{ page.extra.cover }}"/>
     {% endif %}
-		{% endif %}
-{% endblock description%}
 {% block extrameta %}
 {% endblock extrameta %}
     <meta name="author" content="Hemish">

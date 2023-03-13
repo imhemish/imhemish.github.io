@@ -2,11 +2,11 @@
 {% block description %}
 
 {% if section.description %}
-    <meta name="description" content="{{ section.description }}">
+    <meta name="description" content="{{ section.description | safe }}">
 {% elif page.description %}
-    <meta name="description" content="{{ page.description }}">
+    <meta name="description" content="{{ page.description | safe }}">
 {% elif page.summary %}
-    <meta name="description" content="{{ page.summary }} ... (continued)">
+    <meta name="description" content="{{ page.summary | safe }} ... (continued)">
 {% elif page.title %}
     <meta name="description" content="Page: {{ page.title }}"/>
 {% else %}
