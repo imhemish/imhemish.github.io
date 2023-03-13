@@ -16,7 +16,11 @@
     {% endblock %}
     {% if page.extra.cover %}
     <meta property="og:image" content="/images/{{ page.extra.cover }}"/>
+    {% else %}
+    <meta property="og:image" content="/images/apple-touch-icon.png"/>
     {% endif %}
+{% block description %}
+{% endblock description %}
 {% block extrameta %}
 {% endblock extrameta %}
     <meta name="author" content="Hemish">

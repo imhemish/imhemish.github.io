@@ -25,6 +25,7 @@ socials = [
     ["Twitter", "https://twitter.com/imhemish"],
     ["Email", "mailto:hemish04082005@gmail.com"],
     ["Instagram", "https://instagram.com/imhemish"],
+    ["last.fm", "https://last.fm/user/imhemish"]
 ]
 photo_mentions = [
     ["https://bugswriter.com", "https://bugswriter.com/favicon.ico", "BugsWriter"],
