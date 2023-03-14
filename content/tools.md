@@ -19,11 +19,15 @@ I primarily use Wayland.
 
 # Music Players
 
-- I download music (by very legal ways) and maintain playlists using .m3u files. I use [Audacious](https://audacious-media-player.org/) on my laptop. I sync these music files and playlists between my phone and laptop by either using Syncthing, or using [MEGA](https://mega.io) cloud storage.
+- I download music (by very legal ways) and maintain playlists using .m3u files. I use [mpd](https://www.musicpd.org/) and [ncmpcppcpcppcppcpp](https://rybczak.net/ncmpcpp/) on my laptop. I sync these music files and playlists between my phone and laptop by either using Syncthing, or using [MEGA](https://mega.io) cloud storage.
+
+I use something called "GoneMAD music player" on my phone, because it has got support for non-databased .m3u playlists and support for id3v2.4 tags with correct support for multiple 'ARTIST' fields.
+
+I scrobble my music to [last.fm](https://last.fml), [libre.fm](https://libre.fm) and [listenbrainz.org](https://listenbrainz.org).
 
 I also use Spotify for discovering music (by going to some song that I know, and then clicking 'Go to Song Radio'). I used to use Spotify Premium, with thierd party clients based on [librespot](https://github.com/librespot-org/librespot), but I stopped using it, following the switch to offline music management.
 
-Sometimes I also use [Amberol](https://apps.gnome.org/en/app/io.bassi.Amberol/) for offline music. Emanuel Bassi and others have done great work on it.
+I also use [Amberol](https://apps.gnome.org/en/app/io.bassi.Amberol/) for random music files. Emanuel Bassi and others have done great work on it.
 
 # Archive manager
 
