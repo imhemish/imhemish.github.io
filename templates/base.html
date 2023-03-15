@@ -61,7 +61,7 @@
 	    Links: <br> <br>
       <nav>
         {% for social in config.extra.socials %}
-        <a target="_blank" href="{{ social[1] }}"><button>{{ social[0] }}</button></a>
+        <a target="_blank" rel="me" href="{{ social[1] }}"><button>{{ social[0] }}</button></a>
         {% endfor %}
 
       </nav>
