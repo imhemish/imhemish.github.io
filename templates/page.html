@@ -1,19 +1,4 @@
 {% extends "base.html" %}
-{% block description %}
-
-{% if section.description %}
-    <meta name="description" content="{{ section.description | safe | striptags }}">
-{% elif page.description %}
-    <meta name="description" content="{{ page.description | safe | striptags }}">
-{% elif page.summary %}
-    <meta name="description" content="{{ page.summary | safe | striptags }} ... (continued)">
-{% elif page.title %}
-    <meta name="description" content="Page: {{ page.title }}"/>
-{% else %}
-    <meta name="description" content="A page on Hemish's website"/>
-{% endif %}
-
-{% endblock description %}
 
 {% block content %}
 <div>
@@ -32,9 +17,4 @@
 <div id="blog">  
   {{ page.content | markdown | safe }}
 </div>  
-{% if page.extra.fediid %}
-{% include 'fedicomments.html' %}
-{% elif section.extra.fediid %}
-{% include 'fedicomments.html' %}
-{% endif %}
 {% endblock content %}

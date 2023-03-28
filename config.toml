@@ -19,7 +19,7 @@ external_links_target_blank = true
 socials = [
     ["LinkedIn", "https://linkedin.com/in/imhemish"],
     ["GitHub", "https://github.com/imhemish"],
-    ["Matrix", "https://matrix.to/#/@hemish:aria-net.org"],
+    ["XMPP", "xmpp://hemish@sure.im"],
     ["Telegram", "https://telegram.me/imhemish"],
     ["Mastodon", "https://mastodon.world/@hemish"],
     ["Twitter", "https://twitter.com/imhemish"],
