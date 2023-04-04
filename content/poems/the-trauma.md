@@ -1,6 +1,6 @@
 +++
 title = "The Trauma"
-date = "2022-04-04"
+date = "2023-04-04"
 [taxonomies]
 languages = ['english']
 +++
