@@ -32,4 +32,4 @@ The song is not a motivational song at all, but it still somehow gives me chills
 
 The song was made in times of intense hussle and tussle, where India was just emerging as an independent nation, and everyone had apprehensions about the future of India. As an emerging and in-development nation, the song presses on the point that Indians are going to interact with world, shape our future and contribute to world's common good, and India would be becoming a part of the bigger Global World; and here we are in India in 2023, seeing this. Yep I agree that we are still nowhere near the West in terms of progress, but still there is a hope seeing how much we have progressed from absymal state of India to a truly republic and democratic state of India.
 
-I didn't know while writing this blog about a random vintage bollywood song would bring out the Desi and patriot in me, but here it is. Bye, peeps!
+I didn't know that writing this blog about a random vintage bollywood song would bring out the Desi and patriot in me, but here it is. Bye, peeps!
