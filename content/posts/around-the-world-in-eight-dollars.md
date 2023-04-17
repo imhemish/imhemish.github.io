@@ -3,6 +3,8 @@ title = "Duniya Ki Sair Kar lo - Around the World in 8 dollars"
 date = "2023-04-16"
 [taxonomies]
 tags=['casual', 'nostalgia', 'india']
+[extra]
+fediid='110208337259572891'
 +++
 
 The song 'Duniya Ki Sair Kar Lo' which was released even before my parents were born, has got a profound and reserved place in my heart. Let's see why!
