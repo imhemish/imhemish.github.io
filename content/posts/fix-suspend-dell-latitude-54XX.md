@@ -38,7 +38,7 @@ i915.enable_psr=0 mem_sleep_default=deep snd_hda_intel.dmic_detect=0 intel_idle.
 
 I don't know which one of this does the trick, but putting all of them does no harm and suspend works gracefully and has not failed since I used them all.  
 
-If you are a technically user and know the internals, you already know how to use these kernel parameters, but here is a guide for those who don't know:  
+If you are a technical user and know the internals, you already know how to use these kernel parameters, but here is a guide for those who don't know:  
 
 To add these kernel parameters in your bootloader in distros like Ubuntu, Fedora, you can follow these steps:
 Open the terminal and type:
