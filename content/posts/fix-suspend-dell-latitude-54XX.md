@@ -5,6 +5,7 @@ date = "2023-04-18"
 tags = ['opensource', 'linux']
 [extra]
 search_tags = ['dell', 'ubuntu', 'dell latitude', '5490']
+fediid = '110219336170435010'
 +++
 
 I wrote this to provide others an aggregated view to how to solve this problem, and not lurk in multiple formus or threads to find the solutions.
@@ -20,7 +21,11 @@ I lurked across various forums including Ubuntu forums, Arch forums, Reddit and 
 
 To fix suspend not working on Dell Latitude 5490 and other laptops in the 54xx series, you should do all the following steps:
 
-- Add your user to power group by the command ```sudo usermod -a -G power $USER```
+- Add your user to power group by the command:  
+
+```
+sudo usermod -a -G power $USER
+```
 
 - Update your firmware using either CLI using [fwupd](https://fwupd.org/) or just using a frontend like GNOME Software Center.
 
@@ -36,7 +41,12 @@ I don't know which one of this does the trick, but putting all of them does no h
 If you are a technically user and know the internals, you already know how to use these kernel parameters, but here is a guide for those who don't know:  
 
 To add these kernel parameters in your bootloader in distros like Ubuntu, Fedora, you can follow these steps:
-Open the terminal and type ```sudo nano /etc/default/grub```  
+Open the terminal and type:
+
+```
+sudo nano /etc/default/grub
+```
+
 Find the line that starts with ```GRUB_CMDLINE_LINUX_DEFAULT``` and add your kernel parameters to it.  
 Save and exit by pressing Ctrl+X, then Y, then Enter.  
 Update GRUB entries by typing sudo update-grub  
