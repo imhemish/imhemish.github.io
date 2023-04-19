@@ -4,7 +4,7 @@ date = "2023-04-19"
 [taxonomies]
 tags = ['opensource', 'openweb']
 [extra]
-search_tags = ['RSS', 'feeds' 'feedly', 'greader', 'newsboat']
+search_tags = ['RSS', 'feeds', 'feedly', 'greader', 'newsboat']
 +++
 
 RSS and atom feeds are new love for me, just like how a teenager newly discovers Instagram.
