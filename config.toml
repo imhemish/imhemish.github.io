@@ -23,14 +23,13 @@ socials = [
     ["Telegram", "https://telegram.me/imhemish"],
     ["Email", "mailto:hemish04082005@gmail.com"],
     ["Instagram", "https://instagram.com/imhemish"],
-    ["last.fm", "https://last.fm/user/imhemish"]
+    ["Spotify", "https://open.spotify.com/user/q96e23cp4bimqcczlj9e6gj90"]
 ]
 photo_mentions = [
     ["https://bugswriter.com", "https://bugswriter.com/favicon.ico", "BugsWriter"],
     ["https://en.wikipedia.org/wiki/India", "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg", "India"],
     ["https://en.wikipedia.org/", "https://upload.wikimedia.org/wikipedia/en/8/80/Wikipedia-logo-v2.svg", "Wikipedia"],
     ["https://gnome.org", "https://upload.wikimedia.org/wikipedia/commons/6/68/Gnomelogo.svg", "GNOME"],
-    ["https://archlinux.org", "https://upload.wikimedia.org/wikipedia/commons/a/a5/Archlinux-icon-crystal-64.svg", "Arch Linux"],
     ["https://kernel.org", "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png", "Linux"]
 ]
 fedihost = 'mastodon.world'
