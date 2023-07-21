@@ -2,7 +2,7 @@
 title = "School farewell poem"
 date = "2023-07-21"
 [taxonomies]
-languages = ['english, 'punjabi', 'punjabi']
+languages = ['english', 'punjabi', 'punjabi']
 +++
 I wrote this trilingual poem for my school farewell this year (held in February 2023):
 
