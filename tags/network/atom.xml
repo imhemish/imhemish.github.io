@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Hemish - network</title>
+	<link href="https://hemish.net/tags/network/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://hemish.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-09-20T00:00:00+00:00</updated>
+	<id>https://hemish.net/tags/network/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Mitmproxy</title>
+		<published>2022-09-20T00:00:00+00:00</published>
+		<updated>2022-09-20T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://hemish.net/posts/mitmproxy/" type="text/html"/>
+		<id>https://hemish.net/posts/mitmproxy/</id>
+		<content type="html">&lt;p&gt;Today, I came across this wonderful tool called &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mitmproxy.org&#x2F;&quot;&gt;mitmproxy&lt;&#x2F;a&gt; which is a TLS capable HTTP and HTTPS proxy and can be used by pen-testers and enthusiasts.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Their documentation provides an easy way to install CA trust certificates on each operating system so that browser or any application does not show security errors making it unable to connect to required site.&lt;&#x2F;p&gt;
+&lt;p&gt;It provides three tools in single package:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;mitmdump: This is a CLI tool which can be used to dump http(s) requests. It is like tcpdump tool, but just for HTTP and capable of decoding TLS requests.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;mitmproxy: This is a TUI interface which provides convenient way of monitoring the requests.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;mitmweb: is a web interface (the interface is rendered in your browser) which provides a chromium-devtools-like interface for monitoring and editing requests.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Mitmweb is most convenient as it provides a GUI interface. Though, BurpSuite may be beneficial for advance usecases; but for a random hobbyist, mitmproxy is enough for just intercepting requests.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
