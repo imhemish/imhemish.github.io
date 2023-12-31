@@ -19,7 +19,7 @@ external_links_target_blank = true
 socials = [
     ["LinkedIn", "https://linkedin.com/in/imhemish"],
     ["GitHub", "https://github.com/imhemish"],
-    ["XMPP", "xmpp://hemish@sure.im"],
+    ["Matrix", "https://matrix.to/#/@hemish:matrix.org"],
     ["Telegram", "https://telegram.me/imhemish"],
     ["Email", "mailto:hemish04082005@gmail.com"],
     ["Instagram", "https://instagram.com/imhemish"],
@@ -34,4 +34,4 @@ photo_mentions = [
 ]
 fedihost = 'mastodon.world'
 fediuser = 'hemish'
-mirrors = ["https://hemish.tildevarsh.in", "https://hemish.net", "https://hemish.neocities.org"]
+mirrors = ["https://hemish.net", "https://hemish.neocities.org"]
