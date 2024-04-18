@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Hemish - hindi</title>
+	<link href="https://hemish.net/languages/hindi/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://hemish.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2023-07-25T00:00:00+00:00</updated>
+	<id>https://hemish.net/languages/hindi/atom.xml</id>
+	<entry xml:lang="en">
+		<title>बेशुमार हो जाता है</title>
+		<published>2023-07-25T00:00:00+00:00</published>
+		<updated>2023-07-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://hemish.net/poems/beshumaar-ho-jaata-hai/" type="text/html"/>
+		<id>https://hemish.net/poems/beshumaar-ho-jaata-hai/</id>
+		<content type="html">&lt;p&gt;प्यार हो जाता है,&lt;br &#x2F;&gt;
+बहुत ही बेशुमार हो जाता है।&lt;br &#x2F;&gt;
+उसे निहार के,&lt;br &#x2F;&gt;
+कैसे ये रंग प्यार के।&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;था किसी ने बताया,&lt;br &#x2F;&gt;
+तितलियाँ उड़ती हैं पेट में,&lt;br &#x2F;&gt;
+यदि इश्क़ हो किसी से जताया।&lt;br &#x2F;&gt;
+तितलियाँ नहीं थीं जनाब,&lt;br &#x2F;&gt;
+कुछ और था दिल में,&lt;br &#x2F;&gt;
+कैसे बयाँ करूँ,&lt;br &#x2F;&gt;
+कमी है इन शब्दों की महफ़िल में।&lt;&#x2F;p&gt;
+&lt;p&gt;साथ उसका होगा,&lt;br &#x2F;&gt;
+तो कितना अच्छा होगा,&lt;br &#x2F;&gt;
+नहीं तो सिर्फ़ ये दर्द होगा,&lt;br &#x2F;&gt;
+और दिल बहुत ही कच्चा होगा। &lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>नवीन कल</title>
+		<published>2023-07-25T00:00:00+00:00</published>
+		<updated>2023-07-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://hemish.net/poems/naveen-kal/" type="text/html"/>
+		<id>https://hemish.net/poems/naveen-kal/</id>
+		<content type="html">&lt;p&gt;मैनें देखा एक सितारा,&lt;br &#x2F;&gt;
+फ़िर किसी ने चाँद उतारा।&lt;br &#x2F;&gt;
+धीरे-धीरे रात आ गई,&lt;br &#x2F;&gt;
+चाँद की चमकदार काया भी कालिमय हो गई।&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;आया एक बादल रूपी नभचर,&lt;br &#x2F;&gt;
+जो आकाश में लगने लगा विचर।&lt;br &#x2F;&gt;
+चाँद फ़िर से आया,&lt;br &#x2F;&gt;
+उसने अपना चमकदार चेहरा दिखाया।&lt;&#x2F;p&gt;
+&lt;p&gt;फ़िर सूरज आया,&lt;br &#x2F;&gt;
+दिखाई उसने अपनी काया।&lt;br &#x2F;&gt;
+फ़िर दिन, फ़िर रात, चलता यही क्रम,&lt;br &#x2F;&gt;
+तो कभी बरखा आती छम-छम-छम।&lt;&#x2F;p&gt;
+&lt;p&gt;इसी तरह आते हैं ज़िन्दगी में पल हसीन,&lt;br &#x2F;&gt;
+तुम्हारा भी आएगा एक कल नवीन!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Compiler दोस्त</title>
+		<published>2023-07-22T00:00:00+00:00</published>
+		<updated>2023-07-22T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://hemish.net/poems/compiler-dost/" type="text/html"/>
+		<id>https://hemish.net/poems/compiler-dost/</id>
+		<content type="html">&lt;p&gt;Code कर रहा था मैं,&lt;br &#x2F;&gt;
+Unhandled exception आ गई,&lt;br &#x2F;&gt;
+Documentation पढ रहा था मैं,&lt;br &#x2F;&gt;
+Exception की जङ समझ में आ गई।&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;कई देर से खोया था उसी में,&lt;br &#x2F;&gt;
+पहले पढ लेता तो अच्छा रहता,&lt;br &#x2F;&gt;
+फ़िर compiler भी कहता,&lt;br &#x2F;&gt;
+Boss आपने नहीं फैलाया रायता।&lt;&#x2F;p&gt;
+&lt;p&gt;Compiler एक दम से लगने लगा दोस्त,&lt;br &#x2F;&gt;
+इसके हाँ करने की ज़रूरत थी most,&lt;br &#x2F;&gt;
+ना कह-कह कर कर रहा था ghost,&lt;br &#x2F;&gt;
+क्या पता इसे समय की cost.&lt;&#x2F;p&gt;
+&lt;p&gt;ख़ैर छोङो इसकी भी गलती नहीं,&lt;br &#x2F;&gt;
+हमारी भाषा ये समझता नहीं,&lt;br &#x2F;&gt;
+Obvious errors को ठीक करता नहीं,&lt;br &#x2F;&gt;
+हमारी मजबूरियों को ये समझता नहीं।&lt;&#x2F;p&gt;
+&lt;p&gt;बनना चाहते हो इसके दोस्त,&lt;br &#x2F;&gt;
+तो code करते वक्त focus करो most.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>School farewell poem</title>
+		<published>2023-07-21T00:00:00+00:00</published>
+		<updated>2023-07-21T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://hemish.net/poems/school-farewell/" type="text/html"/>
+		<id>https://hemish.net/poems/school-farewell/</id>
+		<content type="html">&lt;p&gt;I wrote this trilingual poem for my school farewell this year (held in February 2023):&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Is anyone born educated? No I guess.&lt;br &#x2F;&gt;
+Everyone is initially just a mess.&lt;br &#x2F;&gt;
+Everyone has some potential in their mind,&lt;br &#x2F;&gt;
+because everyone is one of a kind.&lt;br &#x2F;&gt;
+But education and school is what empowers one.&lt;br &#x2F;&gt;
+Maybe you also get a lot of fun.&lt;&#x2F;p&gt;
+&lt;p&gt;ਮੈਂ ਖਾਸ ਹਾਂ, ਇਹ ਮੈਂ ਜਾਣਦਾ ਹੈਂ,&lt;br &#x2F;&gt;
+ਤੇ ਏਸੇ ਖਾਸ ਖੁਦ ਨੂੰ ਪਛਾਣਨਾ ਚਾਹੁੰਦਾ ਹਾਂ,&lt;br &#x2F;&gt;
+ਕੀ ਹਾਂ ਮੈਂ, ਕੀ ਮੈਨੂੰ ਪਸੰਦ ਹੈ,&lt;br &#x2F;&gt;
+ਕੀ ਕਰਨਾ ਹੈ ਮੈਂ, ਤੇ ਮੇਰਾ ਕੀ ਮਕਸਦ ਹੈ?&lt;br &#x2F;&gt;
+ਕੌਣ ਹਾਂ ਮੈਂ, ਇਹ ਜਾਣਨਾ ਚਾਹੁੰਦਾ ਹਾਂ,&lt;br &#x2F;&gt;
+ਕੀ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹਾਂ, ਕੀ ਪਾਉਣਾ ਚਾਹੁੰਦਾ ਹਾਂ,&lt;br &#x2F;&gt;
+ਕੀ ਖੋਹਣਾ ਚਾਹੁੰਦਾ ਹਾਂ, ਤੇ ਕਿਹੋ-ਜਿਹੀ ਜ਼ਿੰਦਗੀ ਜਿਉਣਾ ਚਾਹੁੰਦਾ ਹਾਂ,&lt;br &#x2F;&gt;
+ਤਾਰਿਆਂ ਦੇ ਹਨੇਰੇ &#x27;ਚ ਇਸ ਬਾਰੇ ਸੋਚਣਾ ਚਾਹੁੰਦਾ ਹਾਂ।&lt;&#x2F;p&gt;
+&lt;p&gt;बताया स्कूल ने बहुत कुछ इनमें से,&lt;br &#x2F;&gt;
+सब कुछ याद है दिल में,&lt;br &#x2F;&gt;
+अब ये सब कैसे बयाँ करूँ,&lt;br &#x2F;&gt;
+कमी है इन शब्दों की महफ़िल में।&lt;br &#x2F;&gt;
+कैसे एक व्यक्तिगत चरित्र है बनाया,&lt;br &#x2F;&gt;
+स्कूल ने तो यह अहसा सकराया,&lt;br &#x2F;&gt;
+कि क्या मोह और क्या माया।&lt;br &#x2F;&gt;
+पढाई से लेकर दुनियादारी तक,&lt;br &#x2F;&gt;
+सीखा बहुत कुछ।&lt;br &#x2F;&gt;
+मस्ती से लेकर शरारतों तक,&lt;br &#x2F;&gt;
+किया हमने बहुत कुछ।&lt;&#x2F;p&gt;
+&lt;p&gt;पर ये सब अब खत्म होने जा रहा है,&lt;br &#x2F;&gt;
+आगे एक नया दौर आ रहा है।&lt;br &#x2F;&gt;
+ज़िन्दगी है अभी बहत बङी,&lt;br &#x2F;&gt;
+यह तो थी सिर्फ़ एक छोटी सी कङी।&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>बेनाम शहर</title>
+		<published>2022-11-24T00:00:00+00:00</published>
+		<updated>2022-11-24T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://hemish.net/poems/benaam-shahar/" type="text/html"/>
+		<id>https://hemish.net/poems/benaam-shahar/</id>
+		<content type="html">&lt;p&gt;मेरा जीवन एक किताब है,&lt;br &#x2F;&gt;
+इसे सम्पन्न करने का मेरा ख्वाब है।&lt;br &#x2F;&gt;
+जानता हूँ इसमें बहुत सारे दाग हैं,&lt;br &#x2F;&gt;
+पर इन्हें साफ़ करने के लिए भी कोई ना कोई आब है।&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;कमाए हमने बहुत सारे खिताब हैं,&lt;br &#x2F;&gt;
+और भी कमाने की आग है।&lt;br &#x2F;&gt;
+इस &#x27;नई दुनिया&#x27; का हिस्सा बनने का ख्वाब है।&lt;br &#x2F;&gt;
+बस यही ज़िन्दगी एक नाव है।&lt;&#x2F;p&gt;
+&lt;p&gt;ज़िन्दगी जीनी नहीं बेकाम है,&lt;br &#x2F;&gt;
+करने अभी बहुत सारे काम हैं।&lt;br &#x2F;&gt;
+अभी तो ज़िन्दगी बस एक गाम (गाँव) है,&lt;br &#x2F;&gt;
+जो शहर ये बनेगी वो अभी बेनाम है।&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>ए मक्षिका! क्या भिनभिनाती हो?</title>
+		<published>2022-11-24T00:00:00+00:00</published>
+		<updated>2022-11-24T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://hemish.net/poems/e-makshika/" type="text/html"/>
+		<id>https://hemish.net/poems/e-makshika/</id>
+		<content type="html">&lt;p&gt;A little bit of background, how I came up with this poem:
+We had a poem in Grade 9 in school (it was in क्षितिज NCERT book), titled &amp;quot;कैदी और कोकिला&amp;quot; which (you can read it &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.hindipyala.com&#x2F;kaidi-aur-kokila&quot;&gt;here&lt;&#x2F;a&gt;) had  primary lines &amp;quot;क्या गाती हो&amp;quot; and &amp;quot;कोकिल बोलो तो&amp;quot;. It was hightly metaphorical poem, and was written by Makhanlal Chaturvedi during his stay in jail during India&#x27;s Independence moment. Our teacher Meena Anand ma&#x27;am asked us to write one such poem in that style, so I came up with this poem titled &amp;quot;ए मक्षिका! क्या भिनभिनाती हो?&amp;quot;. Is it weird, or is it funny, or does it have some deep message (I seriously did not intend to give a deep message, but if you are a hardcore poet, maybe let me know about the deep meaning.)&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Here it is:&lt;&#x2F;p&gt;
+&lt;p&gt;क्या भिनभिनाती हो? क्या कहना चाहती हो?&lt;br &#x2F;&gt;
+क्यूँ ईधर-उधर घूमती जाती हो? मुझे बताओ!&lt;br &#x2F;&gt;
+यूँ suspense ना बनाओ!&lt;&#x2F;p&gt;
+&lt;p&gt;क्या तुम भी बोर होकर ही, भिनभिना रही हो?&lt;br &#x2F;&gt;
+क्यूँ झूटे खा रही हो? क्या तुम हमारे जीवन की,&lt;br &#x2F;&gt;
+रोज़मर्रा की प्रतिक्रियाएँ ही करना चाह रही हो?&lt;&#x2F;p&gt;
+&lt;p&gt;तुम्हारा यह &#x27;भिन्न-भिन्न&#x27; मुझे और सुनओ,&lt;br &#x2F;&gt;
+या फ़िर अपना मकसद बताओ!&lt;br &#x2F;&gt;
+क्यूँ तुम ईधर-उधर घूमती जाती हो?&lt;br &#x2F;&gt;
+क्या मुझे कुछ बताना चाह रही हो?&lt;br &#x2F;&gt;
+कहाँ है तुम्हारा ईशारा, या फिर सिर्फ़ भिनभिनाहट का गीत प्यारा!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
