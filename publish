@@ -5,7 +5,7 @@ git push origin main
 sed -i '1 s/hemish.net/hemish.neocities.org/g' config.toml
 zola build
 cd public
-neocities push .
+bashcities push .
 cd ..
 
 sed -i '1 s/hemish.neocities.org/hemish.net/g' config.toml
