@@ -1,8 +1,8 @@
-base_url = "https://hemish.net"
+base_url = "https://hemish.neocities.org"
 title = "Hemish"
 compile_sass = false
 default_language = "en"
-feed_filename = "atom.xml"
+feed_filenames = ["atom.xml"]
 build_search_index = true
 taxonomies = [
     {name = "tags", feed = true, paginate_by = 5},
