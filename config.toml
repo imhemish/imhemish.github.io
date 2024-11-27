@@ -20,10 +20,9 @@ socials = [
     ["LinkedIn", "https://linkedin.com/in/imhemish"],
     ["GitHub", "https://github.com/imhemish"],
     ["Matrix", "https://matrix.to/#/@hemish:matrix.org"],
-    ["Telegram", "https://telegram.me/imhemish"],
+    ["Telegram", "https://telegram.me/imported_maal"],
     ["Email", "mailto:hemish04082005@gmail.com"],
     ["Instagram", "https://instagram.com/imhemish"],
-    ["Spotify", "https://open.spotify.com/user/q96e23cp4bimqcczlj9e6gj90"]
 ]
 photo_mentions = [
     ["https://bugswriter.com", "https://bugswriter.com/favicon.ico", "BugsWriter"],

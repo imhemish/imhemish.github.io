@@ -2,10 +2,10 @@ git add .
 git commit -m "auto update"
 git push origin main
 
-sed -i '1 s/tildevarsh.in/neocities.org/g' config.toml
-org.getzola.zola build
+sed -i '1 s/hemish.net/hemish.neocities.org/g' config.toml
+zola build
 cd public
-~/.local/share/gem/ruby/3.0.0/bin/neocities push .
+neocities push .
 cd ..
 
 sed -i '1 s/hemish.neocities.org/hemish.net/g' config.toml
