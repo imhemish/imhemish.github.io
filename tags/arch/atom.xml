@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Hemish - arch</title>
+	<link href="https://hemish.net/tags/arch/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://hemish.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-11-14T00:00:00+00:00</updated>
+	<id>https://hemish.net/tags/arch/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Hamara Plymouth Theme</title>
+		<published>2022-11-14T00:00:00+00:00</published>
+		<updated>2022-11-14T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://hemish.net/posts/plymouth-theme-hamra/" type="text/html"/>
+		<id>https://hemish.net/posts/plymouth-theme-hamra/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;Hamara Linux&lt;&#x2F;em&gt; was&#x2F;is a India based linux distribution. It is in pretty dormant stage now (Even the site is down for some time).&lt;&#x2F;p&gt;
+&lt;p&gt;I asked &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;itsmeh.com&#x2F;chirag_sukhala&quot;&gt;Chirag Sukhala&lt;&#x2F;a&gt; what is even the need of such a Linux distribution which gives you Indic languages preinstalled when you can just install Indic languages in pretty much any popular linux distro &lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Well, I would have to dig into archives to extract wallpapers from their ISO, but I found that their Plymouth theme (Plymouth is a program installed by many distros to give you a boot animation) is in Debian repositories.&lt;&#x2F;p&gt;
+&lt;p&gt;Being an Arch Linux user, I created a PKGBUILD and an &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;aur.archlinux.org&quot;&gt;AUR&lt;&#x2F;a&gt; (Arch Linux User Repository) package for it. It is called &#x27;plymouth-theme-hamara&#x27;. So, now any Arch Linux user can enjoy that boot animation.&lt;&#x2F;p&gt;
+&lt;p&gt;Take a look at the package here: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;aur.archlinux.org&#x2F;packages&#x2F;plymouth-theme-hamara&quot;&gt;plymouth-theme-hamara&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

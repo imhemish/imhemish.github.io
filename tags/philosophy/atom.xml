@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Hemish - philosophy</title>
+	<link href="https://hemish.net/tags/philosophy/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://hemish.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2023-11-27T00:00:00+00:00</updated>
+	<id>https://hemish.net/tags/philosophy/atom.xml</id>
+	<entry xml:lang="en">
+		<title>History and Identity</title>
+		<published>2023-11-27T00:00:00+00:00</published>
+		<updated>2023-11-27T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://hemish.net/posts/history-and-identity/" type="text/html"/>
+		<id>https://hemish.net/posts/history-and-identity/</id>
+		<content type="html">&lt;p&gt;Many people wonder why we should study history, which is just a set of old facts.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;In places like India, there&#x27;s a popular sentence among students that history is &amp;quot;गड़े मुर्दे उखाड़ना&amp;quot;, which translates to &#x27;history is picking out dead people from their graves&#x27;. But history is more than just old facts. It&#x27;s about understanding the complex events that shape our present and future.&lt;&#x2F;p&gt;
+&lt;p&gt;Everything we think and do today is influenced by history. You are a product of history. For example, if the British hadn&#x27;t colonized India, I might not exist in my current form. My beliefs and behaviors are shaped by that historical event. If India hadn&#x27;t been partitioned, mass migrations wouldn&#x27;t have happened, and I might have lived in what is the areas which is current-day Pakistan. My identity would be different.&lt;&#x2F;p&gt;
+&lt;p&gt;If my father hadn&#x27;t gotten a job with the government, I might not speak English fluently or have the privileges I enjoy now. History shapes who we are and how we live. It&#x27;s important to know history to understand your own identity— where you come from and what has shaped you.&lt;&#x2F;p&gt;
+&lt;p&gt;So yes, knowing history is essential because it helps us understand ourselves and the world around us. Your values are formed off history, your beliefs are formed off it. When you think about it at a deeper level, present is just a reflection of the history.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

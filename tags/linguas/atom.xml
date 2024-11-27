@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Hemish - linguas</title>
+	<link href="https://hemish.net/tags/linguas/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://hemish.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-10-10T00:00:00+00:00</updated>
+	<id>https://hemish.net/tags/linguas/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Translating in open-source world</title>
+		<published>2022-10-10T00:00:00+00:00</published>
+		<updated>2022-10-10T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://hemish.net/posts/localisation-credits-opensource/" type="text/html"/>
+		<id>https://hemish.net/posts/localisation-credits-opensource/</id>
+		<content type="html">&lt;p&gt;Isn&#x27;t it amazing to get your credits in an opensource app?&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;dialect-credits.png&quot; alt=&quot;Screenshot showing credits in app called Dialect&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Dialect is an open-source desktop translation app for linux systems, specifically designed for GNOME desktop. I translated it into Hindi so that anyone using their desktop in Hindi may be able to see Hindi translations and the app doesnt look like an odd English app in hindi environment.&lt;&#x2F;p&gt;
+&lt;p&gt;Open-source is not only about code, it&#x27;s about multi-faceted work loads spread across community , to which everyone contributes in their own time.&lt;&#x2F;p&gt;
+&lt;p&gt;and this includes translation as well. We live in a globalised world, so people across different nations, speaking different languages use computers, so internationalization (i18n) and localisation (l10n) of apps is important.&lt;&#x2F;p&gt;
+&lt;p&gt;I belive having access to computers is a basic right for everyone, and whatever I can do for making computers more accessible is worth it.&lt;&#x2F;p&gt;
+&lt;p&gt;Thus, I am part of hindi translation team at &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;l10n.gnome.org&quot;&gt;l10n.gnome.org&lt;&#x2F;a&gt; (and I have translated stuff like gnome-clocks, gnome-weather, gnome-bluetooth, gnome-characters). The official website of our team is &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;indlinux.org&quot;&gt;indlinux.org&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

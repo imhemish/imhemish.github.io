@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+  <meta charset="utf-8">
+
+  
+<title>Libadwaita Without Adwaita</title>
+
+
+
+<meta property="og:image" content="/images/apple-touch-icon.png" />
+
+
+<meta name="author" content="Hemish">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="While GNOME is moving to Libadwaita with the help of Purism (sure they need to be acknowledged), themeing has surely lessened, but people still use some hacks.
+ ... (continued)">
+
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" href="/favicon.ico">
+
+</head>
+
+<body>
+  <header>
+    <!-- <span class="hackergotchi">
+		   <img src='/hackergotchi.png' width=104 height=120 alt='My face'> <div class="caption"> What's this? - <a href="https://en.everybodywiki.com/Hackergotchi" target="_blank">Hackergotchi</a></div></span> -->
+    <h1>Hemish</h1>
+    <nav>
+      <span><a href="/">Home</a></span>|
+      <span><a href="/posts">Posts</a></span>|
+      <span><a href="/poems">Poems</a></span>|
+      <span><a href="#contact">Contact</a><span>
+          <br>
+          <span><a href="/guide">Feeds Guide</a><span>
+
+    </nav>
+    <div class="search-container">
+      <input id="search" type="search" placeholder="🔎 Site Search">
+      <button>go</button>
+      <div class="search-results">
+        <div class="search-results__items"></div>
+      </div>
+    </div>
+  </header>
+  <hr />
+  <main>
+    
+<article>
+  <div>
+    <h1 id="blog-title">Libadwaita Without Adwaita</h1>
+    <span>
+      <time>
+        
+        <small class="blog-date">2023-01-17</small>
+        
+      </time>
+      
+      
+      <a href="/tags/linux">#linux</a>
+      
+      <a href="/tags/opensource">#opensource</a>
+      
+      <a href="/tags/gnome">#gnome</a>
+      
+      
+    </span>
+  </div>
+  <div id="blog">
+    <p>While GNOME is moving to Libadwaita with the help of Purism (sure they need to be acknowledged), themeing has surely lessened, but people still use some hacks.</p>
+<span id="continue-reading"></span>
+<p>Some background information:
+((Whenever I search for any new package or install any new packages on my system, I generally use <code>yay -Ss &lt;packagename&gt;</code> or just I use <code>yay -Ss  &lt;packagename&gt;</code> and then press TAB and bash-completuon provides me the matching package names. By doing this, I am able to get aware about any patched package, that might give me some extra functionality or something else.</p>
+<p>I generally don't theme my system and use the default theme for Libadwaita apps. For GTK3 apps, I use adw-gtk3 to match them with the Libadwaita apps. Though sometimes I do switch temporarily to WhiteSur theme by vinceluice (which also provides Libadwaita css) because why not someone would like that glossy theme. But, I keep coming back to the default theme.))</p>
+<p>So, long ago I came across this package called <a rel="noopener" target="_blank" href="https://aur.archlinux.org/packages/libadwaita-without-adwaita-git">libadwaita-without-adwaita</a> on AUR (Arch User Repository). As I mentioned I don't care about themeing not available as I use the default theme generally, but still this libadwaita-without-adwaita grabbed my attention.</p>
+<p>So, the maintainer of this AUR package (named ich) has provided a patch called <code>themeing_patch.diff</code> which patches the specific code which pins the libadwaita-provided Adwaita theme. So the patched package uses the theme from Gsettings (or dconf, whatever you call it) key <code>gtk-theme-name</code> and also follows <code>gtk-application-prefer-dark-theme</code> to use the theme set by the desktop environments. Someone also packaged it for RPM based distros. (<a rel="noopener" target="_blank" href="https://www.reddit.com/r/Fedora/comments/v4miox/managed_to_patch_libadwaita_to_use_gtk_4_instead/">See this</a>) I appreciate the maintainer that they specifically mention that this is experimental and people should not report bugs to Libadwaita apps while using this package. (Also note that any themes used should support Libadwaita widgets in their main css theme for this to work correctly)</p>
+<p>So, this made me think that if this can be patched so easily without adding any new files or changing a hell lotta lines of code, people can experiment with it to provide their own libadwaita package which the apps would use, but it would not pin the new Adwaita theme. I would say this should not be done in any mainstream distros for the sake that we should not break the userspace, but surely we can try something like providing a custom libadwaita package, where some distribution may pin their own theme into this library or they just provide the user a way to just modify in their settings. This patched package may be kept into official repos and voila you have themed apps. I am not saying this should be done to just mitigate the themeing issue, but this can be shown as a proof of concept or just a temporary workaround till GNOME is ready with their themeing API.</p>
+
+  </div>
+</article>
+
+  </main>
+  
+  <hr>
+  <footer>
+    <div id="contact">
+      Links: <br> <br>
+      <nav>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;imhemish"><button>LinkedIn</button></a>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;github.com&#x2F;imhemish"><button>GitHub</button></a>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@hemish:matrix.org"><button>Matrix</button></a>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;telegram.me&#x2F;imported_maal"><button>Telegram</button></a>
+        
+        <a target="_blank" rel="me" href="mailto:hemish04082005@gmail.com"><button>Email</button></a>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;instagram.com&#x2F;imhemish"><button>Instagram</button></a>
+        
+
+      </nav>
+    </div>
+    <br>
+    <hr><br>
+    Special thanks to: <br>
+    <br>
+    <nav>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;bugswriter.com">
+          <img src="https:&#x2F;&#x2F;bugswriter.com&#x2F;favicon.ico" height=30 width=30 alt="BugsWriter">
+        </a>
+      </button>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;India">
+          <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;4&#x2F;41&#x2F;Flag_of_India.svg" height=30 width=30 alt="India">
+        </a>
+      </button>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;">
+          <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;8&#x2F;80&#x2F;Wikipedia-logo-v2.svg" height=30 width=30 alt="Wikipedia">
+        </a>
+      </button>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;gnome.org">
+          <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;68&#x2F;Gnomelogo.svg" height=30 width=30 alt="GNOME">
+        </a>
+      </button>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;kernel.org">
+          <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;a&#x2F;af&#x2F;Tux.png" height=30 width=30 alt="Linux">
+        </a>
+      </button>
+      
+    </nav>
+
+    <br>(Not endoresed by any of these)
+    <br> <br>
+    &copy Copyright 2022 <a href="/">Hemish</a>. Few rights reserved:
+    The content on this site is available under <a href="https://creativecommons.org/licenses/by/4.0/legalcode"
+      target="_blank"> CC-BY-4.0 license</a>, that is you can use the content as long as you credit me, and list this
+    site as source.
+    <br>
+    <br>
+    Mirror(s) of this site:
+    
+    
+    
+    
+
+    <a href="https:&#x2F;&#x2F;hemish.neocities.org" target="_blank">https:&#x2F;&#x2F;hemish.neocities.org</a>
+    
+    
+  </footer>
+</body>
+<script src="/elasticlunr.min.js"></script>
+<script src="/search_index.en.js"></script>
+<script src="/js/search.js"></script>
+
+</html>
