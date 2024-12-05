@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block description %}
+<meta name="description" content="{{ section.description }}" />
+{% endblock description %}
+{% block content %}
+<h1 class="title">{{ section.title }}</h1>
+<div id="blog-list">
+  Here is a list of public shares:
+  <hr>
+  {% for page in paginator.pages %}
+  <div id="blog-summary">
+    <h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
+    <div>First shared at: <code>{{ page.date }}</code></div>
+    <div>Last updated at: <code>{{ page.updated }}</code></div>
+    <br>
+    {{ page.summary | safe }}
+    <a href="{{ page.permalink | safe }}">Open</a>
+  </div>
+  <hr>
+  {% endfor %}
+</div>
+<nav class="pagination">
+  {% if paginator.previous %}
+  <a class="previous" href="{{ paginator.previous }}">‹ Prev</a>
+  {% endif %}
+  {% if paginator.previous and paginator.next %}
+  |
+  {% endif %}
+  {% if paginator.next %}
+  <a class="next" href="{{ paginator.next }}">Next ›</a>
+  {% endif %}
+</nav>
+{% endblock content %}
