@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+  <meta charset="utf-8">
+
+  
+<title>Fixing sleep&#x2F;suspend on Dell Latitude 54XX in Linux</title>
+
+
+
+<meta property="og:image" content="/images/apple-touch-icon.png" />
+
+
+<meta name="author" content="Hemish">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="I wrote this to provide others an aggregated view to how to solve this problem, and not lurk in multiple formus or threads to find the solutions.
+ ... (continued)">
+
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" href="/favicon.ico">
+
+</head>
+
+<body>
+  <header>
+    <!-- <span class="hackergotchi">
+		   <img src='/hackergotchi.png' width=104 height=120 alt='My face'> <div class="caption"> What's this? - <a href="https://en.everybodywiki.com/Hackergotchi" target="_blank">Hackergotchi</a></div></span> -->
+    <h1>Hemish</h1>
+    <nav>
+      <span><a href="/">Home</a></span>|
+      <span><a href="/posts">Posts</a></span>|
+      <span><a href="/poems">Poems</a></span>|
+      <span><a href="#contact">Contact</a><span>
+          <br>
+          <span><a href="/guide">Feeds Guide</a><span>
+
+    </nav>
+    <div class="search-container">
+      <input id="search" type="search" placeholder="🔎 Site Search">
+      <button>go</button>
+      <div class="search-results">
+        <div class="search-results__items"></div>
+      </div>
+    </div>
+  </header>
+  <hr />
+  <main>
+    
+<article>
+  <div>
+    
+    <h1 id="blog-title">Fixing sleep&#x2F;suspend on Dell Latitude 54XX in Linux</h1>
+    
+    <span>
+      <time>
+        
+        <small class="blog-date">2023-04-18</small>
+        
+        <br>
+        
+      </time>
+      
+      
+      <a href="/tags/opensource">#opensource</a>
+      
+      <a href="/tags/linux">#linux</a>
+      
+      
+    </span>
+  </div>
+  <div id="blog">
+    <p>I wrote this to provide others an aggregated view to how to solve this problem, and not lurk in multiple formus or threads to find the solutions.</p>
+<span id="continue-reading"></span>
+<p>I have a Dell Latitude 5490 and since the time I had bought this, I had this problem, both in Windows and Linux distros: When I would click Sleep/Suspend it would try to suspend, but the power LED light will remain there and would freeze, and it wouldnt respond to keyboard or mouse actions, and the only way to wake it up was to hard power off it by holding the power button for 5 seconds and booting again. This was not good as it would often lead to minute data loss, or sometimes disk errors.</p>
+<ul>
+<li>
+<p>There was a simple workaround: to turn off the auto sleeping and just power off the laptop. But that defeated the whole purpose of having a laptop.</p>
+</li>
+<li>
+<p>Another workaround I found out was that the sleep worked fine if it was initiated with administrator priveleges. At Windows' side, I enabled the Administrator user and set it as default working user. In Linux, I used to do <code>sudo systemctl suspend</code> to suspend with administrative powers. It worked for most of times, but casually had the same problem also.</p>
+</li>
+</ul>
+<p>I lurked across various forums including Ubuntu forums, Arch forums, Reddit and found out a lot of solutions which I am all aggregating here.</p>
+<p>To fix suspend not working on Dell Latitude 5490 and other laptops in the 54xx series, you should do all the following steps:</p>
+<ul>
+<li>Add your user to power group by the command:</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>sudo usermod -a -G power $USER
+</span></code></pre>
+<ul>
+<li>
+<p>Update your firmware using either CLI using <a rel="noopener" target="_blank" href="https://fwupd.org/">fwupd</a> or just using a frontend like GNOME Software Center.</p>
+</li>
+<li>
+<p>Add these kernel parameters:</p>
+</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>i915.enable_psr=0 mem_sleep_default=deep snd_hda_intel.dmic_detect=0 intel_idle.max_cstate=1 i915.enable_dc=0
+</span></code></pre>
+<p>I don't know which one of this does the trick, but putting all of them does no harm and suspend works gracefully and has not failed since I used them all.</p>
+<p>If you are a technical user and know the internals, you already know how to use these kernel parameters, but here is a guide for those who don't know:</p>
+<p>To add these kernel parameters in your bootloader in distros like Ubuntu, Fedora, you can follow these steps:
+Open the terminal and type:</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>sudo nano /etc/default/grub
+</span></code></pre>
+<p>Find the line that starts with <code>GRUB_CMDLINE_LINUX_DEFAULT</code> and add your kernel parameters to it.<br />
+Save and exit by pressing Ctrl+X, then Y, then Enter.<br />
+Update GRUB entries by typing sudo update-grub<br />
+If you’re using a bootloader other than GRUB, you can add these kernel parameters by following similar steps specific to your bootloader. Like I use <a rel="noopener" target="_blank" href="https://wiki.archlinux.org/title/EFISTUB">EFISTUB</a> (which is infact not a bootloader, it is Linux Kernel loading itself into memory), I just greate new entries for my kernel.</p>
+<p>I am sure that if you perform all these steps, suspending would work beautifully. Thanks, I hope this would help.</p>
+
+  </div>
+</article>
+
+  </main>
+  
+  <h1>Comments</h2>
+
+  <noscript>
+    <div id="error">
+      Please enable JavaScript to view the comments powered by the Fediverse.
+    </div>
+  </noscript>
+
+  <p>You can use your Fediverse (i.e. Mastodon, among many others) account to reply to this <a class="link"
+      href="https://mastodon.world/@hemish/110219336170435010">post</a>.
+  </p>
+  <p id="mastodon-comments-list"></p>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.1/purify.min.js"
+    integrity="sha512-uHOKtSfJWScGmyyFr2O2+efpDx2nhwHU2v7MVeptzZoiC7bdF6Ny/CmZhN2AwIK1oCFiVQQ5DA/L9FSzyPNu6Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript">
+    var host = 'mastodon.world';
+    var user = 'hemish';
+    var id = '110219336170435010'
+
+    function escapeHtml(unsafe) {
+      return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    var commentsLoaded = false;
+
+    function toot_active(toot, what) {
+      var count = toot[what + '_count'];
+      return count > 0 ? 'active' : '';
+    }
+
+    function toot_count(toot, what) {
+      var count = toot[what + '_count'];
+      return count > 0 ? count : '';
+    }
+
+    function user_account(account) {
+      var result = `@${account.acct}`;
+      if (account.acct.indexOf('@') === -1) {
+        var domain = new URL(account.url)
+        result += `@${domain.hostname}`
+      }
+      return result;
+    }
+
+    function render_toots(toots, in_reply_to, depth) {
+      var tootsToRender = toots.filter(toot => toot.in_reply_to_id === in_reply_to);
+      tootsToRender.forEach(toot => render_toot(toots, toot, depth));
+    }
+
+    function render_toot(toots, toot, depth) {
+      toot.account.display_name = escapeHtml(toot.account.display_name);
+      toot.account.emojis.forEach(emoji => {
+        toot.account.display_name = toot.account.display_name.replace(`:${emoji.shortcode}:`, `<img src="${escapeHtml(emoji.static_url)}" alt="Emoji ${emoji.shortcode}" height="20" width="20" />`);
+      });
+      mastodonComment =
+        `<div class="mastodon-comment" style="margin-left: calc(var(--mastodon-comment-indent) * ${depth})">
+        <span class="author">
+          <div class="avatar">
+            <img src="${escapeHtml(toot.account.avatar_static)}" height=60 width=60 alt="">
+          </div>
+          <div class="details">
+            <a class="name" href="${toot.account.url}" rel="nofollow">${toot.account.display_name}</a>
+            <a class="user" href="${toot.account.url}" rel="nofollow">${user_account(toot.account)}</a>
+          </div>
+          <a class="date" href="${toot.url}" rel="nofollow">${toot.created_at.substr(0, 10)} ${toot.created_at.substr(11, 8)}</a>
+	</span>
+        <div class="content">${toot.content}</div>
+        <div class="status">
+          <div class="replies ${toot_active(toot, 'replies')}">
+            <a href="${toot.url}" rel="nofollow"><i class="fa fa-reply fa-fw"></i>${toot_count(toot, 'replies')}</a>
+          </div>
+          <div class="reblogs ${toot_active(toot, 'reblogs')}">
+            <a href="${toot.url}" rel="nofollow"><i class="fa fa-retweet fa-fw"></i>${toot_count(toot, 'reblogs')}</a>
+          </div>
+          <div class="favourites ${toot_active(toot, 'favourites')}">
+            <a href="${toot.url}" rel="nofollow"><i class="fa fa-star fa-fw"></i>${toot_count(toot, 'favourites')}</a>
+          </div>
+        </div>
+      </div>`;
+      document.getElementById('mastodon-comments-list').appendChild(DOMPurify.sanitize(mastodonComment, { 'RETURN_DOM_FRAGMENT': true }));
+
+      render_toots(toots, toot.id, depth + 1)
+    }
+
+    function loadComments() {
+      if (commentsLoaded) return;
+
+      document.getElementById("mastodon-comments-list").innerHTML = "Loading comments from the Fediverse...";
+
+      fetch('https://' + host + '/api/v1/statuses/' + id + '/context')
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          if (data['descendants'] && Array.isArray(data['descendants']) && data['descendants'].length > 0) {
+            document.getElementById('mastodon-comments-list').innerHTML = "";
+            render_toots(data['descendants'], id, 0)
+          } else {
+            document.getElementById('mastodon-comments-list').innerHTML = "<p>Not comments found</p>";
+          }
+
+          commentsLoaded = true;
+        });
+    }
+
+    function respondToVisibility(element, callback) {
+      var options = {
+        root: null,
+      };
+
+      var observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.intersectionRatio > 0) {
+            callback();
+          }
+        });
+      }, options);
+
+      observer.observe(element);
+    }
+
+    var comments = document.getElementById("mastodon-comments-list");
+    respondToVisibility(comments, loadComments);
+  </script>
+  
+  <hr>
+  <footer>
+    <div id="contact">
+      Links: <br> <br>
+      <nav>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;imhemish"><button>LinkedIn</button></a>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;github.com&#x2F;imhemish"><button>GitHub</button></a>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@hemish:matrix.org"><button>Matrix</button></a>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;telegram.me&#x2F;imported_maal"><button>Telegram</button></a>
+        
+        <a target="_blank" rel="me" href="mailto:hemish04082005@gmail.com"><button>Email</button></a>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;instagram.com&#x2F;imhemish"><button>Instagram</button></a>
+        
+
+      </nav>
+    </div>
+    <br>
+    <hr><br>
+    Special thanks to: <br>
+    <br>
+    <nav>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;bugswriter.com">
+          <img src="https:&#x2F;&#x2F;bugswriter.com&#x2F;favicon.ico" height=30 width=30 alt="BugsWriter">
+        </a>
+      </button>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;India">
+          <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;4&#x2F;41&#x2F;Flag_of_India.svg" height=30 width=30 alt="India">
+        </a>
+      </button>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;">
+          <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;8&#x2F;80&#x2F;Wikipedia-logo-v2.svg" height=30 width=30 alt="Wikipedia">
+        </a>
+      </button>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;gnome.org">
+          <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;68&#x2F;Gnomelogo.svg" height=30 width=30 alt="GNOME">
+        </a>
+      </button>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;kernel.org">
+          <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;a&#x2F;af&#x2F;Tux.png" height=30 width=30 alt="Linux">
+        </a>
+      </button>
+      
+    </nav>
+
+    <br>(Not endoresed by any of these)
+    <br> <br>
+    &copy Copyright 2022 <a href="/">Hemish</a>. Few rights reserved:
+    The content on this site is available under <a href="https://creativecommons.org/licenses/by/4.0/legalcode"
+      target="_blank"> CC-BY-4.0 license</a>, that is you can use the content as long as you credit me, and list this
+    site as source.
+    <br>
+    <br>
+    Mirror(s) of this site:
+    
+  </footer>
+</body>
+<script src="/elasticlunr.min.js"></script>
+<script src="/search_index.en.js"></script>
+<script src="/js/search.js"></script>
+
+</html>
