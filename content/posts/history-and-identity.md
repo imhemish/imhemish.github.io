@@ -7,7 +7,6 @@ tags=['philosophy', 'history', 'overthinking']
 
 Many people wonder why we should study history, which is just a set of old facts.
 <!-- more -->
-
 In places like India, there's a popular sentence among students that history is "गड़े मुर्दे उखाड़ना", which translates to 'history is picking out dead people from their graves'. But history is more than just old facts. It's about understanding the complex events that shape our present and future.
 
 Everything we think and do today is influenced by history. You are a product of history. For example, if the British hadn't colonized India, I might not exist in my current form. My beliefs and behaviors are shaped by that historical event. If India hadn't been partitioned, mass migrations wouldn't have happened, and I might have lived in what is the areas which is current-day Pakistan. My identity would be different.

@@ -4,7 +4,8 @@ date = '2022-12-18'
 [taxonomies]
 tags = ['casual', 'storytime']
 +++
-Though we have an age gap of about 6 years, I still kinda think that we enjoyed a similar kind of childhood, dispered by some differences as well. <!-- more --> 
+Though we have an age gap of about 6 years, I still kinda think that we enjoyed a similar kind of childhood, dispered by some differences as well.
+<!-- more --> 
 Growing up with a sibling is kind of fun, and annoying at same time. You get to experience some of same things, you learn some things together, or maybe sometimes do fun stuff together (yeah referring to friendly fights, or maybe my sister randomly dressing me up as a girl!). Even dispersed by 6 years, I still want to say that I just always felt us to be the same age.
 
 There had been times I have disappointed my sister or caused discomfort to her, knowing or unknowingly, and same applies to her, but at the end of the day, you are siblings who are bound to be kinda share things with each other even after you grow up and make your own individual lives, or in parents' words "live together the whole lives" (yes referring to the times when parents randomly ask us to sing that 'ek hazaaron mein meri/mera behna/bhai hai, saaaariiiiii umarrrrrr hummeeeee sung rehnaaa haii' on birthdays or Raksha Bandhan).
