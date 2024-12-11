@@ -19,8 +19,15 @@
     {% if page.updated and page.updated != page.date %}
     <div><code>Updated at {{ page.updated }}</code></div>
     {% endif %}
+    {% if page.description %}
+    <br> <br>
+    {{ page.description }} <br> <br>
+    <a href="{{ page.permalink | safe }}">open...</a>
+    {% else %}
     {{ page.summary | safe }}
     <a href="{{ page.permalink | safe }}">continue...</a>
+    {% endif %}
+    
   </div>
   <hr>
   {% endfor %}
