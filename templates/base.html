@@ -12,55 +12,36 @@
 
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" type="image/png" href="/favicon.ico">
-
 </head>
 
 <body>
-  <header>
-    <!-- <span class="hackergotchi">
-		   <img src='/hackergotchi.png' width=104 height=120 alt='My face'> <div class="caption"> What's this? - <a href="https://en.everybodywiki.com/Hackergotchi" target="_blank">Hackergotchi</a></div></span> -->
-    <h1>{{ config.title }}</h1>
-    <nav>
-      <span><a href="/">Home</a></span>|
-      <span><a href="/posts">Posts</a></span>|
-      <span><a href="/poems">Poems</a></span>|
-      <span><a href="#contact">Contact</a><span>
-          <br>
-          <span><a href="/guide">Feeds Guide</a><span>
+  {% include 'header.html' %}
 
-    </nav>
-    <div class="search-container">
-      <input id="search" type="search" placeholder="🔎 Site Search">
-      <button>go</button>
-      <div class="search-results">
-        <div class="search-results__items"></div>
-      </div>
-    </div>
-  </header>
-  <hr />
-  <main>
+  <!-- Content Wrapper -->
+  <main class="content-wrapper">
     {% block content %}{% endblock %}
-  </main>
-  {% if page.extra.fediid %}
+    {% if page.extra.fediid %}
   {% include 'fedicomments.html' %}
   {% elif section.extra.fediid %}
   {% include 'fedicomments.html' %}
   {% endif %}
-  <hr>
+  </main>
+
+  
+
+  <!-- Footer -->
   <footer>
     <div id="contact">
-      Links: <br> <br>
+      Links: <br><br>
       <nav>
         {% for social in config.extra.socials %}
         <a target="_blank" rel="me" href="{{ social[1] }}"><button>{{ social[0] }}</button></a>
         {% endfor %}
-
       </nav>
     </div>
     <br>
     <hr><br>
-    Special thanks to: <br>
-    <br>
+    Special thanks to: <br><br>
     <nav>
       {% for mention in config.extra.photo_mentions %}
       <button>
@@ -70,21 +51,17 @@
       </button>
       {% endfor %}
     </nav>
-
-    <br>(Not endoresed by any of these)
-    <br> <br>
-    &copy Copyright 2022 <a href="/">Hemish</a>. Few rights reserved:
+    <br>(Not endorsed by any of these)
+    <br><br>
+    &copy Copyright {{ now() | date(format="%Y") }} <a href="/">Hemish</a>. Few rights reserved:
     The content on this site is available under <a href="https://creativecommons.org/licenses/by/4.0/legalcode"
-      target="_blank"> CC-BY-4.0 license</a>, that is you can use the content as long as you credit me, and list this
-    site as source.
-    <br>
-    <br>
-    Mirror(s) of this site:
-    
+      target="_blank"> CC-BY-4.0 license</a>, that is you can use the content as long as you credit me and list this
+    site as a source.
   </footer>
+
+  <script src="/elasticlunr.min.js"></script>
+  <script src="/search_index.en.js"></script>
+  <script src="/js/search.js"></script>
 </body>
-<script src="/elasticlunr.min.js"></script>
-<script src="/search_index.en.js"></script>
-<script src="/js/search.js"></script>
 
 </html>

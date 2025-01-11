@@ -5,31 +5,27 @@
 {% block content %}
 <h1 class="title">{{ section.title }}</h1>
 <div id="blog-list">
-  I seriously write anything after getting high on water (or sometimes Sting). Here is the <a target="_blank"
-    href="/posts/atom.xml">Atom (RSSv1) feed</a>. List of tags are available at <a href="/tags">/tags</a>
-  <hr>
+  {{ section.extra.posts_describer }} Here is the <a target="_blank"
+    href="/posts/atom.xml">Atom (RSSv1) feed</a>. List of {{ section.extra.taxonomy_title }} are available at <a href="/{{ section.extra.taxonomy_title }}">/{{ section.extra.taxonomy_title }}</a>
   {% for page in paginator.pages %}
-  <div id="blog-summary">
-    <h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
-    <span><code>{{ page.date }}</code>
-      {% for tag in page.taxonomies["tags"] %}
-      <a href="/tags/{{ tag }}">#{{ tag }}</a>
-      {% endfor %}
-    </span>
-    {% if page.updated and page.updated != page.date %}
-    <div><code>Updated at {{ page.updated }}</code></div>
-    {% endif %}
-    {% if page.description %}
-    <br> <br>
-    {{ page.description }} <br> <br>
-    <a href="{{ page.permalink | safe }}">open...</a>
-    {% else %}
-    {{ page.summary | safe }}
-    <a href="{{ page.permalink | safe }}">continue...</a>
-    {% endif %}
-    
+  <div id="blog-summary" onclick="location.href='{{ page.permalink | safe }}';"">
+      <h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
+      <span><code>{{ page.date }}</code>
+        {% for tag in page.taxonomies[section.extra.taxonomy_title] %}
+        <a href="/{{ section.extra.taxonomy_title }}/{{ tag }}">#{{ tag }}</a>
+        {% endfor %}
+      </span>
+      {% if page.updated and page.pupdated != page.date %}
+      <div><code>Updated at {{ page.updated }}</code></div>
+      {% endif %}
+      {% if page.description %}
+      <br> <br>
+      {{ page.description }} <br> <br>
+      {% else %}
+      {{ page.summary | safe }}
+      {% endif %}
   </div>
-  <hr>
+
   {% endfor %}
 </div>
 <nav class="pagination">
