@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+  <meta charset="utf-8">
+
+  {% include 'meta.html' %}
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" href="/favicon.ico">
+
+</head>
+
+<body>
+  <header>
+    <!-- <span class="hackergotchi">
+		   <img src='/hackergotchi.png' width=104 height=120 alt='My face'> <div class="caption"> What's this? - <a href="https://en.everybodywiki.com/Hackergotchi" target="_blank">Hackergotchi</a></div></span> -->
+    <h1>{{ config.title }}</h1>
+    <nav>
+      <span><a href="/">Home</a></span>|
+      <span><a href="/posts">Posts</a></span>|
+      <span><a href="/poems">Poems</a></span>|
+      <span><a href="#contact">Contact</a><span>
+          <br>
+          <span><a href="/guide">Feeds Guide</a><span>
+
+    </nav>
+    <div class="search-container">
+      <input id="search" type="search" placeholder="🔎 Site Search">
+      <button>go</button>
+      <div class="search-results">
+        <div class="search-results__items"></div>
+      </div>
+    </div>
+  </header>
+  <hr />
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  {% if page.extra.fediid %}
+  {% include 'fedicomments.html' %}
+  {% elif section.extra.fediid %}
+  {% include 'fedicomments.html' %}
+  {% endif %}
+  <hr>
+  <footer>
+    <div id="contact">
+      Links: <br> <br>
+      <nav>
+        {% for social in config.extra.socials %}
+        <a target="_blank" rel="me" href="{{ social[1] }}"><button>{{ social[0] }}</button></a>
+        {% endfor %}
+
+      </nav>
+    </div>
+    <br>
+    <hr><br>
+    Special thanks to: <br>
+    <br>
+    <nav>
+      {% for mention in config.extra.photo_mentions %}
+      <button>
+        <a target="_blank" href="{{ mention[0] }}">
+          <img src="{{ mention[1] }}" height=30 width=30 alt="{{ mention[2] }}">
+        </a>
+      </button>
+      {% endfor %}
+    </nav>
+
+    <br>(Not endoresed by any of these)
+    <br> <br>
+    &copy Copyright 2022 <a href="/">Hemish</a>. Few rights reserved:
+    The content on this site is available under <a href="https://creativecommons.org/licenses/by/4.0/legalcode"
+      target="_blank"> CC-BY-4.0 license</a>, that is you can use the content as long as you credit me, and list this
+    site as source.
+    <br>
+    <br>
+    Mirror(s) of this site:
+    
+  </footer>
+</body>
+<script src="/elasticlunr.min.js"></script>
+<script src="/search_index.en.js"></script>
+<script src="/js/search.js"></script>
+
+</html>

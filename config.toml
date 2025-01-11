@@ -1,0 +1,35 @@
+base_url = "https://hemish.net"
+title = "Hemish"
+compile_sass = false
+default_language = "en"
+build_search_index = true
+feed_filenames = ["atom.xml"]
+taxonomies = [
+    {name = "tags", feed = true, paginate_by = 5},
+    {name = "languages", feed = true, paginate_by = 5}
+]
+
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
+external_links_target_blank = true
+
+[extra]
+# Put all your custom variables here
+socials = [
+    ["LinkedIn", "https://linkedin.com/in/imhemish"],
+    ["GitHub", "https://github.com/imhemish"],
+    ["Matrix", "https://matrix.to/#/@hemish:matrix.org"],
+    ["Telegram", "https://telegram.me/imported_maal"],
+    ["Email", "mailto:hemish04082005@gmail.com"],
+    ["Instagram", "https://instagram.com/imhemish"],
+]
+photo_mentions = [
+    ["https://bugswriter.com", "https://bugswriter.com/favicon.ico", "BugsWriter"],
+    ["https://en.wikipedia.org/wiki/India", "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg", "India"],
+    ["https://en.wikipedia.org/", "https://upload.wikimedia.org/wikipedia/en/8/80/Wikipedia-logo-v2.svg", "Wikipedia"],
+    ["https://gnome.org", "https://upload.wikimedia.org/wikipedia/commons/6/68/Gnomelogo.svg", "GNOME"],
+    ["https://kernel.org", "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png", "Linux"]
+]
+fedihost = 'mastodon.world'
+fediuser = 'hemish'

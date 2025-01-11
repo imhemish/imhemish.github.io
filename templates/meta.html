@@ -1,0 +1,28 @@
+{% if page.title %}
+<title>{{ page.title }}</title>
+{% elif section.title %}
+<title>{{ section.title }}</title>
+{% else %}
+<title>{{ config.title }}'s website</title>
+{% endif %}
+
+{% if page.extra.cover %}
+<meta property="og:image" content="/images/{{ page.extra.cover }}" />
+{% else %}
+<meta property="og:image" content="/images/apple-touch-icon.png" />
+{% endif %}
+
+<meta name="author" content="{{ config.title }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% if section.description %}
+<meta name="description" content="{{ section.description | safe | striptags }}">
+{% elif page.description %}
+<meta name="description" content="{{ page.description | safe | striptags }}">
+{% elif page.summary %}
+<meta name="description" content="{{ page.summary | safe | striptags }} ... (continued)">
+{% elif page.title %}
+<meta name="description" content="Page: {{ page.title }}" />
+{% else %}
+<meta name="description" content="A page on {{ config.title }}'s website" />
+{% endif %}

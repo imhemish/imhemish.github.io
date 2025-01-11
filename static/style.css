@@ -1,0 +1,232 @@
+/** CSS partially picked up from https://bugswriter.com, https://krolyxon.tildevarsh.in/, https://perfectsite.neocities.org **/
+
+@font-face {
+    font-family: "Hack";
+    src: url(../fonts/Hack-Regular.ttf);
+}
+@font-face {
+    font-family: "Newlimran";
+    src: url(../fonts/Newlimran.otf);
+}
+/* ------------------------------- */
+
+
+
+body{
+  color:white;
+  background-color:#0d0d0d;
+  margin: auto;
+  padding: 20px;
+  font-size: 120%;
+  max-width: 900px;
+}
+
+
+p{
+    text-align: justify;
+}
+
+hr{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-container {
+    display:none;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.search-results{
+    text-align: left;
+    padding: 5px;
+}
+
+.search-results li{
+    list-style: none;
+    border-bottom: 1px dotted black;
+    padding: 5px;
+}
+
+.search-results li:nth-child(even) {
+    background-color: #FAF9F6;
+}
+
+pre {
+    font-family: "Hack";
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 20px;
+    overflow-x: scroll;
+    text-align: start;
+    max-width: 850px ;
+}
+
+/* -------- Links ---------- */
+a:link {
+    text-decoration: none;
+}
+a {
+  color: #73f273;
+}
+a:hover {
+    color: white; 
+    text-decoration: underline;
+}
+/* ------------------------ */
+
+footer span{
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+header {
+    text-align: center;
+}
+header h1 {
+    font-size: 300%;
+}
+
+header nav a{
+    padding: 0.5em;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;    
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+button {
+    background-color: #FFFFFF;
+}
+
+article {
+    width: auto;
+    text-align: center;
+    padding: 0.5em;
+    
+}
+
+ul { text-align: left; }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+#blog ul, #blog ol{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#blog img{
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    display: block;
+    text-align: justify;
+}
+
+.pagination {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 110%;
+}
+
+.hackergotchi:hover .caption{
+    visibility: visible;
+}
+
+h1, h2, h3 {
+	color:#73f273;
+	font-family: "Newlimran";
+}
+
+
+
+.mastodon-comment {
+    background-color: var(--block-background-color);
+    border-radius: var(--block-border-radius);
+    border: 1px var(--block-border-color) solid;
+    padding: 6px;
+    margin-bottom: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color);
+    font-size: var(--font-size);
+  }
+  .mastodon-comment p {
+    margin-bottom: 0px;
+  }
+  .mastodon-comment .author {
+    padding-top:0;
+    display:flex;
+  }
+  .mastodon-comment .author a {
+    text-decoration: none;
+  }
+  .mastodon-comment .author .avatar img {
+    margin-right:1rem;
+    min-width:60px;
+    border-radius: 5px;
+  }
+  .mastodon-comment .author .details {
+    display: flex;
+    flex-direction: column;
+  }
+  .mastodon-comment .author .details .name {
+    font-weight: bold;
+  }
+  .mastodon-comment .author .details .user {
+    color: #abec32;
+    font-size: medium;
+  }
+  .mastodon-comment .author .date {
+    margin-left: auto;
+    font-size: small;
+  }
+  .mastodon-comment .content {
+    margin: 15px 20px;
+  }
+  .mastodon-comment .content p:first-child {
+    margin-top:0;
+    margin-bottom:0;
+  }
+  .mastodon-comment .status > div {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .mastodon-comment .status a {
+    color: #50cf47;
+    text-decoration: none;
+  }
+  .mastodon-comment .status .replies.active a {
+    color: #003eaa;
+  }
+  .mastodon-comment .status .reblogs.active a {
+    color: #8c8dff;
+  }
+  .mastodon-comment .status .favourites.active a {
+    color: #ca8f04;
+  }
+  

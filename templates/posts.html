@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block description %}
+<meta name="description" content="{{ section.description }}" />
+{% endblock description %}
+{% block content %}
+<h1 class="title">{{ section.title }}</h1>
+<div id="blog-list">
+  I seriously write anything after getting high on water (or sometimes Sting). Here is the <a target="_blank"
+    href="/posts/atom.xml">Atom (RSSv1) feed</a>. List of tags are available at <a href="/tags">/tags</a>
+  <hr>
+  {% for page in paginator.pages %}
+  <div id="blog-summary">
+    <h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
+    <span><code>{{ page.date }}</code>
+      {% for tag in page.taxonomies["tags"] %}
+      <a href="/tags/{{ tag }}">#{{ tag }}</a>
+      {% endfor %}
+    </span>
+    {% if page.updated and page.updated != page.date %}
+    <div><code>Updated at {{ page.updated }}</code></div>
+    {% endif %}
+    {% if page.description %}
+    <br> <br>
+    {{ page.description }} <br> <br>
+    <a href="{{ page.permalink | safe }}">open...</a>
+    {% else %}
+    {{ page.summary | safe }}
+    <a href="{{ page.permalink | safe }}">continue...</a>
+    {% endif %}
+    
+  </div>
+  <hr>
+  {% endfor %}
+</div>
+<nav class="pagination">
+  {% if paginator.previous %}
+  <a class="previous" href="{{ paginator.previous }}">‹ Prev</a>
+  {% endif %}
+  {% if paginator.previous and paginator.next %}
+  |
+  {% endif %}
+  {% if paginator.next %}
+  <a class="next" href="{{ paginator.next }}">Next ›</a>
+  {% endif %}
+</nav>
+{% endblock content %}
