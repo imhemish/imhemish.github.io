@@ -1,4 +1,5 @@
-git reset $(git commit-tree HEAD^{tree} -m "Initial commit")
+#!/bin/bash
+# git reset $(git commit-tree HEAD^{tree} -m "Initial commit")
 git add .
 git commit -m "auto update"
 git push origin main --force
