@@ -7,7 +7,8 @@ tags = ['opensource', 'openweb']
 search_tags = ['RSS', 'feeds', 'feedly', 'greader', 'newsboat']
 +++
 
-RSS and atom feeds are new love for me, just like how a teenager newly discovers Instagram.<!-- more -->
+RSS and atom feeds are new love for me, just like how a teenager newly discovers Instagram. 
+<!-- more -->
 
 I discovered using RSS and atom feeds only some months ago, so the concept is very new to me. But, being immersed in Linux and related technologies, I quickly caught up using them.
 
