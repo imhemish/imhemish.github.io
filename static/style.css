@@ -163,11 +163,11 @@ blockquote {
   align-self: center;
   text-align: center;
   margin-top: 20px;
-  background-color: #9678bb;
+  background-color: #F5F5DC;
   padding: 20px;
   border-radius: 30px;
-  color: #81f2cd;
-  font-weight: 600;
+  color: #382b16;
+  font-weight: 500;
   line-height: 1.5;
   font-size: larger;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
