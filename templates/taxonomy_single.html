@@ -5,17 +5,16 @@
 {% block content %}
 <h1 class="title">#{{ term.name }}</h1>
 <div id="blog-list">
-    Here is the list of poems tagged with language #{{ term.name }}. If you want to just follow this language's poems and not all my poems, here is a separate <a href="{{ term.permalink }}atom.xml">Atom feed</a> for #{{ term.name }}.
+  Entries with #{{ term.name }}. Separate <a href="{{ term.permalink }}atom.xml">Atom feed</a> for #{{ term.name }}.
   {% for page in paginator.pages %}
-  <div id="blog-summary"> 
+  <div id="blog-summary" onclick="location.href='{{ page.permalink | safe }}';"">
     <h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
     <span><code>{{ page.date }}</code>
-      {% for tag in page.taxonomies["languages"] %}
-      <a href="/tags/{{ tag }}">#{{ tag }}</a>
+      {% for tag in page.taxonomies[taxonomy.name] %}
+      <a href="/{{ taxonomy.name }}/{{ tag }}">#{{ tag }}</a>
       {% endfor %}
     </span>
     {{ page.summary | safe }}
-    <a href="{{ page.permalink | safe }}">continue...</a>
   </div>
   {% endfor %}
 </div>

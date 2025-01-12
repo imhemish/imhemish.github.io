@@ -1,11 +1,11 @@
-{% extends "base.html" %}
+{% extends "page.html" %}
 {% block title %}
-<title>Post Tags</title>
+<title>{{ taxonomy.name | title }}</title>
 {% endblock %}
 {% block content %}
-<h1 class="title">Tags</h1>
+<h1 class="title">{{ taxonomy.name | title }}</h1>
 <div id="blog-list">
-	Here is the list of tags of my posts below. If you want to just follow some particular topics and not all my posts, individual Atom (RSSv1) feeds are linked along with the tag. <br> <br>
+	Here is the list of {{ taxonomy.name | title}}s. Individual Atom (RSSv1) feeds are linked along. <br>
   {% if terms %}
       <div id="blog-summary">
       {% for term in terms %}

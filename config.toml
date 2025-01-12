@@ -3,6 +3,7 @@ title = "Hemish"
 compile_sass = false
 default_language = "en"
 build_search_index = true
+generate_feeds = true
 feed_filenames = ["atom.xml"]
 taxonomies = [
     {name = "tags", feed = true, paginate_by = 5},

@@ -1,0 +1,261 @@
+{% extends "base.html" %}
+{% block description %}
+<meta name="description" content="{{ section.description }}" />
+{% endblock description %}
+{% block content %}
+<h1 class="title">{{ section.title }}</h1>
+
+<style>
+    .posts-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .post-card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        padding: 16px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .post-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .post-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    .post-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-right: 12px;
+    }
+
+    .post-meta {
+        flex-grow: 1;
+    }
+
+    .post-author {
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+
+    .post-date {
+        color: #666;
+        font-size: 0.9em;
+    }
+
+    .post-content {
+        line-height: 1.5;
+    }
+
+    .loading {
+        text-align: center;
+        padding: 20px;
+        color: #666;
+    }
+
+    .boosted {
+        border-left: 4px solid #2b90d9;
+        padding-left: 12px;
+    }
+</style>
+</head>
+<body>
+<div class="posts-container" id="postsContainer">
+    <!-- Posts will be loaded here -->
+</div>
+<div id="loading" class="loading" style="display: none;">Loading more posts...</div>
+
+<div class="posts-container" id="postsContainer">
+    <!-- Posts will be loaded here -->
+</div>
+<div id="loading" class="loading" style="display: none;">Loading more posts...</div>
+<div id="error" class="error-message" style="display: none;"></div>
+
+<script>
+    const MASTODON_INSTANCE = 'mastodon.world';
+    let lastId = null;
+    let loading = false;
+    const DEBUG = false; // Set to false to hide debug info in production
+
+    async function lookupAccount(username) {
+        try {
+            const response = await fetch(`https://${MASTODON_INSTANCE}/api/v1/accounts/lookup?acct=${username}`);
+            if (!response.ok) throw new Error('Account lookup failed');
+            const data = await response.json();
+            return data.id;
+        } catch (error) {
+            showError(`Error looking up account: ${error.message}`);
+            throw error;
+        }
+    }
+
+    async function initialize() {
+        try {
+            const accountId = await lookupAccount('hemish');
+            fetchPosts(accountId);
+        } catch (error) {
+            showError('Failed to initialize the feed');
+        }
+    }
+
+    async function fetchPosts(accountId) {
+        if (loading) return;
+        loading = true;
+        document.getElementById('loading').style.display = 'block';
+        document.getElementById('error').style.display = 'none';
+
+        try {
+            const params = new URLSearchParams({
+                limit: 40,
+                exclude_replies: true
+            });
+            
+            if (lastId) {
+                params.append('max_id', lastId);
+            }
+
+            const response = await fetch(`https://${MASTODON_INSTANCE}/api/v1/accounts/${accountId}/statuses?${params}`);
+            if (!response.ok) throw new Error('Failed to fetch posts');
+            
+            const posts = await response.json();
+
+            if (posts.length > 0) {
+                lastId = posts[posts.length - 1].id;
+                displayPosts(posts);
+            }
+
+            if (posts.length < 40) {
+                document.getElementById('loading').style.display = 'none';
+            }
+        } catch (error) {
+            showError(`Error fetching posts: ${error.message}`);
+        } finally {
+            loading = false;
+            document.getElementById('loading').style.display = 'none';
+        }
+    }
+
+    function showError(message) {
+        const errorDiv = document.getElementById('error');
+        errorDiv.textContent = message;
+        errorDiv.style.display = 'block';
+    }
+
+    function displayPosts(posts) {
+        const container = document.getElementById('postsContainer');
+        
+        posts.forEach(post => {
+            if (!isRelevantPost(post)) return;
+
+            const card = document.createElement('div');
+            card.className = 'post-card';
+            if (post.reblog) {
+                card.classList.add('boosted');
+            }
+
+            const postToDisplay = post.reblog || post;
+            const date = new Date(postToDisplay.created_at);
+            const formattedDate = date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+
+            let debugInfo = '';
+            if (DEBUG) {
+                debugInfo = `
+                    <div class="debug-info">
+                        Account: ${postToDisplay.account.acct}<br>
+                        Username: ${postToDisplay.account.username}<br>
+                        Display name: ${postToDisplay.account.display_name}<br>
+                        URL: ${postToDisplay.account.url}<br>
+                        ${post.reblog ? `Reblogged from: ${post.reblog.account.acct} (${post.reblog.account.url})` : ''}
+                    </div>
+                `;
+            }
+
+            card.innerHTML = `
+                <div class="post-header">
+                    <img class="post-avatar" src="${postToDisplay.account.avatar}" alt="${postToDisplay.account.username}">
+                    <div class="post-meta">
+                        <div class="post-author">
+                            ${post.reblog ? '🔁 ' : ''}${postToDisplay.account.display_name}
+                        </div>
+                        <div class="post-date">${formattedDate}</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    ${postToDisplay.content}
+                </div>
+                ${debugInfo}
+            `;
+
+            card.addEventListener('click', () => {
+                window.open(postToDisplay.url, '_blank');
+            });
+
+            container.appendChild(card);
+        });
+    }
+
+    function isRelevantPost(post) {
+        if(post.content.toLowerCase().match(/([67][38][61][79]|[71][61][89]|[71][97][121]|[113][117][101][101][114]|[108][103][98][116])/i)) {
+       return false;
+   }
+        // Helper function to check if an account matches given criteria
+        const isThreadsAccount = (account) => {
+            // Check various properties that might indicate a threads.net account
+            return (
+                account.acct.includes('imhemish') ||
+                account.username.includes('imhemish') ||
+                account.url.includes('threads.net')
+
+            );
+        };
+
+        const isMastodonAccount = (account) => {
+            return account.acct === 'hemish' || 
+                   account.username === 'hemish' || 
+                   account.url.includes('mastodon.world');
+        };
+
+        // If it's a repost
+        if (post.reblog) {
+            // Only allow if it's a repost of imhemish@threads.net content
+            return isThreadsAccount(post.reblog.account);
+        }
+
+        // For non-reposts, show if it's from either account
+        return isMastodonAccount(post.account) || isThreadsAccount(post.account);
+    }
+
+    // Initial load
+    initialize();
+
+    // Infinite scroll with debounce
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 1000) {
+                initialize();
+            }
+        }, 100);
+    });
+</script>
+
+{% endblock content %}

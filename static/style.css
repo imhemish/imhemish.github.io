@@ -25,6 +25,7 @@ footer {
 
 /* Code Blocks */
 pre {
+  position: relative;
   font-family: "Fira Code", monospace;
   background-color: #1e2a47;
   color: #8ecae6;
@@ -36,6 +37,26 @@ pre {
   max-width: 100%;
   white-space: pre;
   text-align: left;
+}
+
+pre .copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #8ecae6;
+  color: #1e2a47;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+pre .copy-btn:hover {
+  opacity: 1;
 }
 
 /* Links */
