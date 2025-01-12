@@ -11,10 +11,10 @@ body {
 /* Content Wrapper */
 .content-wrapper {
   max-width: 800px;
-  margin: 20px auto;
+  margin: auto;
   padding: 0 20px;
 }
-
+ 
 /* Footer Styles */
 footer {
   text-align: center;
@@ -55,7 +55,7 @@ a:hover {
 /* Header */
 header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 header h1 {
@@ -82,7 +82,8 @@ table {
   font-size: 0.9em;
 }
 
-table th, table td {
+table th,
+table td {
   padding: 10px;
   border: 1px solid #3b4b6b;
 }
@@ -114,10 +115,13 @@ button:hover {
 
 /* General Article */
 article {
-  width: auto;
+  align-self: center;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   text-align: left;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 0px;
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -131,58 +135,85 @@ ul {
 /* Blockquotes */
 blockquote {
   font-style: italic;
-  color: #8ecae6; /* Secondary accent color */
+  color: #8ecae6;
+  /* Secondary accent color */
   margin: 20px 0;
   padding-left: 15px;
-  border-left: 3px solid #00b4d8; /* Highlight color */
+  border-left: 3px solid #00b4d8;
+  /* Highlight color */
 }
 
 /* Images */
-#blog img,
-.subscribe-image img {
-  margin: 20px auto;
-  display: block;
-  max-width: 100%;
-  border-radius: 5px;
-  border: 2px solid #00b4d8; /* Highlight border */
-}
+#blog img {
+  margin: 20px auto; display: block; border-radius: 5px; border: 2px solid #00b4d8; width: 100%; /* Ensures the image fits the screen size */
+} 
 
 #blog-title {
   text-align: center;
-  margin: 0 auto; /* Center the title itself if it's a block element */
-  padding: 10px 0; /* Optional padding for spacing */
+  margin: 0 auto;
+  /* Center the title itself if it's a block element */
+  padding: 10px 0;
+  /* Optional padding for spacing */
   font-size: 2.3rem;
+}
+
+/* center poems */
+.poem {
+  display:inline-block;
+  align-self: center;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #9678bb;
+  padding: 20px;
+  border-radius: 30px;
+  color: #81f2cd;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: larger;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.poem:hover {
+  box-shadow: 6px 7px 6px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.4s;
 }
 
 #blog-title h1 {
   color: #3d255b;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
-#blog-date {
+.blog-details {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 #blog-summary {
-  cursor: pointer; /* Clickable cursor*/
-  background-color: #aeaae1; /* Card background color */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for a card effect */
-  padding: 20px; /* Space inside the card */
-  color: #3e30a1; /* Text color for contrast */
+  cursor: pointer;
+  /* Clickable cursor*/
+  background-color: #aeaae1;
+  /* Card background color */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  /* Subtle shadow for a card effect */
+  padding: 20px;
+  /* Space inside the card */
+  color: #3e30a1;
+  /* Text color for contrast */
   font-weight: 400;
-  margin: 20px auto; /* Center the card and add spacing */
-  max-width: 800px; /* Limit card width */
-  border: 1px solid #3b4b6b; /* Optional: Add a border */
-  font-size: 1rem; /* Adjust font size */
+  margin: 20px auto;
+  /* Center the card and add spacing */
+  max-width: 800px;
+  border: 1px solid #3b4b6b;
+  font-size: 1rem;
   line-height: 1.2;
 }
 
 #blog-summary a {
-  pointer-events: auto; /*allows the anchor tags to be clicked inside clickable card*/
-  color:#450fb8;
+  pointer-events: auto;
+  /*allows the anchor tags to be clicked inside clickable card*/
+  color: #450fb8;
   font-weight: 900;
 }
 
@@ -200,7 +231,8 @@ blockquote {
 
 .pagination a {
   margin: 0 5px;
-  color: #5a23a2; /* Highlight color */
+  color: #5a23a2;
+  /* Highlight color */
 }
 
 .pagination a:hover {
@@ -209,9 +241,11 @@ blockquote {
 
 /* Mastodon Comment */
 .mastodon-comment {
-  background-color: #1a233b; /* Base background color */
+  background-color: #1a233b;
+  /* Base background color */
   border-radius: 10px;
-  border: 1px solid #3b4b6b; /* Slightly darker for subtle contrast */
+  border: 1px solid #3b4b6b;
+  /* Slightly darker for subtle contrast */
   padding: 15px;
   margin-bottom: 20px;
   color: #ffffff;
@@ -227,7 +261,8 @@ blockquote {
   height: 60px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 2px solid #00b4d8; /* Highlight border */
+  border: 2px solid #00b4d8;
+  /* Highlight border */
 }
 
 .mastodon-comment .author .details {
@@ -236,7 +271,8 @@ blockquote {
 }
 
 .mastodon-comment .author .details .user {
-  color: #00b4d8; /* Highlight username */
+  color: #00b4d8;
+  /* Highlight username */
 }
 
 .mastodon-comment .content {
@@ -244,10 +280,12 @@ blockquote {
 }
 
 .mastodon-comment .status a {
-  color: #00b4d8; /* Highlight links */
+  color: #00b4d8;
+  /* Highlight links */
 }
 
 .mastodon-comment .status a:hover {
   text-decoration: underline;
-  color: #8ecae6; /* Hover effect: secondary accent */
+  color: #8ecae6;
+  /* Hover effect: secondary accent */
 }

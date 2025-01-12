@@ -6,6 +6,7 @@
     {% if page.title %}
     <h1 id="blog-title">{{ page.title }}</h1>
     {% endif %}
+    <div class="blog-details">
     <span>
       <time>
         {% if page.date %}
@@ -16,14 +17,23 @@
         <small class="blog-date">Updated at {{ page.updated }}</small>
         {% endif %}
       </time>
-      {% if page.taxonomies %}
-      {% for tag in page.taxonomies["tags"] %}
-      <a href="/tags/{{ tag }}">#{{ tag }}</a>
-      {% endfor %}
-      {% endif %}
     </span>
+      {% if page.taxonomies %}
+        {% for tax_name, tags in page.taxonomies %}
+          {{ tax_name | title }}: 
+          {% for tag in tags %} 
+            <a href="/{{ tax_name }}/{{ tag }}">#{{ tag }}</a>
+          {% endfor %}
+        {% endfor %}
+      {% endif %}
   </div>
+  </div>
+  {% if page.components[0] == "poems" %}
+  <div id="blog" class="poem">
+  {% else %}
   <div id="blog">
+  
+  {% endif %}
     {{ page.content | markdown | safe }}
   </div>
 </article>

@@ -4,7 +4,6 @@ description = "List of poems by Hemish"
 sort_by = "date"
 template = "posts.html"
 generate_feeds = true
-page_template = "poem.html"
 paginate_by = 5
 
 [extra]

@@ -1,11 +1,11 @@
-{% extends "base.html" %}
+{% extends "page.html" %}
 {% block title %}
 <title>Poem Language Tags</title>
 {% endblock %}
 {% block content %}
 <h1 class="title">Tags</h1>
 <div id="blog-list">
-	Here is the list of language tags of my poems. If you want to just follow some particular language and not all my poems, individual Atom (RSSv1) feeds are linked along with the tag. <br> <br>
+	Here is the list of language tags of my poems. If you want to just follow some particular language and not all my poems, individual Atom (RSSv1) feeds are linked along with the tag. <br>
   {% if terms %}
       <div id="blog-summary">
       {% for term in terms %}
