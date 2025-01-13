@@ -7,7 +7,7 @@ page_template = "page.html"
 <div class="form-container">
         <h2>Subscribe to Posts</h2>
         <p>Get the latest posts directly in your inbox!</p>
-        <form action="[YOUR_POST_URL]" method="POST" target="_blank">
+        <form action="https://api.follow.it/subscription-form/U0tNNTNuYVM4OW9CYUZ5QlduM0IwMFNuay95amVnLzRQdHZaWlE1bHUrdWZLVU5IeHo3bjVvcy9aSWZFM1pLQ0wxdG9yUkR4ckNYYnl2czhHYUJnTFlHT2F3VEg0OTVHSm1KcEd5c0Z5eDRvU0lBT0FIMFRtZEIzZkwwQUs3U0Z8WVpxMTBuSkpRVi9ERW05a1BkUFFwR0lLSk5OT2k0MWp5akRVVWtsWVRYVT0=/8" method="POST" target="_blank">
             <input type="email" name="email" placeholder="Enter your email" required>
             <button type="submit">Subscribe</button>
         </form>
