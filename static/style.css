@@ -13,7 +13,7 @@ body {
   margin: auto;
   padding: 0 20px;
 }
- 
+
 /* Footer Styles */
 footer {
   text-align: center;
@@ -136,7 +136,7 @@ button:hover {
 /* General Article */
 article {
   align-self: center;
-  
+
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -164,8 +164,13 @@ blockquote {
 
 /* Images */
 #blog img {
-  margin: 20px auto; display: block; border-radius: 5px; border: 2px solid #00b4d8; width: 100%; /* Ensures the image fits the screen size */
-} 
+  margin: 20px auto;
+  display: block;
+  border-radius: 5px;
+  border: 2px solid #00b4d8;
+  width: 100%;
+  /* Ensures the image fits the screen size */
+}
 
 #blog-title {
   text-align: center;
@@ -178,7 +183,7 @@ blockquote {
 
 /* center poems */
 .poem {
-  display:inline-block;
+  display: inline-block;
   align-self: center;
   text-align: center;
   margin-top: 20px;
@@ -196,6 +201,7 @@ blockquote {
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.4s;
 }
+
 
 #blog-title h1 {
   color: #3d255b;
@@ -309,75 +315,129 @@ blockquote {
   /* Hover effect: secondary accent */
 }
 
-        .form-container {
-            display: block;
-            text-align: center;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #aeaae1;
-            color: #333333;
-            border-radius: 10px;
-            max-width: 400px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            position: relative;
-        }
+.form-container {
+  display: block;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #aeaae1;
+  color: #333333;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
 
-        .form-container h2 {
-            color: #333333;
-            margin-bottom: 10px;
-            font-size: 24px;
-        }
+.form-container h2 {
+  color: #333333;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
 
-        .form-container p {
-            margin: 10px 0;
-            color: #333333;
-        }
+.form-container p {
+  margin: 10px 0;
+  color: #333333;
+}
 
-        .form-container input[type="email"] {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 2px solid #72d88c;
-            border-radius: 5px;
-            font-size: 1em;
-            background-color: #ffffff;
-            color: #333333;
-        }
+.form-container input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #72d88c;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #ffffff;
+  color: #333333;
+}
 
-        .form-container input[type="email"]::placeholder {
-            color: #888;
-        }
+.form-container input[type="email"]::placeholder {
+  color: #888;
+}
 
-        .form-container input[type="email"]:focus {
-            border-color: #58a676;
-            outline: none;
-            box-shadow: 0 0 5px rgba(114, 216, 140, 0.5);
-        }
+.form-container input[type="email"]:focus {
+  border-color: #58a676;
+  outline: none;
+  box-shadow: 0 0 5px rgba(114, 216, 140, 0.5);
+}
 
-        .form-container button {
-            display: inline-block;
-            background-color: #3d255b;
-            color: #dae7ea;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 5px;
-            margin: 10px 0;
-            font-size: 1em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+.form-container button {
+  display: inline-block;
+  background-color: #3d255b;
+  color: #dae7ea;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-        .form-container button:hover {
-            background-color: #58a676;
-        }
+.form-container button:hover {
+  background-color: #58a676;
+}
 
-        .form-container a {
-            color: #333333;
-            text-decoration: none;
-            font-weight: 500;
-        }
+.form-container a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-        .form-container a:hover {
-            color: #5a23a7;
-            text-decoration: underline;
-        }
+.form-container a:hover {
+  color: #5a23a7;
+  text-decoration: underline;
+}
+#popupOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#popup h2 {
+  margin: 0 0 10px;
+}
+
+#popup button {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#popup button:hover {
+  background: #0056b3;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #000;
+}

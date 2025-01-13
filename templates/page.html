@@ -11,35 +11,96 @@
     <h1 id="blog-title">{{ page.title }}</h1>
     {% endif %}
     <div class="blog-details">
-    <span>
-      <time>
-        {% if page.date %}
-        <small class="blog-date">{{ page.date }}</small>
-        {% endif %}
-        <br>
-        {% if page.updated and page.updated != page.date %}
-        <small class="blog-date">Updated at {{ page.updated }}</small>
-        {% endif %}
-      </time>
-    </span>
+      <span>
+        <time>
+          {% if page.date %}
+          <small class="blog-date">{{ page.date }}</small>
+          {% endif %}
+          <br>
+          {% if page.updated and page.updated != page.date %}
+          <small class="blog-date">Updated at {{ page.updated }}</small>
+          {% endif %}
+        </time>
+      </span>
       {% if page.taxonomies %}
-        {% for tax_name, tags in page.taxonomies %}
-          {{ tax_name | title }}: 
-          {% for tag in tags %} 
-            <a href="/{{ tax_name }}/{{ tag }}">#{{ tag }}</a>
-          {% endfor %}
-        {% endfor %}
+      {% for tax_name, tags in page.taxonomies %}
+      {{ tax_name | title }}:
+      {% for tag in tags %}
+      <a href="/{{ tax_name }}/{{ tag }}">#{{ tag }}</a>
+      {% endfor %}
+      {% endfor %}
       {% endif %}
-  </div>
+    </div>
   </div>
   {% if page.components[0] == "poems" %}
   <div id="blog" class="poem">
-  {% else %}
-  <div id="blog">
-  
-  {% endif %}
-    {{ page.content | markdown | safe }}
+    {% else %}
+    <div id="blog">
+
+      {% endif %}
+      {{ page.content | markdown | safe }}
+    </div>
+
+
+
+    <!-- Subscribe popup -->
+    <div id="popupOverlay">
+      <div id="popup">
+        <button id="close-btn" class="close-btn">&times;</button>
+          <h2>Subscribe to my posts</h2>
+          <p>Stay updated with my posts via Email or Atom</p>
+          <button onclick="subscribe()">Subscribe</button>
+      </div>
   </div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const popupOverlay = document.getElementById('popupOverlay');
+    let popupShown = false;
+
+    // Check if URL starts with /posts
+    if (window.location.pathname.startsWith('/posts')) {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const scrollHeight = document.documentElement.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight;
+
+            // Show popup when near the bottom of the page
+            if (!popupShown && scrollHeight - scrollTop - clientHeight < 100) {
+                popupOverlay.style.display = 'flex';
+                popupShown = true;
+            }
+        });
+    }
+
+    // Subscribe function
+    window.subscribe = () => {
+        window.location.pathname = "/subscribe"
+        popupOverlay.style.display = 'none';
+    };
+
+    // Close popup when clicking outside
+    popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay) {
+            popupOverlay.style.display = 'none';
+        }
+    });
+
+    // Close popup with Esc key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && popupShown) {
+            popupOverlay.style.display = 'none';
+        }
+    });
+
+    const closeButton = document.getElementById('close-btn');
+
+    closeButton.addEventListener('click', () => {
+        popupOverlay.style.display = 'none';
+    });
+});
+</script>
+  <!-- Subscribe popup -->
+
 </article>
 {% include 'code_copy.html' %}
 {% endblock content %}
