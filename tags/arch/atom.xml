@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Hemish - arch</title>
+    <link rel="self" type="application/atom+xml" href="https://hemish.net/tags/arch/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://hemish.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-11-14T00:00:00+00:00</updated>
+    <id>https://hemish.net/tags/arch/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Hamara Plymouth Theme</title>
+        <published>2022-11-14T00:00:00+00:00</published>
+        <updated>2022-11-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/plymouth-theme-hamra/"/>
+        <id>https://hemish.net/posts/plymouth-theme-hamra/</id>
+        
+        <summary type="html">&lt;p&gt;&lt;em&gt;Hamara Linux&lt;&#x2F;em&gt; was&#x2F;is a India based linux distribution. It is in pretty dormant stage now (Even the site is down for some time).&lt;&#x2F;p&gt;
+&lt;p&gt;I asked &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;itsmeh.com&#x2F;chirag_sukhala&quot;&gt;Chirag Sukhala&lt;&#x2F;a&gt; what is even the need of such a Linux distribution which gives you Indic languages preinstalled when you can just install Indic languages in pretty much any popular linux distro&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>
