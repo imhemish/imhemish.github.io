@@ -14,7 +14,6 @@ I, excited, opened the file, and I see the following [Python one-liner](https://
 # Python obfuscation by freecodingtools.org
                     
 _ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'==QfWoizP8/vvPv/tu.........a lot of random stuff...........WiUxyW7lVwJe'))
-
 ```
 
 aahhhhh... so much random characters
@@ -124,4 +123,6 @@ b'# Online Python Compiler\n\nprint("Hello, World!")\n# BITSCTF{obfuscation_and_
 b'thon Compiler\n\nprint("Hello, World!")\n# BITSCTF{obfuscation_and_then_some_more_obfuscation_4a4a4a'
 ```
 
-Flag found: `obfuscation_and_then_some_more_obfuscation_4a4a4a4a`, bye
+Flag found:
+
+`obfuscation_and_then_some_more_obfuscation_4a4a4a4a`, bye
