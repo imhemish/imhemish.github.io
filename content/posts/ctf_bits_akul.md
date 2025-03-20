@@ -6,7 +6,7 @@ date = "2025-03-20"
 tags = ['programming', 'python']
 +++
 
-A random Sunday at home, I get a call from my friend [skye](https://skyeline.github.io) (asli naam nhi likhne de rha (he is not letting me write his original name)). He was, as usual, fiddling with cybersec stuff, sparing time from his busy gaming schedule. Initially, I ignored the call, but then answered. He was participating in [BITSCTF '25](https://ctftime.org/event/2607/). He quickly asks me to have a look at a python file he sent me.
+A random Sunday at home, I get a call from my friend [skye](https://skyeliner.github.io) (asli naam nhi likhne de rha (he is not letting me write his original name)). He was, as usual, fiddling with cybersec stuff, sparing time from his busy gaming schedule. Initially, I ignored the call, but then answered. He was participating in [BITSCTF '25](https://ctftime.org/event/2607/). He quickly asks me to have a look at a python file he sent me.
 
 I, excited, opened the file, and I see the following [Python one-liner](https://wiki.python.org/moin/Powerful%20Python%20One-Liners):
 
