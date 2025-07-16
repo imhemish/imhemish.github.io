@@ -1,7 +1,7 @@
 +++
 title = "Wishlist"
-date = "2025-07-05"
-updated = "2025-07-05"
+date = "2025-07-16"
+updated = "2025-07-16"
 +++
 
 Here is the list of things in my wishlist, so you can buy any of it for me, if someone buys something for me, please notify so I can remove it from here.  
@@ -15,5 +15,5 @@ Here is the list of things in my wishlist, so you can buy any of it for me, if s
 - [Transparent Double Tape ~ ₹90](https://www.meesho.com/nano-tape-multipurpose-double-sided-tape-adhesive-silicone-tape-heavy-duty-heat-resistant-multi-functional-removable-washable-reusable-anti-slip-gel-nano-grip-tape-grip-tape/p/871e4j)
 
 ## Tech Stuff
-- [Zebronics Zeb WonderBar 10 Wired Speaker ~ ₹800](https://www.amazon.in/dp/B08K9PX15C/)
+- Mivi Fort Q60
 - Any cheap VR Box within the range of 1000 rupees
