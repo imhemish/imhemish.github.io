@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+  <meta charset="utf-8">
+
+  
+<title>Building SmartCam</title>
+
+
+
+<meta property="og:image" content="/images/apple-touch-icon.png" />
+
+
+<meta name="author" content="Hemish">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="follow.it-verification-code" content="ZKMZC8n02Bv0Hs9t1m3m"/>
+
+ 
+
+
+<meta name="description" content="Gemini powered image descriptions with TextToSpeech and Camera in Flutter">
+
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" href="/favicon.ico">
+</head>
+
+<body>
+  <header class="header-bar">
+    <div class="header-content">
+      <div class="mobile-header">
+        <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="logo-container">
+          <a href="/"><h1>Hemish</h1></a>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/posts">Posts</a>
+        <a href="/poems">Poems</a>
+        <a href="#contact">Contact</a>
+        <a href="/subscribe">Subscribe/Atom</a>
+      </nav>
+    </div>
+  </header>
+  
+  <style>
+    /* Header Styles */
+    .header-bar {
+      width: 100%;
+      background-color: #3d255b;
+      color: #eaeaea;
+      padding: 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+  
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      min-height: 52px;
+    }
+  
+    .mobile-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      height: 52px;
+    }
+  
+    .logo-container h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #00b4d8;
+      line-height: 1;
+      font-weight: 600;
+    }
+  
+    /* Navigation Links */
+    .nav-links {
+      display: flex;
+      gap: 12px;
+    }
+  
+    .nav-links a {
+      text-decoration: none;
+      color: #eaeaea;
+      padding: 6px 12px;
+      border-radius: 3px;
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  
+    .nav-links a:hover {
+      background-color: #00b4d8;
+      text-decoration: none;
+      color: #12182b;
+    }
+  
+    /* Hamburger Icon */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+      height: 21px;
+      justify-content: center;
+    }
+  
+    .hamburger .bar {
+      width: 24px;
+      height: 3px;
+      background-color: #eaeaea;
+      border-radius: 2px;
+    }
+  
+    /* Mobile Responsiveness */
+    @media screen and (max-width: 670px) {
+      .header-content {
+        flex-direction: column;
+        align-items: stretch;
+      }
+  
+      .mobile-header {
+        position: relative;
+        justify-content: center;
+      }
+  
+      .hamburger {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+  
+      .logo-container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+  
+      .logo-container h1 {
+        font-size: 1.4rem;
+      }
+  
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 0;
+      }
+  
+      .nav-links a {
+        padding: 8px 14px;
+        font-size: 1rem;
+      }
+  
+      .nav-links a:hover {
+        background-color: #00b4d8;
+        color: #12182b;
+      }
+    }
+  
+    /* Show navigation links when menu is active */
+    .nav-links.active {
+      display: flex;
+    }
+  </style>
+
+  <!-- Content Wrapper -->
+  <main class="content-wrapper">
+    
+<article>
+  <div>
+    
+    <h1 id="blog-title">Building SmartCam</h1>
+    
+    <div class="blog-details">
+      <span>
+        <time>
+          
+          <small class="blog-date">2024-12-11</small>
+          
+          <br>
+          
+        </time>
+      </span>
+      
+      
+      Tags:
+      
+      <a href="/tags/programming">#programming</a>
+      
+      
+      
+    </div>
+  </div>
+  
+    <div id="blog">
+
+      
+      <h2 id="what-are-we-going-to-build">What are we going to build?</h2>
+<p>We are going to build a sample page of an app in flutter, which captures the image from camera, and then displays the description of the image, and also speaks it through description. The description is fetched through Gemini API.</p>
+<p><img src="/images/smart_cam.png" alt="SmartCam Screen" /></p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>A system with minimum 8 gb of ram</li>
+<li>Flutter installed and configured on the system</li>
+<li>Flutter extension installed in VS Code</li>
+</ul>
+<h2 id="creating-new-project">Creating new project</h2>
+<p>Visual Studio Code and other IDE's provide us with ways to automatically create new flutter project with boiler plate code already written, along with all the build files.</p>
+<p>In VS Code, press Ctrl+Shift+P and type 'Flutter'. You would see <code>Flutter: New Project</code>option. Click on the option, and you would be asked to select the folder you want to create project in. After selecting the folder, select 'New Application'. Enter the name of the project, and the project structure would be created.</p>
+<h2 id="understanding-directory-structure">Understanding directory structure</h2>
+<p>Flutter follows a defined directory structure for the projects.</p>
+<p>Here are the most important sub-directories:</p>
+<h3 id="android-ios-linux-macos-web-windows">android, ios, linux, macos, web, windows</h3>
+<p>These hold platform-specific build files to run the project on these platforms</p>
+<h3 id="lib">lib</h3>
+<p>The cross-platform code we write for the app</p>
+<h3 id="pubspec-yaml">pubspec.yaml</h3>
+<p>Holds the package information</p>
+<h2 id="removing-the-unncessary-boilerplate">Removing the unncessary boilerplate</h2>
+<p>By default, Flutter provides a counter app. First, remove the <code>MyHomePage</code> from <code>main.dart</code> and unncessary comments. You can also remove the color theme if you want.</p>
+<h2 id="installing-the-required-packages">Installing the required packages</h2>
+<p>We are going to require these packages for various functionalities:</p>
+<h3 id="camera">camera</h3>
+<p>Provides access to cameras on multiple platforms</p>
+<h3 id="flutter-tts">flutter_tts</h3>
+<p>Provides Google's Text To Speech Services on various platforms</p>
+<h3 id="flutter-gemini">flutter_gemini</h3>
+<p>Provides access to Gemini inside a Flutter app</p>
+<p>You can install these packages by running these commands in the terminal:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">flutter</span><span> pub add camera flutter_tts flutter_gemini
+</span></code></pre>
+<h2 id="creating-the-smartcam-screen">Creating the SmartCam screen</h2>
+<p>Create a new file in <code>lib</code> directory. Give it a suitable name, say <code>smart_cam.dart</code>.</p>
+<p>We need to import Flutter's <code>material</code> library to use widgets. We also need <code>flutter_gemini</code> and <code>flutter_tts</code>for the respective functionalities.</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;package:flutter/material.dart&#39;</span><span>;
+</span><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;package:flutter_gemini/flutter_gemini.dart&#39;</span><span>;
+</span><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;package:flutter_tts/flutter_tts.dart&#39;</span><span>;
+</span></code></pre>
+<p>Then we will be creating a page or screen. To do so, write <code>stf</code> in VS Code window, and it will automatically give you suggestion to create a <code>Stateful Widget</code>.  Give it a suitable name, say <code>SmartCam</code>.</p>
+<p>Inside the <code>SmartCam</code> class, create a variable <code>language</code> to store the language and create a constructor also:</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#b48ead;">final </span><span style="color:#ebcb8b;">String</span><span> language;
+</span><span style="color:#ebcb8b;">SmartCam</span><span>(</span><span style="color:#bf616a;">this</span><span>.language);
+</span></code></pre>
+<h2 id="building-the-ui">Building the UI</h2>
+<p>We need to override the <code>build</code> method in the state of the widget to specify the apperance of the widget.</p>
+<p>For now, write this code:</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#b48ead;">@override
+</span><span>  </span><span style="color:#ebcb8b;">Widget </span><span style="color:#8fa1b3;">build</span><span>(</span><span style="color:#ebcb8b;">BuildContext</span><span> context) {
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#ebcb8b;">Scaffold</span><span>(
+</span><span>        appBar: </span><span style="color:#ebcb8b;">AppBar</span><span>(
+</span><span>          title: </span><span style="color:#ebcb8b;">Text</span><span>(</span><span style="color:#a3be8c;">&quot;SmartCam&quot;</span><span>),
+</span><span>          backgroundColor: </span><span style="color:#ebcb8b;">Colors</span><span>.black54,
+</span><span>          foregroundColor: </span><span style="color:#ebcb8b;">Colors</span><span>.white,
+</span><span>        ),
+</span><span>        body: </span><span style="color:#ebcb8b;">Center</span><span>(
+</span><span>          child: </span><span style="color:#ebcb8b;">GestureDetector</span><span>(
+</span><span>            onLongPress: () {
+</span><span>            },
+</span><span>            child: </span><span style="color:#ebcb8b;">Column</span><span>(
+</span><span>                crossAxisAlignment: </span><span style="color:#ebcb8b;">CrossAxisAlignment</span><span>.center,
+</span><span>                children: [
+</span><span>                  </span><span style="color:#ebcb8b;">Expanded</span><span>(
+</span><span>                    child: </span><span style="color:#ebcb8b;">Container</span><span>(
+</span><span>                      color: </span><span style="color:#ebcb8b;">Colors</span><span>.black,
+</span><span>                      child: </span><span style="color:#ebcb8b;">Container</span><span>(
+</span><span>                          height:
+</span><span>                              </span><span style="color:#d08770;">2 </span><span>* (</span><span style="color:#ebcb8b;">MediaQuery</span><span>.</span><span style="color:#8fa1b3;">sizeOf</span><span>(context).height / </span><span style="color:#d08770;">3</span><span>) - </span><span style="color:#d08770;">60</span><span>,
+</span><span>                          decoration: </span><span style="color:#ebcb8b;">BoxDecoration</span><span>(
+</span><span>                              border:
+</span><span>                                  </span><span style="color:#ebcb8b;">Border</span><span>.</span><span style="color:#8fa1b3;">all</span><span>(color: </span><span style="color:#ebcb8b;">Colors</span><span>.black, width: </span><span style="color:#d08770;">13</span><span>)),
+</span><span>                          child: </span><span style="color:#ebcb8b;">Center</span><span>(
+</span><span>                              child: </span><span style="color:#ebcb8b;">ClipRRect</span><span>(
+</span><span>                                  borderRadius: </span><span style="color:#ebcb8b;">BorderRadius</span><span>.</span><span style="color:#8fa1b3;">circular</span><span>(</span><span style="color:#d08770;">10</span><span>),
+</span><span>                                  child: </span><span style="color:#ebcb8b;">Placeholder</span><span>()))),
+</span><span>                    ),
+</span><span>                  ),
+</span><span>                  </span><span style="color:#ebcb8b;">Align</span><span>(
+</span><span>                      alignment: </span><span style="color:#ebcb8b;">Alignment</span><span>.center,
+</span><span>                      child: </span><span style="color:#ebcb8b;">Container</span><span>(
+</span><span>                          width: </span><span style="color:#ebcb8b;">MediaQuery</span><span>.</span><span style="color:#8fa1b3;">sizeOf</span><span>(context).width,
+</span><span>                          color: </span><span style="color:#ebcb8b;">Colors</span><span>.black54,
+</span><span>                          child: </span><span style="color:#ebcb8b;">Container</span><span>(
+</span><span>                              padding: </span><span style="color:#ebcb8b;">EdgeInsets</span><span>.</span><span style="color:#8fa1b3;">all</span><span>(</span><span style="color:#d08770;">10</span><span>),
+</span><span>                              margin: </span><span style="color:#ebcb8b;">EdgeInsets</span><span>.</span><span style="color:#8fa1b3;">all</span><span>(</span><span style="color:#d08770;">10</span><span>),
+</span><span>                              decoration: </span><span style="color:#ebcb8b;">BoxDecoration</span><span>(
+</span><span>                                color: </span><span style="color:#ebcb8b;">Colors</span><span>.black54,
+</span><span>                                borderRadius: </span><span style="color:#ebcb8b;">BorderRadius</span><span>.</span><span style="color:#8fa1b3;">circular</span><span>(</span><span style="color:#d08770;">20</span><span>),
+</span><span>                              ),
+</span><span>                              child: </span><span style="color:#ebcb8b;">Text</span><span>(
+</span><span>                                </span><span style="color:#a3be8c;">&#39;Hello&#39;</span><span>,
+</span><span>                                style: </span><span style="color:#ebcb8b;">TextStyle</span><span>(color: </span><span style="color:#ebcb8b;">Colors</span><span>.white),
+</span><span>                              ))))
+</span><span>                ]),
+</span><span>          ),
+</span><span>        ));
+</span><span>  }
+</span></code></pre>
+<p>To show this UI, inside <code>main.dart</code> file, use this <code>SmartCam(language: 'english')</code> as <code>home: </code> argument.</p>
+<p>Now, we have got the sample UI without the functionality.</p>
+<p>If you are running it in DartPad, the following code will work:</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;package:flutter/material.dart&#39;</span><span>;
+</span><span>
+</span><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>  </span><span style="color:#ebcb8b;">WidgetsFlutterBinding</span><span>.</span><span style="color:#8fa1b3;">ensureInitialized</span><span>();
+</span><span>  </span><span style="color:#8fa1b3;">runApp</span><span>(</span><span style="color:#b48ead;">const </span><span style="color:#ebcb8b;">MyApp</span><span>());
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">class </span><span style="color:#ebcb8b;">MyApp </span><span style="color:#b48ead;">extends </span><span style="color:#ebcb8b;">StatelessWidget</span><span> {
+</span><span>  </span><span style="color:#b48ead;">const </span><span style="color:#ebcb8b;">MyApp</span><span>({</span><span style="color:#bf616a;">super</span><span>.key});
+</span><span>
+</span><span>  </span><span style="color:#b48ead;">@override
+</span><span>  </span><span style="color:#ebcb8b;">Widget </span><span style="color:#8fa1b3;">build</span><span>(</span><span style="color:#ebcb8b;">BuildContext</span><span> context) {
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#ebcb8b;">MaterialApp</span><span>(
+</span><span>      debugShowCheckedModeBanner: </span><span style="color:#d08770;">false</span><span>,
+</span><span>      title: </span><span style="color:#a3be8c;">&#39;Flutter Demo&#39;</span><span>,
+</span><span>      home: </span><span style="color:#ebcb8b;">SmartCam</span><span>(</span><span style="color:#a3be8c;">&#39;hindi&#39;</span><span>),
+</span><span>    );
+</span><span>  }
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">class </span><span style="color:#ebcb8b;">SmartCam </span><span style="color:#b48ead;">extends </span><span style="color:#ebcb8b;">StatefulWidget</span><span> {
+</span><span>  </span><span style="color:#b48ead;">final </span><span style="color:#ebcb8b;">String</span><span> language;
+</span><span>  </span><span style="color:#ebcb8b;">SmartCam</span><span>(</span><span style="color:#bf616a;">this</span><span>.language);
+</span><span>
+</span><span>  </span><span style="color:#b48ead;">@override
+</span><span>  </span><span style="color:#ebcb8b;">State</span><span>&lt;</span><span style="color:#ebcb8b;">SmartCam</span><span>&gt; </span><span style="color:#8fa1b3;">createState</span><span>() =&gt; </span><span style="color:#ebcb8b;">_SmartCamState</span><span>();
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">class </span><span style="color:#ebcb8b;">_SmartCamState </span><span style="color:#b48ead;">extends </span><span style="color:#ebcb8b;">State</span><span>&lt;</span><span style="color:#ebcb8b;">SmartCam</span><span>&gt; {
+</span><span>  </span><span style="color:#b48ead;">@override
+</span><span>  </span><span style="color:#ebcb8b;">Widget </span><span style="color:#8fa1b3;">build</span><span>(</span><span style="color:#ebcb8b;">BuildContext</span><span> context) {
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#ebcb8b;">Scaffold</span><span>(
+</span><span>        appBar: </span><span style="color:#ebcb8b;">AppBar</span><span>(
+</span><span>          title: </span><span style="color:#ebcb8b;">Text</span><span>(</span><span style="color:#a3be8c;">&quot;SmartCam&quot;</span><span>),
+</span><span>          backgroundColor: </span><span style="color:#ebcb8b;">Colors</span><span>.black54,
+</span><span>          foregroundColor: </span><span style="color:#ebcb8b;">Colors</span><span>.white,
+</span><span>        ),
+</span><span>        body: </span><span style="color:#ebcb8b;">Center</span><span>(
+</span><span>          child: </span><span style="color:#ebcb8b;">GestureDetector</span><span>(
+</span><span>            onLongPress: () {},
+</span><span>            child: </span><span style="color:#ebcb8b;">Column</span><span>(
+</span><span>                crossAxisAlignment: </span><span style="color:#ebcb8b;">CrossAxisAlignment</span><span>.center,
+</span><span>                children: [
+</span><span>                  </span><span style="color:#ebcb8b;">Expanded</span><span>(
+</span><span>                    child: </span><span style="color:#ebcb8b;">Container</span><span>(
+</span><span>                      color: </span><span style="color:#ebcb8b;">Colors</span><span>.black,
+</span><span>                      child: </span><span style="color:#ebcb8b;">Container</span><span>(
+</span><span>                          height:
+</span><span>                              </span><span style="color:#d08770;">2 </span><span>* (</span><span style="color:#ebcb8b;">MediaQuery</span><span>.</span><span style="color:#8fa1b3;">sizeOf</span><span>(context).height / </span><span style="color:#d08770;">3</span><span>) - </span><span style="color:#d08770;">60</span><span>,
+</span><span>                          decoration: </span><span style="color:#ebcb8b;">BoxDecoration</span><span>(
+</span><span>                              border:
+</span><span>                                  </span><span style="color:#ebcb8b;">Border</span><span>.</span><span style="color:#8fa1b3;">all</span><span>(color: </span><span style="color:#ebcb8b;">Colors</span><span>.black, width: </span><span style="color:#d08770;">13</span><span>)),
+</span><span>                          child: </span><span style="color:#ebcb8b;">Center</span><span>(
+</span><span>                              child: </span><span style="color:#ebcb8b;">ClipRRect</span><span>(
+</span><span>                                  borderRadius: </span><span style="color:#ebcb8b;">BorderRadius</span><span>.</span><span style="color:#8fa1b3;">circular</span><span>(</span><span style="color:#d08770;">10</span><span>),
+</span><span>                                  child: </span><span style="color:#ebcb8b;">Placeholder</span><span>()))),
+</span><span>                    ),
+</span><span>                  ),
+</span><span>                  </span><span style="color:#ebcb8b;">Align</span><span>(
+</span><span>                      alignment: </span><span style="color:#ebcb8b;">Alignment</span><span>.center,
+</span><span>                      child: </span><span style="color:#ebcb8b;">Container</span><span>(
+</span><span>                          width: </span><span style="color:#ebcb8b;">MediaQuery</span><span>.</span><span style="color:#8fa1b3;">sizeOf</span><span>(context).width,
+</span><span>                          color: </span><span style="color:#ebcb8b;">Colors</span><span>.black54,
+</span><span>                          child: </span><span style="color:#ebcb8b;">Container</span><span>(
+</span><span>                              padding: </span><span style="color:#ebcb8b;">EdgeInsets</span><span>.</span><span style="color:#8fa1b3;">all</span><span>(</span><span style="color:#d08770;">10</span><span>),
+</span><span>                              margin: </span><span style="color:#ebcb8b;">EdgeInsets</span><span>.</span><span style="color:#8fa1b3;">all</span><span>(</span><span style="color:#d08770;">10</span><span>),
+</span><span>                              decoration: </span><span style="color:#ebcb8b;">BoxDecoration</span><span>(
+</span><span>                                color: </span><span style="color:#ebcb8b;">Colors</span><span>.black54,
+</span><span>                                borderRadius: </span><span style="color:#ebcb8b;">BorderRadius</span><span>.</span><span style="color:#8fa1b3;">circular</span><span>(</span><span style="color:#d08770;">20</span><span>),
+</span><span>                              ),
+</span><span>                              child: </span><span style="color:#ebcb8b;">Text</span><span>(
+</span><span>                                </span><span style="color:#a3be8c;">&#39;Hello&#39;</span><span>,
+</span><span>                                style: </span><span style="color:#ebcb8b;">TextStyle</span><span>(color: </span><span style="color:#ebcb8b;">Colors</span><span>.white),
+</span><span>                              ))))
+</span><span>                ]),
+</span><span>          ),
+</span><span>        ));
+</span><span>  }
+</span><span>}
+</span><span>
+</span></code></pre>
+<p>From this onwards, all of the code needs to be run on system, and can not run on DartPad.</p>
+<h2 id="initialising-the-camera">Initialising the camera</h2>
+<p><code>camera</code> package provides the camera functionality. According to the documentation, we will create two variables in the state:</p>
+<ul>
+<li><code>late List&lt;CameraDescription&gt; _cameras;</code>- Holds the list of cameras available on the system. It would be initialised late when the state is initialised.</li>
+<li><code>CameraController? controller;</code>- Holds the <code>CameraController</code> for the current camera. It provides the methods to read camera feed. It can be null because certain systems may not have any camera.</li>
+</ul>
+<p>Now, we will create an <code>void initState()</code> method according to the documentation:</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#b48ead;">@override
+</span><span>  </span><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">initState</span><span>() {
+</span><span>    </span><span style="color:#bf616a;">super</span><span>.</span><span style="color:#8fa1b3;">initState</span><span>();
+</span><span>    </span><span style="color:#8fa1b3;">availableCameras</span><span>().</span><span style="color:#8fa1b3;">then</span><span>((value) {
+</span><span>      _cameras = value;
+</span><span>      controller = </span><span style="color:#ebcb8b;">CameraController</span><span>(_cameras[</span><span style="color:#d08770;">0</span><span>], </span><span style="color:#ebcb8b;">ResolutionPreset</span><span>.max);
+</span><span>      controller?.</span><span style="color:#8fa1b3;">initialize</span><span>().</span><span style="color:#8fa1b3;">then</span><span>((_) {
+</span><span>        </span><span style="color:#b48ead;">if</span><span> (!mounted) {
+</span><span>          </span><span style="color:#b48ead;">return</span><span>;
+</span><span>        }
+</span><span>        </span><span style="color:#8fa1b3;">setState</span><span>(() {});
+</span><span>      }).</span><span style="color:#8fa1b3;">catchError</span><span>((</span><span style="color:#ebcb8b;">Object</span><span> e) {
+</span><span>      });
+</span><span>    });
+</span><span>  }
+</span></code></pre>
+<h2 id="displaying-the-camera-feed">Displaying the camera feed</h2>
+<p>Now, we would first understand some other variables required in the state.</p>
+<p>Put these variables in the state:</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>bool processing = false;
+</span><span>Uint8List? image;
+</span><span>String description = &#39;&#39;;
+</span></code></pre>
+<ul>
+<li><code>processing</code> - It indicates whether the image captured has finished processing</li>
+<li><code>image</code> - It stores the captured image.</li>
+<li><code>description</code> - It holds the textual description of image showed in UI in the bottom.</li>
+</ul>
+<p>Now, we need to display the camera feed into the UI we created. We had put a placeholder for showing the camera feed. We will replace that with a
+<code>Stack</code> widget because Stack can hold multiple widgets in it.</p>
+<p>Create a method <code>_showImage</code> which will return the widgets in stack:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">List</span><span>&lt;Widget&gt; _showImage(CameraController? controller, Uint8List? image) {
+</span><span>    </span><span style="color:#b48ead;">if </span><span>(</span><span style="color:#bf616a;">controller</span><span> == null) {
+</span><span>      return &lt;Widget&gt;[
+</span><span>        SizedBox(
+</span><span>          width: 1,
+</span><span>        )
+</span><span>      ];
+</span><span>    } else if (processing == false) {
+</span><span>      </span><span style="color:#b48ead;">return </span><span>&lt;Widget&gt;[
+</span><span>        </span><span style="color:#bf616a;">CameraPreview</span><span>(controller)</span><span style="color:#bf616a;">,
+</span><span>      </span><span style="color:#bf616a;">]</span><span>;
+</span><span>    } else if (processing == true) {
+</span><span>      </span><span style="color:#b48ead;">return </span><span>&lt;Widget&gt;[
+</span><span>        </span><span style="color:#bf616a;">Image.memory</span><span>(image!)</span><span style="color:#bf616a;">,
+</span><span>        </span><span style="color:#bf616a;">Positioned.fill</span><span>(
+</span><span>            </span><span style="color:#bf616a;">child:</span><span> Center(child: CircularProgressIndicator.adaptive()))
+</span><span>      </span><span style="color:#bf616a;">]</span><span>;
+</span><span>    } else {
+</span><span>      return &lt;Widget&gt;[
+</span><span>        CameraPreview(controller),
+</span><span>      ];
+</span><span>    }
+</span><span>  }
+</span></code></pre>
+<ul>
+<li>If the camera is not initialised, i.e. <code>controller</code> is null, then show nothing. For it, we have placed a <code>SizedBox</code> with nothing in it.</li>
+<li>If the image is processing, show that static image on screen and do not show the camera feed. Since, <code>image</code> variables stores the captured image in memory, we use <code>Image.network</code> to display that image. <code>Positioned.fill</code> along with <code>Center</code> widget with <code>CircularProgressIndicator</code>, displays a loading circular indicator above captured image.</li>
+<li>If the there is no image being processed, show the camera feed and not static image via use of <code>CameraPreview</code>.</li>
+</ul>
+<p>Inside the <code>build</code> method of state, use <code>description</code> inside <code>Text</code> widget, like:</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#ebcb8b;">Text</span><span>(description,
+</span><span>    style: </span><span style="color:#ebcb8b;">TextStyle</span><span>(color: </span><span style="color:#ebcb8b;">Colors</span><span>.white
+</span><span>)
+</span></code></pre>
+<h2 id="integrating-gemini">Integrating Gemini</h2>
+<p>To integrate Gemini, we first need to import and initialise Gemini package (which we already installed) in the <code>main.dart</code> file. Put this code inside <code>main.dart</code> inside the <code>void main()</code> function, before the <code>runApp(const MyApp());</code> statement.</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>WidgetsFlutterBinding.ensureInitialized();
+</span><span>Gemini.init(apiKey: &#39;your key here&#39;);
+</span></code></pre>
+<p>You need to get this key from <a rel="noopener" target="_blank" href="https://aistudio.google.com/app/apikey">https://aistudio.google.com/app/apikey</a>.</p>
+<p>Now, in <code>smart_cam.dart file</code>, create a variable inside state:</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#b48ead;">final</span><span> gemini = </span><span style="color:#ebcb8b;">Gemini</span><span>.instance;
+</span></code></pre>
+<p>Now, create a method:</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">_describeImage</span><span>() </span><span style="color:#b48ead;">async</span><span> {
+</span><span>    </span><span style="color:#b48ead;">var</span><span> picture = </span><span style="color:#b48ead;">await</span><span> controller?.</span><span style="color:#8fa1b3;">takePicture</span><span>();
+</span><span>    </span><span style="color:#b48ead;">var</span><span> b = </span><span style="color:#b48ead;">await</span><span> picture?.</span><span style="color:#8fa1b3;">readAsBytes</span><span>();
+</span><span>    </span><span style="color:#8fa1b3;">setState</span><span>(() {
+</span><span>      processing = </span><span style="color:#d08770;">true</span><span>;
+</span><span>      image = b;
+</span><span>    });
+</span><span>    </span><span style="color:#b48ead;">var</span><span> response = </span><span style="color:#b48ead;">await</span><span> gemini.</span><span style="color:#8fa1b3;">textAndImage</span><span>(
+</span><span>        text:
+</span><span>            </span><span style="color:#a3be8c;">&quot;What does this show? Respond in ${</span><span style="color:#bf616a;">widget.language</span><span style="color:#a3be8c;">} language with 3-4 lines&quot;</span><span>,
+</span><span>        images: [b!]);
+</span><span>    </span><span style="color:#b48ead;">var</span><span> p = response?.outputPart </span><span style="color:#b48ead;">as </span><span style="color:#ebcb8b;">TextPart</span><span>;
+</span><span>    </span><span style="color:#8fa1b3;">setState</span><span>(() {
+</span><span>      description = p.text;
+</span><span>      processing = </span><span style="color:#d08770;">false</span><span>;
+</span><span>    });
+</span><span>    tts.</span><span style="color:#8fa1b3;">speak</span><span>(p.text);
+</span><span>}
+</span></code></pre>
+<p>This method captures the picture from <code>CameraController</code>, reads it as bytes, and then sets <code>processing</code> to true, and sets the captured image. This ensures UI is built again to reflect that image is captured and is being processed, i.e. a static captured image would be shown, along with circular progress indicator above it.</p>
+<p>Then, it sends the image to Gemini along with the prompt, and receives the text from it, and then sets <code>description</code> to the text received from Gemini and sets <code>processing</code> to false again. This ensures description is now shown in the UI and the static image is again replaced by camera feed.</p>
+<h2 id="integrating-texttospeech">Integrating TextToSpeech</h2>
+<p>In <code>smart_cam.dart</code> file, import the package for TextToSpeech:</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;package:flutter_tts/flutter_tts.dart&#39;</span><span>;
+</span></code></pre>
+<p>In the <code>SmartCamState</code>, create a variable:</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#b48ead;">final</span><span> tts = </span><span style="color:#ebcb8b;">FlutterTts</span><span>();
+</span></code></pre>
+<p>Inside <code>initState</code> method, add the following:</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#b48ead;">if</span><span> (widget.language.</span><span style="color:#8fa1b3;">toLowerCase</span><span>() == </span><span style="color:#a3be8c;">&#39;hindi&#39;</span><span>) {
+</span><span>      tts.</span><span style="color:#8fa1b3;">setLanguage</span><span>(</span><span style="color:#a3be8c;">&#39;hi&#39;</span><span>);
+</span><span>}
+</span></code></pre>
+<p>It ensures that if language is Hindi, correct language is chosen for TextToSpeech.</p>
+<p>In the <code>_describeImage</code> method, add the following at the end:</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span>tts.</span><span style="color:#8fa1b3;">speak</span><span>(p.text);
+</span></code></pre>
+<p>This ensures the text which is received from Gemini is spoken by TextToSpeech.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>So, we just built a simple flutter project including the vision capabilities of Gemini with camera.</p>
+<p>The full code at the end looks like this:</p>
+<p>main.dart</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;package:flutter/material.dart&#39;</span><span>;
+</span><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;package:flutter_gemini/flutter_gemini.dart&#39;</span><span>;
+</span><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;./smart_cam.dart&#39;</span><span>;
+</span><span>
+</span><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>  </span><span style="color:#ebcb8b;">WidgetsFlutterBinding</span><span>.</span><span style="color:#8fa1b3;">ensureInitialized</span><span>();
+</span><span>  </span><span style="color:#ebcb8b;">Gemini</span><span>.</span><span style="color:#8fa1b3;">init</span><span>(apiKey: </span><span style="color:#a3be8c;">&#39;your key here&#39;</span><span>);
+</span><span>  </span><span style="color:#8fa1b3;">runApp</span><span>(</span><span style="color:#b48ead;">const </span><span style="color:#ebcb8b;">MyApp</span><span>());
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">class </span><span style="color:#ebcb8b;">MyApp </span><span style="color:#b48ead;">extends </span><span style="color:#ebcb8b;">StatelessWidget</span><span> {
+</span><span>  </span><span style="color:#b48ead;">const </span><span style="color:#ebcb8b;">MyApp</span><span>({</span><span style="color:#bf616a;">super</span><span>.key});
+</span><span>
+</span><span>  </span><span style="color:#b48ead;">@override
+</span><span>  </span><span style="color:#ebcb8b;">Widget </span><span style="color:#8fa1b3;">build</span><span>(</span><span style="color:#ebcb8b;">BuildContext</span><span> context) {
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#ebcb8b;">MaterialApp</span><span>(
+</span><span>      debugShowCheckedModeBanner: </span><span style="color:#d08770;">false</span><span>,
+</span><span>      title: </span><span style="color:#a3be8c;">&#39;Flutter Demo&#39;</span><span>,
+</span><span>      home: </span><span style="color:#ebcb8b;">SmartCam</span><span>(</span><span style="color:#a3be8c;">&#39;hindi&#39;</span><span>),
+</span><span>    );
+</span><span>  }
+</span><span>}
+</span><span>
+</span></code></pre>
+<p>smart_cam.dart</p>
+<pre data-lang="dart" style="background-color:#2b303b;color:#c0c5ce;" class="language-dart "><code class="language-dart" data-lang="dart"><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;dart:typed_data&#39;</span><span>;
+</span><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;package:camera/camera.dart&#39;</span><span>;
+</span><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;package:flutter/material.dart&#39;</span><span>;
+</span><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;package:flutter_gemini/flutter_gemini.dart&#39;</span><span>;
+</span><span style="color:#b48ead;">import </span><span style="color:#a3be8c;">&#39;package:flutter_tts/flutter_tts.dart&#39;</span><span>;
+</span><span>
+</span><span style="color:#b48ead;">class </span><span style="color:#ebcb8b;">SmartCam </span><span style="color:#b48ead;">extends </span><span style="color:#ebcb8b;">StatefulWidget</span><span> {
+</span><span>  </span><span style="color:#b48ead;">final </span><span style="color:#ebcb8b;">String</span><span> language;
+</span><span>  </span><span style="color:#ebcb8b;">SmartCam</span><span>(</span><span style="color:#bf616a;">this</span><span>.language);
+</span><span>
+</span><span>  </span><span style="color:#b48ead;">@override
+</span><span>  </span><span style="color:#ebcb8b;">State</span><span>&lt;</span><span style="color:#ebcb8b;">SmartCam</span><span>&gt; </span><span style="color:#8fa1b3;">createState</span><span>() =&gt; </span><span style="color:#ebcb8b;">_SmartCamState</span><span>();
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">class </span><span style="color:#ebcb8b;">_SmartCamState </span><span style="color:#b48ead;">extends </span><span style="color:#ebcb8b;">State</span><span>&lt;</span><span style="color:#ebcb8b;">SmartCam</span><span>&gt; {
+</span><span>  late </span><span style="color:#ebcb8b;">List</span><span>&lt;</span><span style="color:#ebcb8b;">CameraDescription</span><span>&gt; _cameras;
+</span><span>  </span><span style="color:#ebcb8b;">CameraController</span><span>? controller;
+</span><span>
+</span><span>  </span><span style="color:#ebcb8b;">bool</span><span> processing = </span><span style="color:#d08770;">false</span><span>;
+</span><span>  </span><span style="color:#ebcb8b;">Uint8List</span><span>? image;
+</span><span>  </span><span style="color:#ebcb8b;">String</span><span> description = </span><span style="color:#a3be8c;">&#39;&#39;</span><span>;
+</span><span>
+</span><span>  </span><span style="color:#b48ead;">final</span><span> gemini = </span><span style="color:#ebcb8b;">Gemini</span><span>.instance;
+</span><span>  
+</span><span>  </span><span style="color:#b48ead;">final</span><span> tts = </span><span style="color:#ebcb8b;">FlutterTts</span><span>();
+</span><span>
+</span><span>  </span><span style="color:#b48ead;">@override
+</span><span>  </span><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">initState</span><span>() {
+</span><span>    </span><span style="color:#bf616a;">super</span><span>.</span><span style="color:#8fa1b3;">initState</span><span>();
+</span><span>    </span><span style="color:#b48ead;">if</span><span> (widget.language.</span><span style="color:#8fa1b3;">toLowerCase</span><span>() == </span><span style="color:#a3be8c;">&#39;hindi&#39;</span><span>) {
+</span><span>      tts.</span><span style="color:#8fa1b3;">setLanguage</span><span>(</span><span style="color:#a3be8c;">&#39;hi&#39;</span><span>);
+</span><span>    }
+</span><span>    </span><span style="color:#8fa1b3;">availableCameras</span><span>().</span><span style="color:#8fa1b3;">then</span><span>((value) {
+</span><span>      _cameras = value;
+</span><span>      controller = </span><span style="color:#ebcb8b;">CameraController</span><span>(_cameras[</span><span style="color:#d08770;">0</span><span>], </span><span style="color:#ebcb8b;">ResolutionPreset</span><span>.max);
+</span><span>      controller?.</span><span style="color:#8fa1b3;">initialize</span><span>().</span><span style="color:#8fa1b3;">then</span><span>((_) {
+</span><span>        </span><span style="color:#b48ead;">if</span><span> (!mounted) {
+</span><span>          </span><span style="color:#b48ead;">return</span><span>;
+</span><span>        }
+</span><span>        </span><span style="color:#8fa1b3;">setState</span><span>(() {});
+</span><span>      }).</span><span style="color:#8fa1b3;">catchError</span><span>((</span><span style="color:#ebcb8b;">Object</span><span> e) {
+</span><span>      });
+</span><span>    });
+</span><span>  }
+</span><span>
+</span><span>  </span><span style="color:#ebcb8b;">List</span><span>&lt;</span><span style="color:#ebcb8b;">Widget</span><span>&gt; </span><span style="color:#8fa1b3;">_showImage</span><span>(</span><span style="color:#ebcb8b;">CameraController</span><span>? controller, </span><span style="color:#ebcb8b;">Uint8List</span><span>? image) {
+</span><span>    </span><span style="color:#b48ead;">if</span><span> (controller == </span><span style="color:#d08770;">null</span><span>) {
+</span><span>      </span><span style="color:#b48ead;">return </span><span>&lt;</span><span style="color:#ebcb8b;">Widget</span><span>&gt;[
+</span><span>        </span><span style="color:#ebcb8b;">SizedBox</span><span>(
+</span><span>          width: </span><span style="color:#d08770;">1</span><span>,
+</span><span>        )
+</span><span>      ];
+</span><span>    } </span><span style="color:#b48ead;">else if</span><span> (processing == </span><span style="color:#d08770;">false</span><span>) {
+</span><span>      </span><span style="color:#b48ead;">return </span><span>&lt;</span><span style="color:#ebcb8b;">Widget</span><span>&gt;[
+</span><span>        </span><span style="color:#ebcb8b;">CameraPreview</span><span>(controller),
+</span><span>      ];
+</span><span>    } </span><span style="color:#b48ead;">else if</span><span> (processing == </span><span style="color:#d08770;">true</span><span>) {
+</span><span>      </span><span style="color:#b48ead;">return </span><span>&lt;</span><span style="color:#ebcb8b;">Widget</span><span>&gt;[
+</span><span>        </span><span style="color:#ebcb8b;">Image</span><span>.</span><span style="color:#8fa1b3;">memory</span><span>(image!),
+</span><span>        </span><span style="color:#ebcb8b;">Positioned</span><span>.</span><span style="color:#8fa1b3;">fill</span><span>(
+</span><span>            child: </span><span style="color:#ebcb8b;">Center</span><span>(child: </span><span style="color:#ebcb8b;">CircularProgressIndicator</span><span>.</span><span style="color:#8fa1b3;">adaptive</span><span>()))
+</span><span>      ];
+</span><span>    } </span><span style="color:#b48ead;">else</span><span> {
+</span><span>      </span><span style="color:#b48ead;">return </span><span>&lt;</span><span style="color:#ebcb8b;">Widget</span><span>&gt;[
+</span><span>        </span><span style="color:#ebcb8b;">CameraPreview</span><span>(controller),
+</span><span>      ];
+</span><span>    }
+</span><span>  }
+</span><span>
+</span><span>  </span><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">_describeImage</span><span>() </span><span style="color:#b48ead;">async</span><span> {
+</span><span>    </span><span style="color:#b48ead;">var</span><span> picture = </span><span style="color:#b48ead;">await</span><span> controller?.</span><span style="color:#8fa1b3;">takePicture</span><span>();
+</span><span>    </span><span style="color:#b48ead;">var</span><span> b = </span><span style="color:#b48ead;">await</span><span> picture?.</span><span style="color:#8fa1b3;">readAsBytes</span><span>();
+</span><span>    </span><span style="color:#8fa1b3;">setState</span><span>(() {
+</span><span>      processing = </span><span style="color:#d08770;">true</span><span>;
+</span><span>      image = b;
+</span><span>    });
+</span><span>    </span><span style="color:#b48ead;">var</span><span> response = </span><span style="color:#b48ead;">await</span><span> gemini.</span><span style="color:#8fa1b3;">textAndImage</span><span>(
+</span><span>        text:
+</span><span>            </span><span style="color:#a3be8c;">&quot;What does this show? Respond in ${</span><span style="color:#bf616a;">widget.language</span><span style="color:#a3be8c;">} language with 3-4 lines&quot;</span><span>,
+</span><span>        images: [b!]);
+</span><span>    </span><span style="color:#b48ead;">var</span><span> p = response?.outputPart </span><span style="color:#b48ead;">as </span><span style="color:#ebcb8b;">TextPart</span><span>;
+</span><span>    </span><span style="color:#8fa1b3;">setState</span><span>(() {
+</span><span>      description = p.text;
+</span><span>      processing = </span><span style="color:#d08770;">false</span><span>;
+</span><span>    });
+</span><span>    tts.</span><span style="color:#8fa1b3;">speak</span><span>(p.text);
+</span><span>  }
+</span><span>
+</span><span>  </span><span style="color:#b48ead;">@override
+</span><span>  </span><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">dispose</span><span>() {
+</span><span>    controller?.</span><span style="color:#8fa1b3;">dispose</span><span>();
+</span><span>    </span><span style="color:#bf616a;">super</span><span>.</span><span style="color:#8fa1b3;">dispose</span><span>();
+</span><span>  }
+</span><span>
+</span><span>  </span><span style="color:#b48ead;">@override
+</span><span>  </span><span style="color:#ebcb8b;">Widget </span><span style="color:#8fa1b3;">build</span><span>(</span><span style="color:#ebcb8b;">BuildContext</span><span> context) {
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#ebcb8b;">Scaffold</span><span>(
+</span><span>        appBar: </span><span style="color:#ebcb8b;">AppBar</span><span>(
+</span><span>          title: </span><span style="color:#ebcb8b;">Text</span><span>(</span><span style="color:#a3be8c;">&quot;SmartCam&quot;</span><span>),
+</span><span>          backgroundColor: </span><span style="color:#ebcb8b;">Colors</span><span>.black54,
+</span><span>          foregroundColor: </span><span style="color:#ebcb8b;">Colors</span><span>.white,
+</span><span>        ),
+</span><span>        body: </span><span style="color:#ebcb8b;">Center</span><span>(
+</span><span>          child: </span><span style="color:#ebcb8b;">GestureDetector</span><span>(
+</span><span>            onLongPress: () {
+</span><span>              </span><span style="color:#8fa1b3;">_describeImage</span><span>();
+</span><span>            },
+</span><span>            child: </span><span style="color:#ebcb8b;">Column</span><span>(
+</span><span>                crossAxisAlignment: </span><span style="color:#ebcb8b;">CrossAxisAlignment</span><span>.center,
+</span><span>                children: [
+</span><span>                  </span><span style="color:#ebcb8b;">Expanded</span><span>(
+</span><span>                    child: </span><span style="color:#ebcb8b;">Container</span><span>(
+</span><span>                      color: </span><span style="color:#ebcb8b;">Colors</span><span>.black,
+</span><span>                      child: </span><span style="color:#ebcb8b;">Container</span><span>(
+</span><span>                          height:
+</span><span>                              </span><span style="color:#d08770;">2 </span><span>* (</span><span style="color:#ebcb8b;">MediaQuery</span><span>.</span><span style="color:#8fa1b3;">sizeOf</span><span>(context).height / </span><span style="color:#d08770;">3</span><span>) - </span><span style="color:#d08770;">60</span><span>,
+</span><span>                          decoration: </span><span style="color:#ebcb8b;">BoxDecoration</span><span>(
+</span><span>                              border:
+</span><span>                                  </span><span style="color:#ebcb8b;">Border</span><span>.</span><span style="color:#8fa1b3;">all</span><span>(color: </span><span style="color:#ebcb8b;">Colors</span><span>.black, width: </span><span style="color:#d08770;">13</span><span>)),
+</span><span>                          child: </span><span style="color:#ebcb8b;">Center</span><span>(
+</span><span>                              child: </span><span style="color:#ebcb8b;">ClipRRect</span><span>(
+</span><span>                                  borderRadius: </span><span style="color:#ebcb8b;">BorderRadius</span><span>.</span><span style="color:#8fa1b3;">circular</span><span>(</span><span style="color:#d08770;">10</span><span>),
+</span><span>                                  child: </span><span style="color:#ebcb8b;">Stack</span><span>(
+</span><span>                                      children:
+</span><span>                                          </span><span style="color:#8fa1b3;">_showImage</span><span>(controller, image))))),
+</span><span>                    ),
+</span><span>                  ),
+</span><span>                  </span><span style="color:#ebcb8b;">Align</span><span>(
+</span><span>                      alignment: </span><span style="color:#ebcb8b;">Alignment</span><span>.center,
+</span><span>                      child: </span><span style="color:#ebcb8b;">Container</span><span>(
+</span><span>                          width: </span><span style="color:#ebcb8b;">MediaQuery</span><span>.</span><span style="color:#8fa1b3;">sizeOf</span><span>(context).width,
+</span><span>                          color: </span><span style="color:#ebcb8b;">Colors</span><span>.black54,
+</span><span>                          child: </span><span style="color:#ebcb8b;">Container</span><span>(
+</span><span>                              padding: </span><span style="color:#ebcb8b;">EdgeInsets</span><span>.</span><span style="color:#8fa1b3;">all</span><span>(</span><span style="color:#d08770;">10</span><span>),
+</span><span>                              margin: </span><span style="color:#ebcb8b;">EdgeInsets</span><span>.</span><span style="color:#8fa1b3;">all</span><span>(</span><span style="color:#d08770;">10</span><span>),
+</span><span>                              decoration: </span><span style="color:#ebcb8b;">BoxDecoration</span><span>(
+</span><span>                                color: </span><span style="color:#ebcb8b;">Colors</span><span>.black54,
+</span><span>                                borderRadius: </span><span style="color:#ebcb8b;">BorderRadius</span><span>.</span><span style="color:#8fa1b3;">circular</span><span>(</span><span style="color:#d08770;">20</span><span>),
+</span><span>                              ),
+</span><span>                              child: </span><span style="color:#ebcb8b;">Text</span><span>(
+</span><span>                                description,
+</span><span>                                style: </span><span style="color:#ebcb8b;">TextStyle</span><span>(color: </span><span style="color:#ebcb8b;">Colors</span><span>.white),
+</span><span>                              ))))
+</span><span>                ]),
+</span><span>          ),
+</span><span>        ));
+</span><span>  }
+</span><span>}
+</span><span>
+</span></code></pre>
+<p>The code of this sits at GitHub repository: <a rel="noopener" target="_blank" href="https://github.com/imhemish/smart_cam">https://github.com/imhemish/smart_cam</a>.</p>
+
+    </div>
+
+
+
+    <!-- Subscribe popup -->
+    <div id="popupOverlay">
+      <div id="popup">
+        <button id="close-btn" class="close-btn">&times;</button>
+          <h2>Subscribe to my posts</h2>
+          <p>Stay updated with my posts via Email or Atom</p>
+          <button onclick="subscribe()">Subscribe</button>
+      </div>
+  </div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const popupOverlay = document.getElementById('popupOverlay');
+    let popupShown = false;
+
+    // Check if URL starts with /posts
+    if (window.location.pathname.startsWith('/posts')) {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const scrollHeight = document.documentElement.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight;
+
+            // Show popup when near the bottom of the page
+            if (!popupShown && scrollHeight - scrollTop - clientHeight < 100) {
+                popupOverlay.style.display = 'flex';
+                popupShown = true;
+            }
+        });
+    }
+
+    // Subscribe function
+    window.subscribe = () => {
+        window.location.pathname = "/subscribe"
+        popupOverlay.style.display = 'none';
+    };
+
+    // Close popup when clicking outside
+    popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay) {
+            popupOverlay.style.display = 'none';
+        }
+    });
+
+    // Close popup with Esc key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && popupShown) {
+            popupOverlay.style.display = 'none';
+        }
+    });
+
+    const closeButton = document.getElementById('close-btn');
+
+    closeButton.addEventListener('click', () => {
+        popupOverlay.style.display = 'none';
+    });
+});
+</script>
+  <!-- Subscribe popup -->
+
+</article>
+<script>
+document.querySelectorAll('pre').forEach((pre) => {
+    // Create a copy button
+    const button = document.createElement('button');
+    button.innerText = 'Copy';
+    button.className = 'copy-btn';
+  
+    // Add click event to copy the content
+    button.addEventListener('click', () => {
+      // Create a temporary container to hold the text
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = pre.innerHTML; // Get the HTML of the pre block
+      tempDiv.querySelector('.copy-btn')?.remove(); // Remove the button from the content
+  
+      // Copy only the cleaned text content
+      const code = tempDiv.innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        button.innerText = 'Copied!';
+        setTimeout(() => (button.innerText = 'Copy'), 2000);
+      }).catch(() => {
+        button.innerText = 'Failed!';
+      });
+    });
+  
+    // Append the button to the pre element
+    pre.style.position = 'relative';
+    pre.appendChild(button);
+  });
+</script>
+
+    
+  </main>
+
+  
+
+  <!-- Footer -->
+  <footer>
+    <div id="contact">
+      Links: <br><br>
+      <nav>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;imhemish"><button>LinkedIn</button></a>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;github.com&#x2F;imhemish"><button>GitHub</button></a>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@hemish:matrix.org"><button>Matrix</button></a>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;telegram.me&#x2F;imported_maal"><button>Telegram</button></a>
+        
+        <a target="_blank" rel="me" href="mailto:hemish04082005@gmail.com"><button>Email</button></a>
+        
+        <a target="_blank" rel="me" href="https:&#x2F;&#x2F;instagram.com&#x2F;imhemish"><button>Instagram</button></a>
+        
+      </nav>
+    </div>
+    <br>
+    <hr><br>
+    Special thanks to: <br><br>
+    <nav>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;bugswriter.com">
+          <img src="https:&#x2F;&#x2F;bugswriter.com&#x2F;favicon.ico" height=30 width=30 alt="BugsWriter">
+        </a>
+      </button>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;India">
+          <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;4&#x2F;41&#x2F;Flag_of_India.svg" height=30 width=30 alt="India">
+        </a>
+      </button>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;">
+          <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;8&#x2F;80&#x2F;Wikipedia-logo-v2.svg" height=30 width=30 alt="Wikipedia">
+        </a>
+      </button>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;gnome.org">
+          <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;68&#x2F;Gnomelogo.svg" height=30 width=30 alt="GNOME">
+        </a>
+      </button>
+      
+      <button>
+        <a target="_blank" href="https:&#x2F;&#x2F;kernel.org">
+          <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;a&#x2F;af&#x2F;Tux.png" height=30 width=30 alt="Linux">
+        </a>
+      </button>
+      
+    </nav>
+    <br>(Not endorsed by any of these)
+    <br><br>
+    &copy Copyright 2025 <a href="/">Hemish</a>. Few rights reserved:
+    The content on this site is available under <a href="https://creativecommons.org/licenses/by/4.0/legalcode"
+      target="_blank"> CC-BY-4.0 license</a>, that is you can use the content as long as you credit me and list this
+    site as a source.
+  </footer>
+
+  <script src="/elasticlunr.min.js"></script>
+  <script src="/search_index.en.js"></script>
+  <script src="/js/search.js"></script>
+</body>
+
+</html>

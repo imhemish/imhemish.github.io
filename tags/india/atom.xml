@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Hemish - india</title>
+    <link rel="self" type="application/atom+xml" href="https://hemish.net/tags/india/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://hemish.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-04-16T00:00:00+00:00</updated>
+    <id>https://hemish.net/tags/india/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Duniya Ki Sair Kar lo - Around the World in 8 dollars</title>
+        <published>2023-04-16T00:00:00+00:00</published>
+        <updated>2023-04-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/around-the-world-in-eight-dollars/"/>
+        <id>https://hemish.net/posts/around-the-world-in-eight-dollars/</id>
+        
+        <summary type="html">&lt;p&gt;The song &#x27;Duniya Ki Sair Kar Lo&#x27; which was released even before my parents were born, has got a profound and reserved place in my heart. Let&#x27;s see why!&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>

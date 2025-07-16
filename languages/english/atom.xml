@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Hemish - english</title>
+    <link rel="self" type="application/atom+xml" href="https://hemish.net/languages/english/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://hemish.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-07-22T00:00:00+00:00</updated>
+    <id>https://hemish.net/languages/english/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Compiler दोस्त</title>
+        <published>2023-07-22T00:00:00+00:00</published>
+        <updated>2023-07-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/compiler-dost/"/>
+        <id>https://hemish.net/poems/compiler-dost/</id>
+        
+        <summary type="html">&lt;p&gt;Code कर रहा था मैं,&lt;br &#x2F;&gt;
+Unhandled exception आ गई,&lt;br &#x2F;&gt;
+Documentation पढ रहा था मैं,&lt;br &#x2F;&gt;
+Exception की जङ समझ में आ गई।&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>School farewell poem</title>
+        <published>2023-07-21T00:00:00+00:00</published>
+        <updated>2023-07-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/school-farewell/"/>
+        <id>https://hemish.net/poems/school-farewell/</id>
+        
+        <summary type="html">&lt;p&gt;I wrote this trilingual poem for my school farewell this year (held in February 2023):&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Trauma</title>
+        <published>2023-04-04T00:00:00+00:00</published>
+        <updated>2023-04-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/the-trauma/"/>
+        <id>https://hemish.net/poems/the-trauma/</id>
+        
+        <summary type="html">&lt;p&gt;Rethinking about regretted life choices, I wrote this:&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Talents and qualities of my classmates</title>
+        <published>2022-11-24T00:00:00+00:00</published>
+        <updated>2022-11-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/talents-and-qualities-of-my-classmates/"/>
+        <id>https://hemish.net/poems/talents-and-qualities-of-my-classmates/</id>
+        
+        <summary type="html">&lt;p&gt;In Grade 10, during the period where studies were semi-online (lockdown was just opened, and we started going to school for reduced hours optionally), our English teacher Sujata ma&#x27;am provided us with projects we have to do for final evaluation. One of these was to write a song on the topic &quot;Talents and qualities of my classmates&quot;.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Blank Face</title>
+        <published>2022-11-22T00:00:00+00:00</published>
+        <updated>2022-11-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/the-blank-face/"/>
+        <id>https://hemish.net/poems/the-blank-face/</id>
+        
+        <summary type="html">&lt;p&gt;One day I had a dream, so I wrote about it:&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>

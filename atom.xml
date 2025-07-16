@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Hemish</title>
+    <link rel="self" type="application/atom+xml" href="https://hemish.net/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://hemish.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-07-16T00:00:00+00:00</updated>
+    <id>https://hemish.net/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Wishlist</title>
+        <published>2025-07-16T00:00:00+00:00</published>
+        <updated>2025-07-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/public_shares/wishlist/"/>
+        <id>https://hemish.net/public_shares/wishlist/</id>
+        
+        <content type="html" xml:base="https://hemish.net/public_shares/wishlist/">&lt;p&gt;Here is the list of things in my wishlist, so you can buy any of it for me, if someone buys something for me, please notify so I can remove it from here.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;meesho-finds&quot;&gt;Meesho Finds&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.meesho.com&#x2F;portable-heat-sealer-cutter-with-usb-charging-cable-2-in-1-mini-food-bag-re-seller-pack-of-1&#x2F;p&#x2F;97yqpk&quot;&gt;Package Heat Sealer ~ ₹160&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.meesho.com&#x2F;geometric-black-stainless-steel-pendant-necklace-with-chain-for-men-boys&#x2F;p&#x2F;7rqo9d&quot;&gt;Geometric Pendant ~ ₹160&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.meesho.com&#x2F;2-in-1-thermal-paper-correction-fluid-with-unboxing-knife-thermal-paper-data-fluid-information-anti-leakage-protection-correction-fluid-for-package-labels-bills&#x2F;p&#x2F;95jnv2&quot;&gt;Thermal Bill Eraser and Cutter ~ ₹190&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.meesho.com&#x2F;ymir-nap-eye-mask-for-sleeping-smooth-sleeping-mask-sleep-mask-with-adjustable-strap&#x2F;p&#x2F;4a3pi8&quot;&gt;Sleep Eye Mask ~ ₹110 &lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.meesho.com&#x2F;lyud-1pcs-multi-functional-storage-peelervegetable-peelerfruit-peeler-peeler-with-containersuitable-for-home-and-kitchen-usemulticolor&#x2F;p&#x2F;7s2i2e&quot;&gt;Peeler with Storage ~ ₹130&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.meesho.com&#x2F;nano-tape-multipurpose-double-sided-tape-adhesive-silicone-tape-heavy-duty-heat-resistant-multi-functional-removable-washable-reusable-anti-slip-gel-nano-grip-tape-grip-tape&#x2F;p&#x2F;871e4j&quot;&gt;Transparent Double Tape ~ ₹90&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tech-stuff&quot;&gt;Tech Stuff&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mivi Fort Q60&lt;&#x2F;li&gt;
+&lt;li&gt;Any cheap VR Box within the range of 1000 rupees&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>24 घंटे</title>
+        <published>2025-07-05T00:00:00+00:00</published>
+        <updated>2025-07-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/24-ghante/"/>
+        <id>https://hemish.net/poems/24-ghante/</id>
+        
+        <content type="html" xml:base="https://hemish.net/poems/24-ghante/">&lt;p&gt;क्या करें जनाब 24 घंटे कम पड़ जाया करते हैं&lt;br &#x2F;&gt;
+आप कहिए तो माँग लें कुदरत से और&lt;br &#x2F;&gt;
+पर वक्त की कमी से ही आप याद आया करते हैं&lt;br &#x2F;&gt;
+कहें तो ना किया करें आपको याद और&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Helped a Homie with BITSCTF Using Python Internals</title>
+        <published>2025-03-20T00:00:00+00:00</published>
+        <updated>2025-03-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/ctf-bits-skyeliner/"/>
+        <id>https://hemish.net/posts/ctf-bits-skyeliner/</id>
+        
+        <content type="html" xml:base="https://hemish.net/posts/ctf-bits-skyeliner/">&lt;p&gt;A random Sunday at home, I get a call from my friend &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;skyeliner.github.io&quot;&gt;skye&lt;&#x2F;a&gt; (asli naam nhi likhne de rha (he is not letting me write his original name)). He was, as usual, fiddling with cybersec stuff, sparing time from his busy gaming schedule. Initially, I ignored the call, but then answered. He was participating in &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ctftime.org&#x2F;event&#x2F;2607&#x2F;&quot;&gt;BITSCTF &#x27;25&lt;&#x2F;a&gt;. He quickly asks me to have a look at a python file he sent me.&lt;&#x2F;p&gt;
+&lt;p&gt;I, excited, opened the file, and I see the following &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.python.org&#x2F;moin&#x2F;Powerful%20Python%20One-Liners&quot;&gt;Python one-liner&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Python obfuscation by freecodingtools.org
+&lt;&#x2F;span&gt;&lt;span&gt;                    
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_ &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;__ &lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;__import__&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;zlib&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;decompress&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;__import__&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;base64&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;b64decode&lt;&#x2F;span&gt;&lt;span&gt;(__[::-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;]));&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;exec&lt;&#x2F;span&gt;&lt;span&gt;((&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_&lt;&#x2F;span&gt;&lt;span&gt;)(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;==QfWoizP8&#x2F;vvPv&#x2F;tu.........a lot of random stuff...........WiUxyW7lVwJe&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;aahhhhh... so much random characters&lt;&#x2F;p&gt;
+&lt;p&gt;The goal was to find a &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Capture_the_flag_(cybersecurity)&quot;&gt;flag&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s first understand what the code is doing:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First, a &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.python.org&#x2F;3&#x2F;tutorial&#x2F;controlflow.html#lambda-expressions&quot;&gt;lambda function&lt;&#x2F;a&gt; is being used. A lambda function allows definition of a function in a single line. It takes an argument (here &lt;code&gt;__&lt;&#x2F;code&gt;). It is followed by &lt;code&gt;:&lt;&#x2F;code&gt; which defines what the function should return. The function is assigned into a variable &lt;code&gt;_&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;__import__(&#x27;zlib&#x27;).decompress(...)&lt;&#x2F;code&gt; is equivalent to the following, thanks to Python&#x27;s &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Metaprogramming&quot;&gt;metaprogramming&lt;&#x2F;a&gt; functions:&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;zlib
+&lt;&#x2F;span&gt;&lt;span&gt;zlib.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;decompress&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;...&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Similarly, &lt;code&gt;__import__(&#x27;base64&#x27;).b64decode(...)&lt;&#x2F;code&gt; is equivalent to the following:&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;base64
+&lt;&#x2F;span&gt;&lt;span&gt;base64.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;decode&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;...&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;__[::-1])&lt;&#x2F;code&gt;, as everyone knows, reverses the string &lt;code&gt;__&lt;&#x2F;code&gt; (which is the argument for the function).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;;&lt;&#x2F;code&gt;: A lot of people don&#x27;t know, but Python supports semicolons. It, like in any other languages, can be used to separate two statements. It&#x27;s not necessary, and also not a standard, but is useful to make one-liners (as here two python statements are there in a single line)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;exec(...)&lt;&#x2F;code&gt;: It treats strings as Python statements, for example &lt;code&gt;exec(&quot;print(&#x27;Hello World&#x27;)&quot;)&lt;&#x2F;code&gt; would treat the string as a Python statement and execute it, resulting in output &lt;code&gt;Hello World&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The random string which is given is actually encoded string, given as a raw binary string (base64 takes binary strings by default). The &lt;code&gt;_&lt;&#x2F;code&gt; function is thus called on the random string, passing the random string as the argument &lt;code&gt;__&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In essence, the function first reverses the string passed to it, decodes it via &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Base64&quot;&gt;base64&lt;&#x2F;a&gt;, and then decompresses it via &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Zlib&quot;&gt;zlib&lt;&#x2F;a&gt;. This is called on the random string.&lt;&#x2F;p&gt;
+&lt;p&gt;I was feeling sus(picious) about the code as it is random string, and upon decoding, it could be any malicious code, and it is being run by &lt;code&gt;exec&lt;&#x2F;code&gt;. But, I took the riks, and executed the code. What output do I get?&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;Hello, World!
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Looks like a normal &quot;Hello World!&quot;, huh&lt;&#x2F;p&gt;
+&lt;p&gt;I replaced the &lt;code&gt;exec&lt;&#x2F;code&gt; with a &lt;code&gt;print&lt;&#x2F;code&gt; to see what code is being executed, instead of seeing the &quot;Hello World!&quot; output of the code:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Python obfuscation by freecodingtools.org
+&lt;&#x2F;span&gt;&lt;span&gt;                    
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_ &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;__ &lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;__import__&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;zlib&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;decompress&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;__import__&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;base64&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;b64decode&lt;&#x2F;span&gt;&lt;span&gt;(__[::-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;]));&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;((&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_&lt;&#x2F;span&gt;&lt;span&gt;)(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;==QfWoizP8&#x2F;vvPv&#x2F;tu.......................a lot of random stuff............................WiUxyW7lVwJe&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;))
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Running this, I get the output:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;exec((_)(b&amp;#39;=cE3wh5B&#x2F;&#x2F;7.....a lot of random stuff..............xyWzlNwJe&amp;#39;))&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;W-w-whaaaatttt? The output is also a new python code using that function. I can&#x27;t just exec it again. I need to find the stuff encoded in it. So, I strip out the &lt;code&gt;b&quot;exec(&lt;&#x2F;code&gt; at start and &lt;code&gt;)&quot;&lt;&#x2F;code&gt; at the end, to retrieve the contained string, and not execute it. I add the &lt;code&gt;print&lt;&#x2F;code&gt; statement to display it. In essence, I executed this:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_ &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;__ &lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;__import__&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;zlib&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;decompress&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;__import__&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;base64&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;b64decode&lt;&#x2F;span&gt;&lt;span&gt;(__[::-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;]));
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;((&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_&lt;&#x2F;span&gt;&lt;span&gt;)(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;=cE3wh5B.........a lot of random stuff.....yWzlNwJe&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The string passed in this is not the string given initially. This string is the one generated by the run of program.&lt;&#x2F;p&gt;
+&lt;p&gt;Executing the above code, I get the output:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;exec((_)(b&amp;#39;==AiELbHP4&#x2F;&#x2F;&#x2F;....a lot of random stuff......Bt7jfZBVgcxyW0lVwJe&amp;#39;))&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;aaaahhhhh.... another one&lt;&#x2F;p&gt;
+&lt;p&gt;How long should this go? I visited the website given in comment in the initial program: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;freecodingtools.org&quot;&gt;freecodingtools.org&lt;&#x2F;a&gt;. From the homepage, I found &quot;Python Obfuscator&quot;, which says:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Python code is ran through this algorithm 100s of times, each time making it more secure and unreadable.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;100s? aah. I wrote a for loop to automate this decoding the string.&lt;&#x2F;p&gt;
+&lt;p&gt;But where to break the loop? The loop should break when the decoding is no longer possible, i.e. an exception is raised by any of the decoding functions base64decode or zlib.decompress&lt;&#x2F;p&gt;
+&lt;p&gt;This is the loop I wrote:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;decode_obfuscated = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;__ &lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;__import__&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;zlib&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;decompress&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;__import__&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;base64&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;b64decode&lt;&#x2F;span&gt;&lt;span&gt;(__[::-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;]))
+&lt;&#x2F;span&gt;&lt;span&gt;string = &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;==AiELbHP4&#x2F;&#x2F;&#x2F;....a lot of random stuff......Bt7jfZBVgcxyW0lVwJe&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;100&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;try&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;        temp = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;decode_obfuscated&lt;&#x2F;span&gt;&lt;span&gt;(string)
+&lt;&#x2F;span&gt;&lt;span&gt;        string = temp[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;11&lt;&#x2F;span&gt;&lt;span&gt;:-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span&gt;        
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;except&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(temp)
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(string)
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;break
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;The string slicing  [11:-3] strips out &lt;code&gt;b&quot;exec((_)(b&#x27;&lt;&#x2F;code&gt; from start and &lt;code&gt;&#x27;))&quot;&lt;&#x2F;code&gt; from end, to get the string of new iteration.&lt;&#x2F;li&gt;
+&lt;li&gt;When the decompression or decoding is no longer possible, exception is raised and loop is terminated via &#x27;break&#x27; statement.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Running the program:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;b&amp;#39;# Online Python Compiler\n\nprint(&amp;quot;Hello, World!&amp;quot;)\n# BITSCTF{obfuscation_and_then_some_more_obfuscation_4a4a4a4a}&amp;#39;
+&lt;&#x2F;span&gt;&lt;span&gt;b&amp;#39;thon Compiler\n\nprint(&amp;quot;Hello, World!&amp;quot;)\n# BITSCTF{obfuscation_and_then_some_more_obfuscation_4a4a4a&amp;#39;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Flag found:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;obfuscation_and_then_some_more_obfuscation_4a4a4a4a&lt;&#x2F;code&gt;, bye&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>housekeeping</title>
+        <published>2025-02-19T00:00:00+00:00</published>
+        <updated>2025-02-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/public_shares/housekeeping/"/>
+        <id>https://hemish.net/public_shares/housekeeping/</id>
+        
+        <content type="html" xml:base="https://hemish.net/public_shares/housekeeping/">&lt;h1 id=&quot;vc-sir-ka-app&quot;&gt;vc sir ka app&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;sign up with google, with role (attendant, coordinator, supervisor) and employee id and name&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;sign in leads to correct page according to user role&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;if supervisor, has menu to select two things: attendance screen (can mark attendance of workers, will show only workers that come under that supervisor), overall status of checklists (jitni bhi checklists hain list view mein aayengi and unpe tap krne pe chech list dikhegi (table form mein) with fields like time last checked, name of worker, )&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;if overall coordinator: attendance overview (copy from supervisor, but shows all workers or possibly club in form of headed by each supervisor), and checklist overview by a list view first&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;if attendant, check lists and (if possible) their own attendance record&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Building SmartCam</title>
+        <published>2024-12-11T00:00:00+00:00</published>
+        <updated>2024-12-11T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/smart-cam/"/>
+        <id>https://hemish.net/posts/smart-cam/</id>
+        
+        <content type="html" xml:base="https://hemish.net/posts/smart-cam/">&lt;h2 id=&quot;what-are-we-going-to-build&quot;&gt;What are we going to build?&lt;&#x2F;h2&gt;
+&lt;p&gt;We are going to build a sample page of an app in flutter, which captures the image from camera, and then displays the description of the image, and also speaks it through description. The description is fetched through Gemini API.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;smart_cam.png&quot; alt=&quot;SmartCam Screen&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A system with minimum 8 gb of ram&lt;&#x2F;li&gt;
+&lt;li&gt;Flutter installed and configured on the system&lt;&#x2F;li&gt;
+&lt;li&gt;Flutter extension installed in VS Code&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;creating-new-project&quot;&gt;Creating new project&lt;&#x2F;h2&gt;
+&lt;p&gt;Visual Studio Code and other IDE&#x27;s provide us with ways to automatically create new flutter project with boiler plate code already written, along with all the build files.&lt;&#x2F;p&gt;
+&lt;p&gt;In VS Code, press Ctrl+Shift+P and type &#x27;Flutter&#x27;. You would see &lt;code&gt;Flutter: New Project&lt;&#x2F;code&gt;option. Click on the option, and you would be asked to select the folder you want to create project in. After selecting the folder, select &#x27;New Application&#x27;. Enter the name of the project, and the project structure would be created.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;understanding-directory-structure&quot;&gt;Understanding directory structure&lt;&#x2F;h2&gt;
+&lt;p&gt;Flutter follows a defined directory structure for the projects.&lt;&#x2F;p&gt;
+&lt;p&gt;Here are the most important sub-directories:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;android-ios-linux-macos-web-windows&quot;&gt;android, ios, linux, macos, web, windows&lt;&#x2F;h3&gt;
+&lt;p&gt;These hold platform-specific build files to run the project on these platforms&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;lib&quot;&gt;lib&lt;&#x2F;h3&gt;
+&lt;p&gt;The cross-platform code we write for the app&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;pubspec-yaml&quot;&gt;pubspec.yaml&lt;&#x2F;h3&gt;
+&lt;p&gt;Holds the package information&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;removing-the-unncessary-boilerplate&quot;&gt;Removing the unncessary boilerplate&lt;&#x2F;h2&gt;
+&lt;p&gt;By default, Flutter provides a counter app. First, remove the &lt;code&gt;MyHomePage&lt;&#x2F;code&gt; from &lt;code&gt;main.dart&lt;&#x2F;code&gt; and unncessary comments. You can also remove the color theme if you want.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;installing-the-required-packages&quot;&gt;Installing the required packages&lt;&#x2F;h2&gt;
+&lt;p&gt;We are going to require these packages for various functionalities:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;camera&quot;&gt;camera&lt;&#x2F;h3&gt;
+&lt;p&gt;Provides access to cameras on multiple platforms&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;flutter-tts&quot;&gt;flutter_tts&lt;&#x2F;h3&gt;
+&lt;p&gt;Provides Google&#x27;s Text To Speech Services on various platforms&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;flutter-gemini&quot;&gt;flutter_gemini&lt;&#x2F;h3&gt;
+&lt;p&gt;Provides access to Gemini inside a Flutter app&lt;&#x2F;p&gt;
+&lt;p&gt;You can install these packages by running these commands in the terminal:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;flutter&lt;&#x2F;span&gt;&lt;span&gt; pub add camera flutter_tts flutter_gemini
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;creating-the-smartcam-screen&quot;&gt;Creating the SmartCam screen&lt;&#x2F;h2&gt;
+&lt;p&gt;Create a new file in &lt;code&gt;lib&lt;&#x2F;code&gt; directory. Give it a suitable name, say &lt;code&gt;smart_cam.dart&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;We need to import Flutter&#x27;s &lt;code&gt;material&lt;&#x2F;code&gt; library to use widgets. We also need &lt;code&gt;flutter_gemini&lt;&#x2F;code&gt; and &lt;code&gt;flutter_tts&lt;&#x2F;code&gt;for the respective functionalities.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;package:flutter&#x2F;material.dart&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;package:flutter_gemini&#x2F;flutter_gemini.dart&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;package:flutter_tts&#x2F;flutter_tts.dart&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then we will be creating a page or screen. To do so, write &lt;code&gt;stf&lt;&#x2F;code&gt; in VS Code window, and it will automatically give you suggestion to create a &lt;code&gt;Stateful Widget&lt;&#x2F;code&gt;.  Give it a suitable name, say &lt;code&gt;SmartCam&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Inside the &lt;code&gt;SmartCam&lt;&#x2F;code&gt; class, create a variable &lt;code&gt;language&lt;&#x2F;code&gt; to store the language and create a constructor also:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;final &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt; language;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SmartCam&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;this&lt;&#x2F;span&gt;&lt;span&gt;.language);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;building-the-ui&quot;&gt;Building the UI&lt;&#x2F;h2&gt;
+&lt;p&gt;We need to override the &lt;code&gt;build&lt;&#x2F;code&gt; method in the state of the widget to specify the apperance of the widget.&lt;&#x2F;p&gt;
+&lt;p&gt;For now, write this code:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@override
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Widget &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;build&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BuildContext&lt;&#x2F;span&gt;&lt;span&gt; context) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Scaffold&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;        appBar: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;AppBar&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;          title: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Text&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;SmartCam&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;          backgroundColor: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black54,
+&lt;&#x2F;span&gt;&lt;span&gt;          foregroundColor: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.white,
+&lt;&#x2F;span&gt;&lt;span&gt;        ),
+&lt;&#x2F;span&gt;&lt;span&gt;        body: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Center&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;          child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;GestureDetector&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;            onLongPress: () {
+&lt;&#x2F;span&gt;&lt;span&gt;            },
+&lt;&#x2F;span&gt;&lt;span&gt;            child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Column&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                crossAxisAlignment: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CrossAxisAlignment&lt;&#x2F;span&gt;&lt;span&gt;.center,
+&lt;&#x2F;span&gt;&lt;span&gt;                children: [
+&lt;&#x2F;span&gt;&lt;span&gt;                  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Expanded&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                    child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Container&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                      color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black,
+&lt;&#x2F;span&gt;&lt;span&gt;                      child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Container&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                          height:
+&lt;&#x2F;span&gt;&lt;span&gt;                              &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2 &lt;&#x2F;span&gt;&lt;span&gt;* (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MediaQuery&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;sizeOf&lt;&#x2F;span&gt;&lt;span&gt;(context).height &#x2F; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;) - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;60&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;                          decoration: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BoxDecoration&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                              border:
+&lt;&#x2F;span&gt;&lt;span&gt;                                  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Border&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;all&lt;&#x2F;span&gt;&lt;span&gt;(color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black, width: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;13&lt;&#x2F;span&gt;&lt;span&gt;)),
+&lt;&#x2F;span&gt;&lt;span&gt;                          child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Center&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                              child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;ClipRRect&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                                  borderRadius: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BorderRadius&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;circular&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;                                  child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Placeholder&lt;&#x2F;span&gt;&lt;span&gt;()))),
+&lt;&#x2F;span&gt;&lt;span&gt;                    ),
+&lt;&#x2F;span&gt;&lt;span&gt;                  ),
+&lt;&#x2F;span&gt;&lt;span&gt;                  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Align&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                      alignment: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Alignment&lt;&#x2F;span&gt;&lt;span&gt;.center,
+&lt;&#x2F;span&gt;&lt;span&gt;                      child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Container&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                          width: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MediaQuery&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;sizeOf&lt;&#x2F;span&gt;&lt;span&gt;(context).width,
+&lt;&#x2F;span&gt;&lt;span&gt;                          color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black54,
+&lt;&#x2F;span&gt;&lt;span&gt;                          child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Container&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                              padding: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;EdgeInsets&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;all&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;                              margin: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;EdgeInsets&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;all&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;                              decoration: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BoxDecoration&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                                color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black54,
+&lt;&#x2F;span&gt;&lt;span&gt;                                borderRadius: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BorderRadius&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;circular&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;                              ),
+&lt;&#x2F;span&gt;&lt;span&gt;                              child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Text&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;Hello&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;                                style: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;TextStyle&lt;&#x2F;span&gt;&lt;span&gt;(color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.white),
+&lt;&#x2F;span&gt;&lt;span&gt;                              ))))
+&lt;&#x2F;span&gt;&lt;span&gt;                ]),
+&lt;&#x2F;span&gt;&lt;span&gt;          ),
+&lt;&#x2F;span&gt;&lt;span&gt;        ));
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To show this UI, inside &lt;code&gt;main.dart&lt;&#x2F;code&gt; file, use this &lt;code&gt;SmartCam(language: &#x27;english&#x27;)&lt;&#x2F;code&gt; as &lt;code&gt;home: &lt;&#x2F;code&gt; argument.&lt;&#x2F;p&gt;
+&lt;p&gt;Now, we have got the sample UI without the functionality.&lt;&#x2F;p&gt;
+&lt;p&gt;If you are running it in DartPad, the following code will work:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;package:flutter&#x2F;material.dart&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;WidgetsFlutterBinding&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;ensureInitialized&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;runApp&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;const &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MyApp&lt;&#x2F;span&gt;&lt;span&gt;());
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MyApp &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;extends &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;StatelessWidget&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;const &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MyApp&lt;&#x2F;span&gt;&lt;span&gt;({&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;super&lt;&#x2F;span&gt;&lt;span&gt;.key});
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@override
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Widget &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;build&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BuildContext&lt;&#x2F;span&gt;&lt;span&gt; context) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MaterialApp&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;      debugShowCheckedModeBanner: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;      title: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;Flutter Demo&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;      home: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SmartCam&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;hindi&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;    );
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SmartCam &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;extends &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;StatefulWidget&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;final &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt; language;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SmartCam&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;this&lt;&#x2F;span&gt;&lt;span&gt;.language);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@override
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;State&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SmartCam&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;createState&lt;&#x2F;span&gt;&lt;span&gt;() =&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;_SmartCamState&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;_SmartCamState &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;extends &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;State&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SmartCam&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@override
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Widget &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;build&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BuildContext&lt;&#x2F;span&gt;&lt;span&gt; context) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Scaffold&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;        appBar: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;AppBar&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;          title: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Text&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;SmartCam&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;          backgroundColor: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black54,
+&lt;&#x2F;span&gt;&lt;span&gt;          foregroundColor: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.white,
+&lt;&#x2F;span&gt;&lt;span&gt;        ),
+&lt;&#x2F;span&gt;&lt;span&gt;        body: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Center&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;          child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;GestureDetector&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;            onLongPress: () {},
+&lt;&#x2F;span&gt;&lt;span&gt;            child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Column&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                crossAxisAlignment: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CrossAxisAlignment&lt;&#x2F;span&gt;&lt;span&gt;.center,
+&lt;&#x2F;span&gt;&lt;span&gt;                children: [
+&lt;&#x2F;span&gt;&lt;span&gt;                  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Expanded&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                    child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Container&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                      color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black,
+&lt;&#x2F;span&gt;&lt;span&gt;                      child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Container&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                          height:
+&lt;&#x2F;span&gt;&lt;span&gt;                              &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2 &lt;&#x2F;span&gt;&lt;span&gt;* (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MediaQuery&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;sizeOf&lt;&#x2F;span&gt;&lt;span&gt;(context).height &#x2F; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;) - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;60&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;                          decoration: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BoxDecoration&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                              border:
+&lt;&#x2F;span&gt;&lt;span&gt;                                  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Border&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;all&lt;&#x2F;span&gt;&lt;span&gt;(color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black, width: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;13&lt;&#x2F;span&gt;&lt;span&gt;)),
+&lt;&#x2F;span&gt;&lt;span&gt;                          child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Center&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                              child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;ClipRRect&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                                  borderRadius: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BorderRadius&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;circular&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;                                  child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Placeholder&lt;&#x2F;span&gt;&lt;span&gt;()))),
+&lt;&#x2F;span&gt;&lt;span&gt;                    ),
+&lt;&#x2F;span&gt;&lt;span&gt;                  ),
+&lt;&#x2F;span&gt;&lt;span&gt;                  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Align&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                      alignment: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Alignment&lt;&#x2F;span&gt;&lt;span&gt;.center,
+&lt;&#x2F;span&gt;&lt;span&gt;                      child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Container&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                          width: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MediaQuery&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;sizeOf&lt;&#x2F;span&gt;&lt;span&gt;(context).width,
+&lt;&#x2F;span&gt;&lt;span&gt;                          color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black54,
+&lt;&#x2F;span&gt;&lt;span&gt;                          child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Container&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                              padding: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;EdgeInsets&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;all&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;                              margin: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;EdgeInsets&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;all&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;                              decoration: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BoxDecoration&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                                color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black54,
+&lt;&#x2F;span&gt;&lt;span&gt;                                borderRadius: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BorderRadius&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;circular&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;                              ),
+&lt;&#x2F;span&gt;&lt;span&gt;                              child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Text&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;Hello&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;                                style: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;TextStyle&lt;&#x2F;span&gt;&lt;span&gt;(color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.white),
+&lt;&#x2F;span&gt;&lt;span&gt;                              ))))
+&lt;&#x2F;span&gt;&lt;span&gt;                ]),
+&lt;&#x2F;span&gt;&lt;span&gt;          ),
+&lt;&#x2F;span&gt;&lt;span&gt;        ));
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;From this onwards, all of the code needs to be run on system, and can not run on DartPad.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;initialising-the-camera&quot;&gt;Initialising the camera&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;code&gt;camera&lt;&#x2F;code&gt; package provides the camera functionality. According to the documentation, we will create two variables in the state:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;late List&amp;lt;CameraDescription&amp;gt; _cameras;&lt;&#x2F;code&gt;- Holds the list of cameras available on the system. It would be initialised late when the state is initialised.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;CameraController? controller;&lt;&#x2F;code&gt;- Holds the &lt;code&gt;CameraController&lt;&#x2F;code&gt; for the current camera. It provides the methods to read camera feed. It can be null because certain systems may not have any camera.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Now, we will create an &lt;code&gt;void initState()&lt;&#x2F;code&gt; method according to the documentation:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@override
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;initState&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;super&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;initState&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;availableCameras&lt;&#x2F;span&gt;&lt;span&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;then&lt;&#x2F;span&gt;&lt;span&gt;((value) {
+&lt;&#x2F;span&gt;&lt;span&gt;      _cameras = value;
+&lt;&#x2F;span&gt;&lt;span&gt;      controller = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CameraController&lt;&#x2F;span&gt;&lt;span&gt;(_cameras[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;], &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;ResolutionPreset&lt;&#x2F;span&gt;&lt;span&gt;.max);
+&lt;&#x2F;span&gt;&lt;span&gt;      controller?.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;initialize&lt;&#x2F;span&gt;&lt;span&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;then&lt;&#x2F;span&gt;&lt;span&gt;((_) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; (!mounted) {
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;setState&lt;&#x2F;span&gt;&lt;span&gt;(() {});
+&lt;&#x2F;span&gt;&lt;span&gt;      }).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;catchError&lt;&#x2F;span&gt;&lt;span&gt;((&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Object&lt;&#x2F;span&gt;&lt;span&gt; e) {
+&lt;&#x2F;span&gt;&lt;span&gt;      });
+&lt;&#x2F;span&gt;&lt;span&gt;    });
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;displaying-the-camera-feed&quot;&gt;Displaying the camera feed&lt;&#x2F;h2&gt;
+&lt;p&gt;Now, we would first understand some other variables required in the state.&lt;&#x2F;p&gt;
+&lt;p&gt;Put these variables in the state:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;bool processing = false;
+&lt;&#x2F;span&gt;&lt;span&gt;Uint8List? image;
+&lt;&#x2F;span&gt;&lt;span&gt;String description = &amp;#39;&amp;#39;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;processing&lt;&#x2F;code&gt; - It indicates whether the image captured has finished processing&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;image&lt;&#x2F;code&gt; - It stores the captured image.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;description&lt;&#x2F;code&gt; - It holds the textual description of image showed in UI in the bottom.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Now, we need to display the camera feed into the UI we created. We had put a placeholder for showing the camera feed. We will replace that with a
+&lt;code&gt;Stack&lt;&#x2F;code&gt; widget because Stack can hold multiple widgets in it.&lt;&#x2F;p&gt;
+&lt;p&gt;Create a method &lt;code&gt;_showImage&lt;&#x2F;code&gt; which will return the widgets in stack:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;List&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;Widget&amp;gt; _showImage(CameraController? controller, Uint8List? image) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;controller&lt;&#x2F;span&gt;&lt;span&gt; == null) {
+&lt;&#x2F;span&gt;&lt;span&gt;      return &amp;lt;Widget&amp;gt;[
+&lt;&#x2F;span&gt;&lt;span&gt;        SizedBox(
+&lt;&#x2F;span&gt;&lt;span&gt;          width: 1,
+&lt;&#x2F;span&gt;&lt;span&gt;        )
+&lt;&#x2F;span&gt;&lt;span&gt;      ];
+&lt;&#x2F;span&gt;&lt;span&gt;    } else if (processing == false) {
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;Widget&amp;gt;[
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;CameraPreview&lt;&#x2F;span&gt;&lt;span&gt;(controller)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;]&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    } else if (processing == true) {
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;Widget&amp;gt;[
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Image.memory&lt;&#x2F;span&gt;&lt;span&gt;(image!)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Positioned.fill&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;child:&lt;&#x2F;span&gt;&lt;span&gt; Center(child: CircularProgressIndicator.adaptive()))
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;]&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    } else {
+&lt;&#x2F;span&gt;&lt;span&gt;      return &amp;lt;Widget&amp;gt;[
+&lt;&#x2F;span&gt;&lt;span&gt;        CameraPreview(controller),
+&lt;&#x2F;span&gt;&lt;span&gt;      ];
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;If the camera is not initialised, i.e. &lt;code&gt;controller&lt;&#x2F;code&gt; is null, then show nothing. For it, we have placed a &lt;code&gt;SizedBox&lt;&#x2F;code&gt; with nothing in it.&lt;&#x2F;li&gt;
+&lt;li&gt;If the image is processing, show that static image on screen and do not show the camera feed. Since, &lt;code&gt;image&lt;&#x2F;code&gt; variables stores the captured image in memory, we use &lt;code&gt;Image.network&lt;&#x2F;code&gt; to display that image. &lt;code&gt;Positioned.fill&lt;&#x2F;code&gt; along with &lt;code&gt;Center&lt;&#x2F;code&gt; widget with &lt;code&gt;CircularProgressIndicator&lt;&#x2F;code&gt;, displays a loading circular indicator above captured image.&lt;&#x2F;li&gt;
+&lt;li&gt;If the there is no image being processed, show the camera feed and not static image via use of &lt;code&gt;CameraPreview&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Inside the &lt;code&gt;build&lt;&#x2F;code&gt; method of state, use &lt;code&gt;description&lt;&#x2F;code&gt; inside &lt;code&gt;Text&lt;&#x2F;code&gt; widget, like:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Text&lt;&#x2F;span&gt;&lt;span&gt;(description,
+&lt;&#x2F;span&gt;&lt;span&gt;    style: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;TextStyle&lt;&#x2F;span&gt;&lt;span&gt;(color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.white
+&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;integrating-gemini&quot;&gt;Integrating Gemini&lt;&#x2F;h2&gt;
+&lt;p&gt;To integrate Gemini, we first need to import and initialise Gemini package (which we already installed) in the &lt;code&gt;main.dart&lt;&#x2F;code&gt; file. Put this code inside &lt;code&gt;main.dart&lt;&#x2F;code&gt; inside the &lt;code&gt;void main()&lt;&#x2F;code&gt; function, before the &lt;code&gt;runApp(const MyApp());&lt;&#x2F;code&gt; statement.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;WidgetsFlutterBinding.ensureInitialized();
+&lt;&#x2F;span&gt;&lt;span&gt;Gemini.init(apiKey: &amp;#39;your key here&amp;#39;);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You need to get this key from &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;aistudio.google.com&#x2F;app&#x2F;apikey&quot;&gt;https:&#x2F;&#x2F;aistudio.google.com&#x2F;app&#x2F;apikey&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Now, in &lt;code&gt;smart_cam.dart file&lt;&#x2F;code&gt;, create a variable inside state:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;final&lt;&#x2F;span&gt;&lt;span&gt; gemini = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Gemini&lt;&#x2F;span&gt;&lt;span&gt;.instance;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now, create a method:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;_describeImage&lt;&#x2F;span&gt;&lt;span&gt;() &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;async&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span&gt; picture = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;await&lt;&#x2F;span&gt;&lt;span&gt; controller?.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;takePicture&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span&gt; b = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;await&lt;&#x2F;span&gt;&lt;span&gt; picture?.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;readAsBytes&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;setState&lt;&#x2F;span&gt;&lt;span&gt;(() {
+&lt;&#x2F;span&gt;&lt;span&gt;      processing = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      image = b;
+&lt;&#x2F;span&gt;&lt;span&gt;    });
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span&gt; response = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;await&lt;&#x2F;span&gt;&lt;span&gt; gemini.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;textAndImage&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;        text:
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;What does this show? Respond in ${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;widget.language&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;} language with 3-4 lines&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;        images: [b!]);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span&gt; p = response?.outputPart &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;as &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;TextPart&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;setState&lt;&#x2F;span&gt;&lt;span&gt;(() {
+&lt;&#x2F;span&gt;&lt;span&gt;      description = p.text;
+&lt;&#x2F;span&gt;&lt;span&gt;      processing = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    });
+&lt;&#x2F;span&gt;&lt;span&gt;    tts.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;speak&lt;&#x2F;span&gt;&lt;span&gt;(p.text);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This method captures the picture from &lt;code&gt;CameraController&lt;&#x2F;code&gt;, reads it as bytes, and then sets &lt;code&gt;processing&lt;&#x2F;code&gt; to true, and sets the captured image. This ensures UI is built again to reflect that image is captured and is being processed, i.e. a static captured image would be shown, along with circular progress indicator above it.&lt;&#x2F;p&gt;
+&lt;p&gt;Then, it sends the image to Gemini along with the prompt, and receives the text from it, and then sets &lt;code&gt;description&lt;&#x2F;code&gt; to the text received from Gemini and sets &lt;code&gt;processing&lt;&#x2F;code&gt; to false again. This ensures description is now shown in the UI and the static image is again replaced by camera feed.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;integrating-texttospeech&quot;&gt;Integrating TextToSpeech&lt;&#x2F;h2&gt;
+&lt;p&gt;In &lt;code&gt;smart_cam.dart&lt;&#x2F;code&gt; file, import the package for TextToSpeech:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;package:flutter_tts&#x2F;flutter_tts.dart&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;In the &lt;code&gt;SmartCamState&lt;&#x2F;code&gt;, create a variable:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;final&lt;&#x2F;span&gt;&lt;span&gt; tts = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;FlutterTts&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Inside &lt;code&gt;initState&lt;&#x2F;code&gt; method, add the following:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; (widget.language.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;toLowerCase&lt;&#x2F;span&gt;&lt;span&gt;() == &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;hindi&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;      tts.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;setLanguage&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;hi&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;It ensures that if language is Hindi, correct language is chosen for TextToSpeech.&lt;&#x2F;p&gt;
+&lt;p&gt;In the &lt;code&gt;_describeImage&lt;&#x2F;code&gt; method, add the following at the end:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span&gt;tts.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;speak&lt;&#x2F;span&gt;&lt;span&gt;(p.text);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This ensures the text which is received from Gemini is spoken by TextToSpeech.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;So, we just built a simple flutter project including the vision capabilities of Gemini with camera.&lt;&#x2F;p&gt;
+&lt;p&gt;The full code at the end looks like this:&lt;&#x2F;p&gt;
+&lt;p&gt;main.dart&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;package:flutter&#x2F;material.dart&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;package:flutter_gemini&#x2F;flutter_gemini.dart&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;.&#x2F;smart_cam.dart&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;WidgetsFlutterBinding&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;ensureInitialized&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Gemini&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;init&lt;&#x2F;span&gt;&lt;span&gt;(apiKey: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;your key here&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;runApp&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;const &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MyApp&lt;&#x2F;span&gt;&lt;span&gt;());
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MyApp &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;extends &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;StatelessWidget&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;const &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MyApp&lt;&#x2F;span&gt;&lt;span&gt;({&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;super&lt;&#x2F;span&gt;&lt;span&gt;.key});
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@override
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Widget &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;build&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BuildContext&lt;&#x2F;span&gt;&lt;span&gt; context) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MaterialApp&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;      debugShowCheckedModeBanner: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;      title: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;Flutter Demo&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;      home: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SmartCam&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;hindi&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;    );
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;smart_cam.dart&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;dart:typed_data&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;package:camera&#x2F;camera.dart&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;package:flutter&#x2F;material.dart&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;package:flutter_gemini&#x2F;flutter_gemini.dart&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;package:flutter_tts&#x2F;flutter_tts.dart&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SmartCam &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;extends &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;StatefulWidget&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;final &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt; language;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SmartCam&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;this&lt;&#x2F;span&gt;&lt;span&gt;.language);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@override
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;State&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SmartCam&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;createState&lt;&#x2F;span&gt;&lt;span&gt;() =&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;_SmartCamState&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;_SmartCamState &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;extends &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;State&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SmartCam&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;  late &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;List&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CameraDescription&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; _cameras;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CameraController&lt;&#x2F;span&gt;&lt;span&gt;? controller;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;bool&lt;&#x2F;span&gt;&lt;span&gt; processing = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Uint8List&lt;&#x2F;span&gt;&lt;span&gt;? image;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt; description = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;final&lt;&#x2F;span&gt;&lt;span&gt; gemini = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Gemini&lt;&#x2F;span&gt;&lt;span&gt;.instance;
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;final&lt;&#x2F;span&gt;&lt;span&gt; tts = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;FlutterTts&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@override
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;initState&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;super&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;initState&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; (widget.language.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;toLowerCase&lt;&#x2F;span&gt;&lt;span&gt;() == &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;hindi&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;      tts.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;setLanguage&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;hi&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;availableCameras&lt;&#x2F;span&gt;&lt;span&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;then&lt;&#x2F;span&gt;&lt;span&gt;((value) {
+&lt;&#x2F;span&gt;&lt;span&gt;      _cameras = value;
+&lt;&#x2F;span&gt;&lt;span&gt;      controller = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CameraController&lt;&#x2F;span&gt;&lt;span&gt;(_cameras[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;], &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;ResolutionPreset&lt;&#x2F;span&gt;&lt;span&gt;.max);
+&lt;&#x2F;span&gt;&lt;span&gt;      controller?.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;initialize&lt;&#x2F;span&gt;&lt;span&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;then&lt;&#x2F;span&gt;&lt;span&gt;((_) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; (!mounted) {
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;setState&lt;&#x2F;span&gt;&lt;span&gt;(() {});
+&lt;&#x2F;span&gt;&lt;span&gt;      }).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;catchError&lt;&#x2F;span&gt;&lt;span&gt;((&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Object&lt;&#x2F;span&gt;&lt;span&gt; e) {
+&lt;&#x2F;span&gt;&lt;span&gt;      });
+&lt;&#x2F;span&gt;&lt;span&gt;    });
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;List&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Widget&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;_showImage&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CameraController&lt;&#x2F;span&gt;&lt;span&gt;? controller, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Uint8List&lt;&#x2F;span&gt;&lt;span&gt;? image) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; (controller == &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;null&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Widget&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;[
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SizedBox&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;          width: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;        )
+&lt;&#x2F;span&gt;&lt;span&gt;      ];
+&lt;&#x2F;span&gt;&lt;span&gt;    } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else if&lt;&#x2F;span&gt;&lt;span&gt; (processing == &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Widget&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;[
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CameraPreview&lt;&#x2F;span&gt;&lt;span&gt;(controller),
+&lt;&#x2F;span&gt;&lt;span&gt;      ];
+&lt;&#x2F;span&gt;&lt;span&gt;    } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else if&lt;&#x2F;span&gt;&lt;span&gt; (processing == &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Widget&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;[
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Image&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;memory&lt;&#x2F;span&gt;&lt;span&gt;(image!),
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Positioned&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;fill&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;            child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Center&lt;&#x2F;span&gt;&lt;span&gt;(child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CircularProgressIndicator&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;adaptive&lt;&#x2F;span&gt;&lt;span&gt;()))
+&lt;&#x2F;span&gt;&lt;span&gt;      ];
+&lt;&#x2F;span&gt;&lt;span&gt;    } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Widget&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;[
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CameraPreview&lt;&#x2F;span&gt;&lt;span&gt;(controller),
+&lt;&#x2F;span&gt;&lt;span&gt;      ];
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;_describeImage&lt;&#x2F;span&gt;&lt;span&gt;() &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;async&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span&gt; picture = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;await&lt;&#x2F;span&gt;&lt;span&gt; controller?.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;takePicture&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span&gt; b = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;await&lt;&#x2F;span&gt;&lt;span&gt; picture?.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;readAsBytes&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;setState&lt;&#x2F;span&gt;&lt;span&gt;(() {
+&lt;&#x2F;span&gt;&lt;span&gt;      processing = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      image = b;
+&lt;&#x2F;span&gt;&lt;span&gt;    });
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span&gt; response = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;await&lt;&#x2F;span&gt;&lt;span&gt; gemini.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;textAndImage&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;        text:
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;What does this show? Respond in ${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;widget.language&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;} language with 3-4 lines&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;        images: [b!]);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span&gt; p = response?.outputPart &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;as &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;TextPart&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;setState&lt;&#x2F;span&gt;&lt;span&gt;(() {
+&lt;&#x2F;span&gt;&lt;span&gt;      description = p.text;
+&lt;&#x2F;span&gt;&lt;span&gt;      processing = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    });
+&lt;&#x2F;span&gt;&lt;span&gt;    tts.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;speak&lt;&#x2F;span&gt;&lt;span&gt;(p.text);
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@override
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;dispose&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    controller?.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;dispose&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;super&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;dispose&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@override
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Widget &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;build&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BuildContext&lt;&#x2F;span&gt;&lt;span&gt; context) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Scaffold&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;        appBar: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;AppBar&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;          title: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Text&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;SmartCam&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;          backgroundColor: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black54,
+&lt;&#x2F;span&gt;&lt;span&gt;          foregroundColor: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.white,
+&lt;&#x2F;span&gt;&lt;span&gt;        ),
+&lt;&#x2F;span&gt;&lt;span&gt;        body: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Center&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;          child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;GestureDetector&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;            onLongPress: () {
+&lt;&#x2F;span&gt;&lt;span&gt;              &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;_describeImage&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;            },
+&lt;&#x2F;span&gt;&lt;span&gt;            child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Column&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                crossAxisAlignment: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CrossAxisAlignment&lt;&#x2F;span&gt;&lt;span&gt;.center,
+&lt;&#x2F;span&gt;&lt;span&gt;                children: [
+&lt;&#x2F;span&gt;&lt;span&gt;                  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Expanded&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                    child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Container&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                      color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black,
+&lt;&#x2F;span&gt;&lt;span&gt;                      child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Container&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                          height:
+&lt;&#x2F;span&gt;&lt;span&gt;                              &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2 &lt;&#x2F;span&gt;&lt;span&gt;* (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MediaQuery&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;sizeOf&lt;&#x2F;span&gt;&lt;span&gt;(context).height &#x2F; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;) - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;60&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;                          decoration: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BoxDecoration&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                              border:
+&lt;&#x2F;span&gt;&lt;span&gt;                                  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Border&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;all&lt;&#x2F;span&gt;&lt;span&gt;(color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black, width: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;13&lt;&#x2F;span&gt;&lt;span&gt;)),
+&lt;&#x2F;span&gt;&lt;span&gt;                          child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Center&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                              child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;ClipRRect&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                                  borderRadius: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BorderRadius&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;circular&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;                                  child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Stack&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                                      children:
+&lt;&#x2F;span&gt;&lt;span&gt;                                          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;_showImage&lt;&#x2F;span&gt;&lt;span&gt;(controller, image))))),
+&lt;&#x2F;span&gt;&lt;span&gt;                    ),
+&lt;&#x2F;span&gt;&lt;span&gt;                  ),
+&lt;&#x2F;span&gt;&lt;span&gt;                  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Align&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                      alignment: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Alignment&lt;&#x2F;span&gt;&lt;span&gt;.center,
+&lt;&#x2F;span&gt;&lt;span&gt;                      child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Container&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                          width: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MediaQuery&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;sizeOf&lt;&#x2F;span&gt;&lt;span&gt;(context).width,
+&lt;&#x2F;span&gt;&lt;span&gt;                          color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black54,
+&lt;&#x2F;span&gt;&lt;span&gt;                          child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Container&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                              padding: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;EdgeInsets&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;all&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;                              margin: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;EdgeInsets&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;all&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;                              decoration: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BoxDecoration&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                                color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.black54,
+&lt;&#x2F;span&gt;&lt;span&gt;                                borderRadius: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BorderRadius&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;circular&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span&gt;),
+&lt;&#x2F;span&gt;&lt;span&gt;                              ),
+&lt;&#x2F;span&gt;&lt;span&gt;                              child: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Text&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;                                description,
+&lt;&#x2F;span&gt;&lt;span&gt;                                style: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;TextStyle&lt;&#x2F;span&gt;&lt;span&gt;(color: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Colors&lt;&#x2F;span&gt;&lt;span&gt;.white),
+&lt;&#x2F;span&gt;&lt;span&gt;                              ))))
+&lt;&#x2F;span&gt;&lt;span&gt;                ]),
+&lt;&#x2F;span&gt;&lt;span&gt;          ),
+&lt;&#x2F;span&gt;&lt;span&gt;        ));
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The code of this sits at GitHub repository: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;imhemish&#x2F;smart_cam&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;imhemish&#x2F;smart_cam&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>History and Identity</title>
+        <published>2023-11-27T00:00:00+00:00</published>
+        <updated>2023-11-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/history-and-identity/"/>
+        <id>https://hemish.net/posts/history-and-identity/</id>
+        
+        <summary type="html">&lt;p&gt;Many people wonder why we should study history, which is just a set of old facts.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>First Day at College</title>
+        <published>2023-08-04T00:00:00+00:00</published>
+        <updated>2023-08-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/first-day-at-college/"/>
+        <id>https://hemish.net/posts/first-day-at-college/</id>
+        
+        <summary type="html">&lt;p&gt;So, I joined MM Deemed University, Mullana, Ambala for Bachelors in Technology in Computer Science.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>बेशुमार हो जाता है</title>
+        <published>2023-07-25T00:00:00+00:00</published>
+        <updated>2023-07-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/beshumaar-ho-jaata-hai/"/>
+        <id>https://hemish.net/poems/beshumaar-ho-jaata-hai/</id>
+        
+        <summary type="html">&lt;p&gt;प्यार हो जाता है,&lt;br &#x2F;&gt;
+बहुत ही बेशुमार हो जाता है।&lt;br &#x2F;&gt;
+उसे निहार के,&lt;br &#x2F;&gt;
+कैसे ये रंग प्यार के।&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>नवीन कल</title>
+        <published>2023-07-25T00:00:00+00:00</published>
+        <updated>2023-07-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/naveen-kal/"/>
+        <id>https://hemish.net/poems/naveen-kal/</id>
+        
+        <summary type="html">&lt;p&gt;मैनें देखा एक सितारा,&lt;br &#x2F;&gt;
+फ़िर किसी ने चाँद उतारा।&lt;br &#x2F;&gt;
+धीरे-धीरे रात आ गई,&lt;br &#x2F;&gt;
+चाँद की चमकदार काया भी कालिमय हो गई।&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Compiler दोस्त</title>
+        <published>2023-07-22T00:00:00+00:00</published>
+        <updated>2023-07-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/compiler-dost/"/>
+        <id>https://hemish.net/poems/compiler-dost/</id>
+        
+        <summary type="html">&lt;p&gt;Code कर रहा था मैं,&lt;br &#x2F;&gt;
+Unhandled exception आ गई,&lt;br &#x2F;&gt;
+Documentation पढ रहा था मैं,&lt;br &#x2F;&gt;
+Exception की जङ समझ में आ गई।&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>School farewell poem</title>
+        <published>2023-07-21T00:00:00+00:00</published>
+        <updated>2023-07-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/school-farewell/"/>
+        <id>https://hemish.net/poems/school-farewell/</id>
+        
+        <summary type="html">&lt;p&gt;I wrote this trilingual poem for my school farewell this year (held in February 2023):&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Feeds and minimal web are a new love for me</title>
+        <published>2023-04-19T00:00:00+00:00</published>
+        <updated>2023-04-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/feeds-and-minimal-web/"/>
+        <id>https://hemish.net/posts/feeds-and-minimal-web/</id>
+        
+        <summary type="html">&lt;p&gt;RSS and atom feeds are new love for me, just like how a teenager newly discovers Instagram.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Fixing sleep&#x2F;suspend on Dell Latitude 54XX in Linux</title>
+        <published>2023-04-18T00:00:00+00:00</published>
+        <updated>2023-04-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/fix-suspend-dell-latitude-54xx/"/>
+        <id>https://hemish.net/posts/fix-suspend-dell-latitude-54xx/</id>
+        
+        <summary type="html">&lt;p&gt;I wrote this to provide others an aggregated view to how to solve this problem, and not lurk in multiple formus or threads to find the solutions.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Duniya Ki Sair Kar lo - Around the World in 8 dollars</title>
+        <published>2023-04-16T00:00:00+00:00</published>
+        <updated>2023-04-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/around-the-world-in-eight-dollars/"/>
+        <id>https://hemish.net/posts/around-the-world-in-eight-dollars/</id>
+        
+        <summary type="html">&lt;p&gt;The song &#x27;Duniya Ki Sair Kar Lo&#x27; which was released even before my parents were born, has got a profound and reserved place in my heart. Let&#x27;s see why!&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Trauma</title>
+        <published>2023-04-04T00:00:00+00:00</published>
+        <updated>2023-04-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/the-trauma/"/>
+        <id>https://hemish.net/poems/the-trauma/</id>
+        
+        <summary type="html">&lt;p&gt;Rethinking about regretted life choices, I wrote this:&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Quest for a Notes app</title>
+        <published>2023-02-20T00:00:00+00:00</published>
+        <updated>2023-02-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/quest-for-a-notes-app/"/>
+        <id>https://hemish.net/posts/quest-for-a-notes-app/</id>
+        
+        <summary type="html">&lt;p&gt;My hunt for a plain markdown capable Notes app is stopped. Why was I searching a good notes app to fit my workflow even though there are countless offline and online notes available?&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Libadwaita Without Adwaita</title>
+        <published>2023-01-17T00:00:00+00:00</published>
+        <updated>2023-01-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/libadwaita-without-adwaita/"/>
+        <id>https://hemish.net/posts/libadwaita-without-adwaita/</id>
+        
+        <summary type="html">&lt;p&gt;While GNOME is moving to Libadwaita with the help of Purism (sure they need to be acknowledged), themeing has surely lessened, but people still use some hacks.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Appreciation post for my sister</title>
+        <published>2022-12-18T00:00:00+00:00</published>
+        <updated>2022-12-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/chelsi-birthday/"/>
+        <id>https://hemish.net/posts/chelsi-birthday/</id>
+        
+        <summary type="html">&lt;p&gt;Though we have an age gap of about 6 years, I still kinda think that we enjoyed a similar kind of childhood, dispered by some differences as well.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Weird trend in school</title>
+        <published>2022-12-03T00:00:00+00:00</published>
+        <updated>2022-12-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/school-catscradle-trend/"/>
+        <id>https://hemish.net/posts/school-catscradle-trend/</id>
+        
+        <summary type="html">&lt;p&gt;How can bringing thread into school almost become illegal?&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>बेनाम शहर</title>
+        <published>2022-11-24T00:00:00+00:00</published>
+        <updated>2022-11-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/benaam-shahar/"/>
+        <id>https://hemish.net/poems/benaam-shahar/</id>
+        
+        <summary type="html">&lt;p&gt;मेरा जीवन एक किताब है,&lt;br &#x2F;&gt;
+इसे सम्पन्न करने का मेरा ख्वाब है।&lt;br &#x2F;&gt;
+जानता हूँ इसमें बहुत सारे दाग हैं,&lt;br &#x2F;&gt;
+पर इन्हें साफ़ करने के लिए भी कोई ना कोई आब है।&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>ए मक्षिका! क्या भिनभिनाती हो?</title>
+        <published>2022-11-24T00:00:00+00:00</published>
+        <updated>2022-11-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/e-makshika/"/>
+        <id>https://hemish.net/poems/e-makshika/</id>
+        
+        <summary type="html">&lt;p&gt;A little bit of background, how I came up with this poem:
+We had a poem in Grade 9 in school (it was in क्षितिज NCERT book), titled &quot;कैदी और कोकिला&quot; which (you can read it &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.hindipyala.com&#x2F;kaidi-aur-kokila&quot;&gt;here&lt;&#x2F;a&gt;) had  primary lines &quot;क्या गाती हो&quot; and &quot;कोकिल बोलो तो&quot;. It was hightly metaphorical poem, and was written by Makhanlal Chaturvedi during his stay in jail during India&#x27;s Independence moment. Our teacher Meena Anand ma&#x27;am asked us to write one such poem in that style, so I came up with this poem titled &quot;ए मक्षिका! क्या भिनभिनाती हो?&quot;. Is it weird, or is it funny, or does it have some deep message (I seriously did not intend to give a deep message, but if you are a hardcore poet, maybe let me know about the deep meaning.)&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>ਜਾਣਨਾ ਚਾਹੁੰਦਾ ਹਾਂ</title>
+        <published>2022-11-24T00:00:00+00:00</published>
+        <updated>2022-11-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/jaanna-chahunda-haan/"/>
+        <id>https://hemish.net/poems/jaanna-chahunda-haan/</id>
+        
+        <summary type="html">&lt;p&gt;ਮੈਂ ਖਾਸ ਹਾਂ,&lt;br &#x2F;&gt;
+ਇਹ ਮੈਂ ਜਾਣਦਾ ਹਾਂ,&lt;br &#x2F;&gt;
+ਤੇ ਏਸੇ ਖਾਸ ਖੁਦ ਨੂੰ,&lt;br &#x2F;&gt;
+ਪਛਾਣਨਾ ਚਾਹੁੰਦਾ ਹਾਂ।&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Talents and qualities of my classmates</title>
+        <published>2022-11-24T00:00:00+00:00</published>
+        <updated>2022-11-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/talents-and-qualities-of-my-classmates/"/>
+        <id>https://hemish.net/poems/talents-and-qualities-of-my-classmates/</id>
+        
+        <summary type="html">&lt;p&gt;In Grade 10, during the period where studies were semi-online (lockdown was just opened, and we started going to school for reduced hours optionally), our English teacher Sujata ma&#x27;am provided us with projects we have to do for final evaluation. One of these was to write a song on the topic &quot;Talents and qualities of my classmates&quot;.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Blank Face</title>
+        <published>2022-11-22T00:00:00+00:00</published>
+        <updated>2022-11-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/the-blank-face/"/>
+        <id>https://hemish.net/poems/the-blank-face/</id>
+        
+        <summary type="html">&lt;p&gt;One day I had a dream, so I wrote about it:&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Upgrading firmware in Linux using fwupd</title>
+        <published>2022-11-14T00:00:00+00:00</published>
+        <updated>2022-11-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/fwupd/"/>
+        <id>https://hemish.net/posts/fwupd/</id>
+        
+        <summary type="html">&lt;p&gt;Want to upgrade your PC or laptop&#x27;s firmware but don&#x27;t want to use Windows?&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Hamara Plymouth Theme</title>
+        <published>2022-11-14T00:00:00+00:00</published>
+        <updated>2022-11-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/plymouth-theme-hamra/"/>
+        <id>https://hemish.net/posts/plymouth-theme-hamra/</id>
+        
+        <summary type="html">&lt;p&gt;&lt;em&gt;Hamara Linux&lt;&#x2F;em&gt; was&#x2F;is a India based linux distribution. It is in pretty dormant stage now (Even the site is down for some time).&lt;&#x2F;p&gt;
+&lt;p&gt;I asked &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;itsmeh.com&#x2F;chirag_sukhala&quot;&gt;Chirag Sukhala&lt;&#x2F;a&gt; what is even the need of such a Linux distribution which gives you Indic languages preinstalled when you can just install Indic languages in pretty much any popular linux distro&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Translating in open-source world</title>
+        <published>2022-10-10T00:00:00+00:00</published>
+        <updated>2022-10-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/localisation-credits-opensource/"/>
+        <id>https://hemish.net/posts/localisation-credits-opensource/</id>
+        
+        <summary type="html">&lt;p&gt;Isn&#x27;t it amazing to get your credits in an opensource app?&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Mitmproxy</title>
+        <published>2022-09-20T00:00:00+00:00</published>
+        <updated>2022-09-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/mitmproxy/"/>
+        <id>https://hemish.net/posts/mitmproxy/</id>
+        
+        <summary type="html">&lt;p&gt;Today, I came across this wonderful tool called &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mitmproxy.org&#x2F;&quot;&gt;mitmproxy&lt;&#x2F;a&gt; which is a TLS capable HTTP and HTTPS proxy and can be used by pen-testers and enthusiasts.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>

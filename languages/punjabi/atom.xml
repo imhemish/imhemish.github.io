@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Hemish - punjabi</title>
+    <link rel="self" type="application/atom+xml" href="https://hemish.net/languages/punjabi/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://hemish.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-07-21T00:00:00+00:00</updated>
+    <id>https://hemish.net/languages/punjabi/atom.xml</id>
+    <entry xml:lang="en">
+        <title>School farewell poem</title>
+        <published>2023-07-21T00:00:00+00:00</published>
+        <updated>2023-07-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/school-farewell/"/>
+        <id>https://hemish.net/poems/school-farewell/</id>
+        
+        <summary type="html">&lt;p&gt;I wrote this trilingual poem for my school farewell this year (held in February 2023):&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>ਜਾਣਨਾ ਚਾਹੁੰਦਾ ਹਾਂ</title>
+        <published>2022-11-24T00:00:00+00:00</published>
+        <updated>2022-11-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/poems/jaanna-chahunda-haan/"/>
+        <id>https://hemish.net/poems/jaanna-chahunda-haan/</id>
+        
+        <summary type="html">&lt;p&gt;ਮੈਂ ਖਾਸ ਹਾਂ,&lt;br &#x2F;&gt;
+ਇਹ ਮੈਂ ਜਾਣਦਾ ਹਾਂ,&lt;br &#x2F;&gt;
+ਤੇ ਏਸੇ ਖਾਸ ਖੁਦ ਨੂੰ,&lt;br &#x2F;&gt;
+ਪਛਾਣਨਾ ਚਾਹੁੰਦਾ ਹਾਂ।&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>

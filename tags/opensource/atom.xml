@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Hemish - opensource</title>
+    <link rel="self" type="application/atom+xml" href="https://hemish.net/tags/opensource/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://hemish.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-04-19T00:00:00+00:00</updated>
+    <id>https://hemish.net/tags/opensource/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Feeds and minimal web are a new love for me</title>
+        <published>2023-04-19T00:00:00+00:00</published>
+        <updated>2023-04-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/feeds-and-minimal-web/"/>
+        <id>https://hemish.net/posts/feeds-and-minimal-web/</id>
+        
+        <summary type="html">&lt;p&gt;RSS and atom feeds are new love for me, just like how a teenager newly discovers Instagram.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Fixing sleep&#x2F;suspend on Dell Latitude 54XX in Linux</title>
+        <published>2023-04-18T00:00:00+00:00</published>
+        <updated>2023-04-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/fix-suspend-dell-latitude-54xx/"/>
+        <id>https://hemish.net/posts/fix-suspend-dell-latitude-54xx/</id>
+        
+        <summary type="html">&lt;p&gt;I wrote this to provide others an aggregated view to how to solve this problem, and not lurk in multiple formus or threads to find the solutions.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Quest for a Notes app</title>
+        <published>2023-02-20T00:00:00+00:00</published>
+        <updated>2023-02-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/quest-for-a-notes-app/"/>
+        <id>https://hemish.net/posts/quest-for-a-notes-app/</id>
+        
+        <summary type="html">&lt;p&gt;My hunt for a plain markdown capable Notes app is stopped. Why was I searching a good notes app to fit my workflow even though there are countless offline and online notes available?&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Libadwaita Without Adwaita</title>
+        <published>2023-01-17T00:00:00+00:00</published>
+        <updated>2023-01-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/libadwaita-without-adwaita/"/>
+        <id>https://hemish.net/posts/libadwaita-without-adwaita/</id>
+        
+        <summary type="html">&lt;p&gt;While GNOME is moving to Libadwaita with the help of Purism (sure they need to be acknowledged), themeing has surely lessened, but people still use some hacks.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Upgrading firmware in Linux using fwupd</title>
+        <published>2022-11-14T00:00:00+00:00</published>
+        <updated>2022-11-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/fwupd/"/>
+        <id>https://hemish.net/posts/fwupd/</id>
+        
+        <summary type="html">&lt;p&gt;Want to upgrade your PC or laptop&#x27;s firmware but don&#x27;t want to use Windows?&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Translating in open-source world</title>
+        <published>2022-10-10T00:00:00+00:00</published>
+        <updated>2022-10-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/localisation-credits-opensource/"/>
+        <id>https://hemish.net/posts/localisation-credits-opensource/</id>
+        
+        <summary type="html">&lt;p&gt;Isn&#x27;t it amazing to get your credits in an opensource app?&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>

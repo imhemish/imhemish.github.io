@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Hemish - rant</title>
+    <link rel="self" type="application/atom+xml" href="https://hemish.net/tags/rant/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://hemish.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-02-20T00:00:00+00:00</updated>
+    <id>https://hemish.net/tags/rant/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Quest for a Notes app</title>
+        <published>2023-02-20T00:00:00+00:00</published>
+        <updated>2023-02-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/quest-for-a-notes-app/"/>
+        <id>https://hemish.net/posts/quest-for-a-notes-app/</id>
+        
+        <summary type="html">&lt;p&gt;My hunt for a plain markdown capable Notes app is stopped. Why was I searching a good notes app to fit my workflow even though there are countless offline and online notes available?&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>

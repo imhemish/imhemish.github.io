@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Hemish - philosophy</title>
+    <link rel="self" type="application/atom+xml" href="https://hemish.net/tags/philosophy/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://hemish.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-11-27T00:00:00+00:00</updated>
+    <id>https://hemish.net/tags/philosophy/atom.xml</id>
+    <entry xml:lang="en">
+        <title>History and Identity</title>
+        <published>2023-11-27T00:00:00+00:00</published>
+        <updated>2023-11-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/history-and-identity/"/>
+        <id>https://hemish.net/posts/history-and-identity/</id>
+        
+        <summary type="html">&lt;p&gt;Many people wonder why we should study history, which is just a set of old facts.&lt;&#x2F;p&gt;</summary>
+        
+    </entry>
+</feed>
