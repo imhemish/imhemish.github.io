@@ -15,5 +15,8 @@ Here is the list of things in my wishlist, so you can buy any of it for me, if s
 - [Transparent Double Tape ~ ₹90](https://www.meesho.com/nano-tape-multipurpose-double-sided-tape-adhesive-silicone-tape-heavy-duty-heat-resistant-multi-functional-removable-washable-reusable-anti-slip-gel-nano-grip-tape-grip-tape/p/871e4j)
 
 ## Tech Stuff
-- Mivi Fort Q60
+- Mivi Fort Q60/Mivi fort q80 (only buy if getting at 3000 or less because same internally as q60)/r70
 - Any cheap VR Box within the range of 1000 rupees
+
+## Other
+- Protein (The Whole Truth)
