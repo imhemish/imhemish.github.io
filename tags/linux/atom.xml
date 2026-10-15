@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Hemish - linux</title>
+    <link rel="self" type="application/atom+xml" href="https://hemish.net/tags/linux/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://hemish.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-10-15T00:00:00+00:00</updated>
+    <id>https://hemish.net/tags/linux/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Guide to Running Citrix Workspace on Ubuntu 26.04+</title>
+        <published>2026-10-15T00:00:00+00:00</published>
+        <updated>2026-10-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/citrix-workspace-compat/"/>
+        <id>https://hemish.net/posts/citrix-workspace-compat/</id>
+        
+        <content type="html" xml:base="https://hemish.net/posts/citrix-workspace-compat/">&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
+&lt;p&gt;Citrix Workspace is an app to access hosted VDI (Virtual Desktop Infrastructure), but it is notorious to setup on newer Linux distributions like Ubuntu 26.04.&lt;/p&gt;
+&lt;p&gt;Windows is not my primary workspace for personal use, and I have a hard time re-adjusting to even doing personal stuff on Windows because my workflow is highly linked to GNOME ecosystem and Linux in general. So, naturally had to figure out installing it on Linux.&lt;/p&gt;
+&lt;p&gt;I began with &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.citrix.com/downloads/workspace-app/&quot;&gt;Citrix Download Page&lt;/a&gt; and was downloading a .deb package. Appeareantly, Citrix maintains two versions of Linux package: Tech Preview and normal prod. The normal one is compiled with gcc8 compatibility and uses a lot of older libraries. Tech Preview has gcc11 compatibility and uses (some, not all) newer libraries.&lt;/p&gt;
+&lt;p&gt;I started with the normal package, as it must be stable, which happens to be &lt;code&gt;2604.10&lt;/code&gt; as of September, 2026. I installed it the regular way, by command line by using &lt;code&gt;sudo apt install ./icaclient&amp;lt;version&amp;gt;.deb&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The install went fine, but I was not able to launch the workspace app from the app menu of my desktop.&lt;/p&gt;
+&lt;h1 id=&quot;warning&quot;&gt;Warning&lt;/h1&gt;
+&lt;p&gt;If you are following any steps, do it at your own discretion. I would not be responsible for any damages to your system, or any blocks.&lt;/p&gt;
+&lt;h1 id=&quot;request&quot;&gt;Request&lt;/h1&gt;
+&lt;p&gt;Even if you are referring to one part of this article, as there are multiple approaches enlisted in this article, please do read the entire article, as a lot of things are interlinked with each other, and the knowledge of other may help you to get a solution of some problem you might be facing, particularly the &lt;code&gt;GDK_BACKEND&lt;/code&gt; environment variable to be set to &lt;code&gt;x11&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;issues-with-current-package-on-ubuntu-26-04&quot;&gt;Issues with current package on Ubuntu 26.04&lt;/h1&gt;
+&lt;p&gt;The issues I disovered by reading many articles, forums on Internet and exploring around the package are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The package is compatible with Ubuntu 22.04 and related distros, doesn&#39;t work well with packages of newer versions.&lt;/li&gt;
+&lt;li&gt;It uses a lot of older libraries, including &lt;code&gt;libwebkit2gtk&lt;/code&gt; which is basically webview like thing for gtk2, which is long EOL and removed in newer distros.&lt;/li&gt;
+&lt;li&gt;A lot of libraries accompanying &lt;code&gt;libwebkit2gtk&lt;/code&gt; including older &lt;code&gt;libsoup&lt;/code&gt;, &lt;code&gt;libxml2&lt;/code&gt;, etc. have the same fate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;no-support-from-citrix&quot;&gt;No Support from Citrix&lt;/h2&gt;
+&lt;p&gt;Linux support may vary between organizations. Check your organization&#39;s current guidance before relying on Linux access.&lt;/p&gt;
+&lt;p&gt;Citrix itself does not package Linux that thoroughly as mainstreams operating systems like Windows or macOS. The most it does is bare-bones packaging, and some documentation for some configurations.&lt;/p&gt;
+&lt;p&gt;So, Linux users are kinda on their own.&lt;/p&gt;
+&lt;h2 id=&quot;xorg-and-wayland-situation&quot;&gt;Xorg and Wayland situation&lt;/h2&gt;
+&lt;p&gt;Citrix is compatible with xorg (x11) only, and does not support Wayland. Ubuntu 26.04 and distros released in contemporary time of Ubuntu 26.04 ship version of GNOME as 50 or later, &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://blogs.gnome.org/alatiera/2025/06/23/x11-session-removal-faq/&quot;&gt;which removed support for Xorg sessions&lt;/a&gt;. So, naturally Ubuntu 26.04 does not have an option to switch to &quot;Ubuntu on Xorg&quot; session on the login window (GDM).
+Citrix can run as a &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://wayland.freedesktop.org/docs/book/Xwayland.html&quot;&gt;xwayland process&lt;/a&gt; (basically, Citrix will call standard Xorg APIs, a standalone X server runs inside your desktop environment, and the windows running inside Xorg, are displayed in your Wayland session. It works pretty seamless, except for some things.&lt;/p&gt;
+&lt;p&gt;While, it CAN RUN as xwayland process, it is not configured to do so by default in a Wayland-only environment. So, basically when you launch it inside a Wayland-only environment (like default Ubuntu 26.04 session), the gtk runs as wayland, and &lt;code&gt;GDK_BACKEND&lt;/code&gt; running is &lt;code&gt;x11&lt;/code&gt; and not &lt;code&gt;wayland&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This thing, I discovered when I was using the Tech preview package (gcc11 compatible), it worked fine with linking a missing library, in logs I saw issues about EGL buffers. Consider EGL buffers as an API for graphics in Wayland. So, the thing which was being used by Citrix does not support EGL Buffers (and thus basically does not support Wayland). The best solution to this is to launch Citrix with &lt;code&gt;GDK_BACKEND&lt;/code&gt; set to &lt;code&gt;x11&lt;/code&gt; as an environment variable, so it defaults to being an xwayland process. I will cover this solution later in the article.&lt;/p&gt;
+&lt;p&gt;Do note that the Ubuntu-based distros with environments other than GNOME may ship a Xorg session (like Cinnamon as on Linux Mint, XFCE as on LM XFCE &amp;amp; Xubuntu, etc.) In that case, you can just use the Xorg session of your desktop environment.&lt;/p&gt;
+&lt;h1 id=&quot;the-solutions&quot;&gt;The Solutions&lt;/h1&gt;
+&lt;p&gt;There are various possible solutions for successfully using Citrix on a newer Linux base like Ubuntu 26.04, all with their own caveats and benefits.&lt;/p&gt;
+&lt;h2 id=&quot;the-symbolic-library-linking-not-recommended&quot;&gt;The Symbolic Library Linking  (not recommended)&lt;/h2&gt;
+&lt;p&gt;So, basically, as we discussed, Citrix is compiled against older versions of certain libraries. For example, if you launch Citrix Workspace via command line binary &lt;code&gt;selfservice&lt;/code&gt; present in &lt;code&gt;/opt/Citrix/ICAClient&lt;/code&gt; and see the logs, it might say &lt;code&gt;libxml2.so.2: cannot open shared object file&lt;/code&gt;. This happens because the newer versions of this library would provide newer &lt;code&gt;.so&lt;/code&gt; files like &lt;code&gt;libxml2.so.16&lt;/code&gt; which are not &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Application_binary_interface#C&quot;&gt;binary compatible with the older ABI&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some people, including me, tried to create a symlink from &lt;code&gt;libxml2.so.2&lt;/code&gt; to &lt;code&gt;libxml2.so.16&lt;/code&gt;, but as we said it is not binary compatible exactly, and certain functionality might break. I was able to launch the newer Tech preview (gcc11 build) of Citrix with this way, but this is not the recommended method and I would thus not cover the steps how to do it.&lt;/p&gt;
+&lt;h2 id=&quot;using-a-container-like-distrobox-or-your-own-managed-podman-docker&quot;&gt;Using a Container (like Distrobox or your own managed Podman/Docker)&lt;/h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://distrobox.it/&quot;&gt;Distrobox&lt;/a&gt; is a tool, which can run other distributions (including their own versions) inside a container in your own operating system. The difference from standard Podman/Docker is that it provides multiple helpers and default configurations that allow the applications inside the containers to behave like they are running natively in your host OS, including features like, but not limited to, linking your home directory in container and host OS, wayland and xorg integrations, exporting &lt;code&gt;.desktop&lt;/code&gt; files so that they appear in your app menu, etc. The benefit of this approach is you can use an older version of distros which has older libraries required for some particular software, and this will not pollute your host OS&#39;s libraries.&lt;/p&gt;
+&lt;p&gt;Please refer the two options you have:&lt;/p&gt;
+&lt;h3 id=&quot;install-the-stuff-yourself&quot;&gt;Install the stuff yourself&lt;/h3&gt;
+&lt;p&gt;Here is a guide which describes installing Citrix in a Distrobox container and exporting it to the host desktop:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install Podman and Distrobox on the host. For Fedora, run &lt;code&gt;sudo dnf install podman distrobox&lt;/code&gt;; on Ubuntu, install Podman with &lt;code&gt;sudo apt update&lt;/code&gt; followed by &lt;code&gt;sudo apt install podman -y&lt;/code&gt;, then install Distrobox using the method recommended for your distribution.&lt;/li&gt;
+&lt;li&gt;Create and enter a container based on a distribution with the required libraries, such as Ubuntu 22.04 or Fedora 42:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #06060C; background-color: #FDF0ED;&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F77D26;&quot;&gt;distrobox&lt;/span&gt;&lt;span&gt; create&lt;/span&gt;&lt;span style=&quot;color: #DC3318;&quot;&gt; --name&lt;/span&gt;&lt;span&gt; citrix-env&lt;/span&gt;&lt;span style=&quot;color: #DC3318;&quot;&gt; --image&lt;/span&gt;&lt;span&gt; ubuntu:22.04&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F77D26;&quot;&gt;distrobox&lt;/span&gt;&lt;span&gt; enter citrix-env&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Fedora users can instead create a Fedora 42 container with &lt;code&gt;distrobox create --name citrix-env --image registry.fedoraproject.org/fedora:42&lt;/code&gt;.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Download the Citrix package for the container&#39;s distribution to &lt;code&gt;~/Downloads&lt;/code&gt;. In a Fedora container, install &lt;code&gt;webkit2gtk3&lt;/code&gt; and the RPM package with &lt;code&gt;sudo dnf install webkit2gtk3&lt;/code&gt; and &lt;code&gt;sudo dnf install ~/Downloads/ICAClient*.rpm&lt;/code&gt;. In an Ubuntu container, run &lt;code&gt;sudo apt update&lt;/code&gt;, install &lt;code&gt;libwebkit2gtk-4.0.37&lt;/code&gt;, and install the downloaded package with &lt;code&gt;sudo apt install ./Downloads/icaclient_*.deb&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Export the application to the host menu with &lt;code&gt;distrobox-export --app icaclient&lt;/code&gt;. If that application name is not found, try &lt;code&gt;selfservice&lt;/code&gt;, &lt;code&gt;wfica&lt;/code&gt;, or &lt;code&gt;Citrix&lt;/code&gt;. You can also locate the &lt;code&gt;.desktop&lt;/code&gt; file with &lt;code&gt;find /usr/share/applications /opt/Citrix -name &quot;*.desktop&quot;&lt;/code&gt; and export that file directly.&lt;/li&gt;
+&lt;li&gt;If the app starts with the wrong display backend, set &lt;code&gt;GDK_BACKEND=x11&lt;/code&gt; for the &lt;code&gt;selfservice&lt;/code&gt; process, as described earlier.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Another article is available on GitHub Gist at &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://gist.github.com/xirixiz/bca653cf2b05739aa0aac0ed78a4fa13&quot;&gt;Citrix Workspace on Linux (Distrobox + Ubuntu 24.04 + DistroShelf)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;the-better-way-a-pre-packaged-script-for-you-to-set-distrobox-with-citrix&quot;&gt;The better way: a pre-packaged script for you to set Distrobox with Citrix&lt;/h3&gt;
+&lt;p&gt;An install and uninstall script can set up the container, export the apps, and help update the installation. The publicly available project and its instructions are in &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/trapexit/distrobox-citrix&quot;&gt;trapexit/distrobox-citrix&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;satisfying-the-required-older-dependencies-directly-inside-your-host-os&quot;&gt;Satisfying the required older dependencies directly inside your host OS&lt;/h2&gt;
+&lt;p&gt;This approach is the one I&#39;m following on my own system. While containers are generally light, as they share the same kernel as host OS, they still introduce some memory overhead (which is quite essential these days). So, I try to keep my installation light, with no containers.&lt;/p&gt;
+&lt;p&gt;What this approach does is, it basically downloads the older dependencies against which Citrix is compiled, from external sources (as they have been removed from repos of Ubuntu 26.04 or related distros), and puts them in a way so that Citrix can find them. Again, there can be 2 approaches here:&lt;/p&gt;
+&lt;h3 id=&quot;installing-the-packages-of-older-libraries&quot;&gt;Installing the packages of older libraries&lt;/h3&gt;
+&lt;p&gt;Various people prefer this method, as it is easier to download &lt;code&gt;.deb&lt;/code&gt; packages of required dependencies, and just install them via &lt;code&gt;apt&lt;/code&gt; or &lt;code&gt;dpkg&lt;/code&gt; and they are automatically available in the LD path and thus directly accessible by &lt;code&gt;selfservice&lt;/code&gt; binary.&lt;/p&gt;
+&lt;p&gt;For the &lt;code&gt;libwebkit2gtk&lt;/code&gt; issue, the concise fix is to download compatible Ubuntu 22.04 packages for &lt;code&gt;libicu70&lt;/code&gt;, &lt;code&gt;libjavascriptcoregtk-4.0-18&lt;/code&gt;, and &lt;code&gt;libwebkit2gtk-4.0-37&lt;/code&gt;, then install them in dependency order. For example:&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #06060C; background-color: #FDF0ED;&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F77D26;&quot;&gt;wget&lt;/span&gt;&lt;span&gt; http://archive.ubuntu.com/ubuntu/pool/main/i/icu/libicu70_70.1-2_amd64.deb&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F77D26;&quot;&gt;wget&lt;/span&gt;&lt;span&gt; http://archive.ubuntu.com/ubuntu/pool/main/w/webkit2gtk/libjavascriptcoregtk-4.0-18_2.48.5-0ubuntu0.22.04.1_amd64.deb&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F77D26;&quot;&gt;wget&lt;/span&gt;&lt;span&gt; http://archive.ubuntu.com/ubuntu/pool/main/w/webkit2gtk/libwebkit2gtk-4.0-37_2.48.5-0ubuntu0.22.04.1_amd64.deb&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F77D26;&quot;&gt;sudo&lt;/span&gt;&lt;span&gt; apt install ./libicu70_70.1-2_amd64.deb&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F77D26;&quot;&gt;sudo&lt;/span&gt;&lt;span&gt; apt install ./libjavascriptcoregtk-4.0-18_2.48.5-0ubuntu0.22.04.1_amd64.deb&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F77D26;&quot;&gt;sudo&lt;/span&gt;&lt;span&gt; apt install ./libwebkit2gtk-4.0-37_2.48.5-0ubuntu0.22.04.1_amd64.deb&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An alternative set of package versions is to download these packages from the public Ubuntu mirrors:&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #06060C; background-color: #FDF0ED;&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F77D26;&quot;&gt;wget&lt;/span&gt;&lt;span&gt; http://mirrors.edge.kernel.org/ubuntu/pool/main/w/webkit2gtk/libwebkit2gtk-4.0-37_2.48.3-0ubuntu0.22.04.1_amd64.deb&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F77D26;&quot;&gt;wget&lt;/span&gt;&lt;span&gt; http://mirrors.edge.kernel.org/ubuntu/pool/main/i/icu/libicu70_70.1-2_amd64.deb&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F77D26;&quot;&gt;wget&lt;/span&gt;&lt;span&gt; http://mirrors.edge.kernel.org/ubuntu/pool/main/w/webkit2gtk/libjavascriptcoregtk-4.0-18_2.48.3-0ubuntu0.22.04.1_amd64.deb&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then install the package set together with &lt;code&gt;sudo dpkg -i ~/Downloads/lib*.deb&lt;/code&gt; after ensuring the download directory contains only the intended packages.&lt;/p&gt;
+&lt;p&gt;This approach avoids adding older Ubuntu repositories to a newer installation, which can cause repository conflicts. Install only the specific compatible packages you need. Package versions and mirrors may change or become unavailable over time. These dependency fixes do not address the &lt;code&gt;GDK_BACKEND=x11&lt;/code&gt; issue in Wayland-only sessions, so apply that separately if needed.&lt;/p&gt;
+&lt;h3 id=&quot;extracting-older-libraries-into-a-local-path-and-adding-them-to-ld-path&quot;&gt;Extracting older libraries into a local path, and adding them to LD path&lt;/h3&gt;
+&lt;p&gt;This is the sub-method that I prefer, though you are free to follow the previous sub-method as well. I like this method, because it does not pollute my package list, with these packages (though you might have a different opinion). Keeping the older libraries in a private compatibility directory avoids interfering with Ubuntu&#39;s system libraries.&lt;/p&gt;
+&lt;p&gt;A great person has put a guide on this, which is available at &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.ankyte.cloud/posts/citrix-workspace-ubuntu-26-installation-troubleshoot&quot;&gt;Citrix Workspace Ubuntu 26 Installation and Troubleshoot&lt;/a&gt;. This person, is also on Ubuntu 26.04, so this guide is the most compatible with newer Ubuntu versions. The article is itself an interesting read, as he describes how he got to know what older libraries he has to actually install by using standard linux ld tools to find out that header files are required.&lt;/p&gt;
+&lt;p&gt;What he does is basically downloads the older libraries, extracts them a separate dedicated folder named &lt;code&gt;citrix-compat&lt;/code&gt; and puts that as a discoverable path to the citrix binary by running the binary with an environment variable.&lt;/p&gt;
+&lt;h4 id=&quot;notes-and-additions-to-the-above-article&quot;&gt;Notes and additions to the above article&lt;/h4&gt;
+&lt;p&gt;There are some additions I would like to add to this article:&lt;/p&gt;
+&lt;h5 id=&quot;cleaner-directory-name&quot;&gt;Cleaner directory name&lt;/h5&gt;
+&lt;p&gt;The original article uses:&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #06060C; background-color: #FDF0ED;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;~/citrix-compat&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This creates a visible directory directly inside your home directory.&lt;/p&gt;
+&lt;p&gt;A cleaner alternative is:&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #06060C; background-color: #FDF0ED;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;~/.citrix-compat&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Another option is:&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #06060C; background-color: #FDF0ED;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;~/.local/share/citrix-compat&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you use a different directory, change the path everywhere it appears, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;mkdir&lt;/code&gt; command&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;dpkg-deb -x&lt;/code&gt; commands&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;find&lt;/code&gt; commands&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;LD_LIBRARY_PATH&lt;/code&gt; commands&lt;/li&gt;
+&lt;li&gt;The launcher script&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;x11-backend-option&quot;&gt;X11 backend option&lt;/h5&gt;
+&lt;p&gt;On systems using Wayland, Citrix may work more reliably when forced to use the X11 backend.&lt;/p&gt;
+&lt;p&gt;Add this near the top of the launcher script:&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #06060C; background-color: #FDF0ED;&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #8A31B9;&quot;&gt;export&lt;/span&gt;&lt;span style=&quot;color: #DA103F;&quot;&gt; GDK_BACKEND&lt;/span&gt;&lt;span style=&quot;color: #333333;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #DA103F;&quot;&gt;x11&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The complete launcher script can be:&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #06060C; background-color: #FDF0ED;&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #33333380;font-style: italic;&quot;&gt;#!/bin/bash&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #8A31B9;&quot;&gt;export&lt;/span&gt;&lt;span style=&quot;color: #DA103F;&quot;&gt; GDK_BACKEND&lt;/span&gt;&lt;span style=&quot;color: #333333;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #DA103F;&quot;&gt;x11&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #DA103F;&quot;&gt;COMPAT_DIR&lt;/span&gt;&lt;span style=&quot;color: #333333;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #F6661E;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #DA103F;&quot;&gt;$HOME&lt;/span&gt;&lt;span style=&quot;color: #F6661E;&quot;&gt;/citrix-compat&amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #33333380;font-style: italic;&quot;&gt; # Change this to actual directory name you use&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #8A31B9;&quot;&gt;export&lt;/span&gt;&lt;span style=&quot;color: #DA103F;&quot;&gt; LD_LIBRARY_PATH&lt;/span&gt;&lt;span style=&quot;color: #333333;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #F6661E;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #DA103F;&quot;&gt;$COMPAT_DIR&lt;/span&gt;&lt;span style=&quot;color: #F6661E;&quot;&gt;/usr/lib/x86_64-linux-gnu:&lt;/span&gt;&lt;span style=&quot;color: #DA103F;&quot;&gt;$LD_LIBRARY_PATH&lt;/span&gt;&lt;span style=&quot;color: #F6661E;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #1D8991;&quot;&gt;exec&lt;/span&gt;&lt;span&gt; /opt/Citrix/ICAClient/selfservice&lt;/span&gt;&lt;span style=&quot;color: #F6661E;&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #DA103F;font-style: italic;&quot;&gt;$@&lt;/span&gt;&lt;span style=&quot;color: #F6661E;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&quot;citrix-app-protection&quot;&gt;Citrix app protection&lt;/h5&gt;
+&lt;p&gt;When installing &lt;code&gt;.deb&lt;/code&gt; file, you may be prompted to ask if you want to install Citrix app protection, and another thing as well. Please click yes/allow in each of it, because your organisation might require Citrix app protection to access its systems.&lt;/p&gt;
+&lt;h5 id=&quot;creating-a-desktop-file-for-the-same&quot;&gt;Creating a &lt;code&gt;.desktop&lt;/code&gt; file for the same&lt;/h5&gt;
+&lt;p&gt;It may be cumbersome to launch the launcher script in terminal every time, so duplicate the already existing Citrix Workspace &lt;code&gt;.desktop&lt;/code&gt; file present in &lt;code&gt;/usr/share/applications/&lt;/code&gt; by copying it to &lt;code&gt;~/.local/share/applications/citrox-compat.desktop&lt;/code&gt;. Change the &lt;code&gt;Exec&lt;/code&gt; and &lt;code&gt;TryExec&lt;/code&gt; properties to the point to the the script you created, in this article &lt;code&gt;/usr/local/bin/citrix-workspace&lt;/code&gt;. Also, change the name in &lt;code&gt;Name&lt;/code&gt; field to differentiate it from original Citrix Workspace menu entry, for example I named it &quot;Citrix Compat&quot;.&lt;/p&gt;
+&lt;p&gt;So, in essence, my &lt;code&gt;~/.local/share/applications/citrox-compat.desktop&lt;/code&gt; looks like:&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #06060C; background-color: #FDF0ED;&quot; &gt;&lt;code data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #DA103F;&quot;&gt;[Desktop Entry]&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #8A31B9;&quot;&gt;Type&lt;/span&gt;&lt;span style=&quot;color: #333333;&quot;&gt;=&lt;/span&gt;&lt;span&gt;Application&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #8A31B9;&quot;&gt;Name&lt;/span&gt;&lt;span style=&quot;color: #333333;&quot;&gt;=&lt;/span&gt;&lt;span&gt;Citrix Compat&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #8A31B9;&quot;&gt;Comment&lt;/span&gt;&lt;span style=&quot;color: #333333;&quot;&gt;=&lt;/span&gt;&lt;span&gt;Citrix Workspace app for remote desktop access&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #8A31B9;&quot;&gt;Exec&lt;/span&gt;&lt;span style=&quot;color: #333333;&quot;&gt;=&lt;/span&gt;&lt;span&gt;/usr/local/bin/citrix-workspace&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #8A31B9;&quot;&gt;Icon&lt;/span&gt;&lt;span style=&quot;color: #333333;&quot;&gt;=&lt;/span&gt;&lt;span&gt;citrix-workspace&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #8A31B9;&quot;&gt;Categories&lt;/span&gt;&lt;span style=&quot;color: #333333;&quot;&gt;=&lt;/span&gt;&lt;span&gt;Network&lt;/span&gt;&lt;span style=&quot;color: #33333380;font-style: italic;&quot;&gt;;RemoteAccess;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #8A31B9;&quot;&gt;StartupNotify&lt;/span&gt;&lt;span style=&quot;color: #333333;&quot;&gt;=&lt;/span&gt;&lt;span&gt;true&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #8A31B9;&quot;&gt;Terminal&lt;/span&gt;&lt;span style=&quot;color: #333333;&quot;&gt;=&lt;/span&gt;&lt;span&gt;false&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Peace out ☮️&lt;/p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Fixing sleep/suspend on Dell Latitude 54XX in Linux</title>
+        <published>2023-04-18T00:00:00+00:00</published>
+        <updated>2023-04-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/fix-suspend-dell-latitude-54xx/"/>
+        <id>https://hemish.net/posts/fix-suspend-dell-latitude-54xx/</id>
+        
+        <summary type="html">&lt;p&gt;I wrote this to provide others an aggregated view to how to solve this problem, and not lurk in multiple formus or threads to find the solutions.&lt;/p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Libadwaita Without Adwaita</title>
+        <published>2023-01-17T00:00:00+00:00</published>
+        <updated>2023-01-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/libadwaita-without-adwaita/"/>
+        <id>https://hemish.net/posts/libadwaita-without-adwaita/</id>
+        
+        <summary type="html">&lt;p&gt;While GNOME is moving to Libadwaita with the help of Purism (sure they need to be acknowledged), themeing has surely lessened, but people still use some hacks.&lt;/p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Upgrading firmware in Linux using fwupd</title>
+        <published>2022-11-14T00:00:00+00:00</published>
+        <updated>2022-11-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/fwupd/"/>
+        <id>https://hemish.net/posts/fwupd/</id>
+        
+        <summary type="html">&lt;p&gt;Want to upgrade your PC or laptop&#39;s firmware but don&#39;t want to use Windows?&lt;/p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Hamara Plymouth Theme</title>
+        <published>2022-11-14T00:00:00+00:00</published>
+        <updated>2022-11-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/plymouth-theme-hamra/"/>
+        <id>https://hemish.net/posts/plymouth-theme-hamra/</id>
+        
+        <summary type="html">&lt;p&gt;&lt;em&gt;Hamara Linux&lt;/em&gt; was/is a India based linux distribution. It is in pretty dormant stage now (Even the site is down for some time).&lt;/p&gt;
+&lt;p&gt;I asked &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://itsmeh.com/chirag_sukhala&quot;&gt;Chirag Sukhala&lt;/a&gt; what is even the need of such a Linux distribution which gives you Indic languages preinstalled when you can just install Indic languages in pretty much any popular linux distro&lt;/p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Translating in open-source world</title>
+        <published>2022-10-10T00:00:00+00:00</published>
+        <updated>2022-10-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/localisation-credits-opensource/"/>
+        <id>https://hemish.net/posts/localisation-credits-opensource/</id>
+        
+        <summary type="html">&lt;p&gt;Isn&#39;t it amazing to get your credits in an opensource app?&lt;/p&gt;</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Mitmproxy</title>
+        <published>2022-09-20T00:00:00+00:00</published>
+        <updated>2022-09-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hemish.net/posts/mitmproxy/"/>
+        <id>https://hemish.net/posts/mitmproxy/</id>
+        
+        <summary type="html">&lt;p&gt;Today, I came across this wonderful tool called &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://mitmproxy.org/&quot;&gt;mitmproxy&lt;/a&gt; which is a TLS capable HTTP and HTTPS proxy and can be used by pen-testers and enthusiasts.&lt;/p&gt;</summary>
+        
+    </entry>
+</feed>
