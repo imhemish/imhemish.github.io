@@ -2,6 +2,7 @@
 title = "What's in a name?"
 description = "Story behind my name and mononymous shenanigans"
 date = "2026-10-22"
+fediid = '117485705888950860'
 [taxonomies]
 tags = ['identity', 'casual']
 +++
